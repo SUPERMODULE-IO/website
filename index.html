@@ -1,306 +1,694 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The first Collective Auto Investments Platform, Click and join the group of investors and let BaseModule manage the operations.">
-    <meta property="og:title" content="SuperModule - CAIP"> 
-    <meta property="og:url" content="https://www.supermodule.io"> 
-    <meta property="og:description" content="Collective Auto Investments Platform">
-    <meta property="og:image" content="favicon/favicon.png">
-    <meta property="og:type" content="website">
-    <meta name="author" content="Vivek Ganesh, BaseModule">
-    <meta name="generator" content="Self">
-    <title>BaseModule - Give wings to your creativity!)</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./assets/styles/supermodule.css" rel="stylesheet">
 
-    
-      <!-- Bootstrap core CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <style>
-    
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-      
-
-      .bg-bm {
-        background-color: #d822dc;
-        background-image: linear-gradient(43deg, #d822dc 0%, #007cff 20%, #0a0909 40%, #000000 60%, #007cff 80%, #d822dc 100%);
-
-        
-      }
-
-      @font-face { font-family: SMF ; src: url('assets/fonts/SMA.otf'); } 
-      .smf { font-family: SMF;  }
   
+</head>
+<!-- class="dark:bg-gray-800 dark:text-gray-200" -->
+<body class="antialiased bg-white dark:bg-gray-900 dark:text-white">
+
+  <header >
+    <nav
+       class="
+         flex flex-wrap
+         items-center
+         justify-between
+         w-full
+         py-4
+         md:py-0
+         px-4
+         fixed
+         top-0
+         z-10
+         bg-white dark:bg-gray-900 dark:text-white
+         shadow-md
+         shadow-red-300
+        
+       "
+     >
+      <div>
+         <a class="font-smf text-3xl text-red-600" href="#">
+          Supermodule
+         </a>
+       </div>
       
-    </style>
+        <svg
+           xmlns="http://www.w3.org/2000/svg"
+           id="menu-button"
+           class="h-6 w-6 cursor-pointer md:hidden block"
+           fill="none"
+           viewBox="0 0 24 24"
+           stroke="currentColor"
+         >
+           <path
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             stroke-width="2"
+             d="M4 6h16M4 12h16M4 18h16"
+           />
+         </svg>
+      
+      <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+         <ul
+           class="
+             pt-4
+             text-base text-gray-700
+             md:flex
+             md:justify-between 
+             md:pt-0"
+         >
+           <li>
+             <a class="md:p-4 py-2 block hover:text-red-400 focus:text-red-600" href="#"
+               >Explore</a
+             >
+           </li>
+           <li>
+             <a class="md:p-4 py-2 block hover:text-red-400 focus:text-red-600" href="#how-it-works"
+               >How it works</a
+             >
+           </li>
+           <li>
+             <a class="md:p-4 py-2 block hover:text-red-400 focus:text-red-600" href="#smart-modules"
+               >Smart Modules</a
+             >
+           </li>
+           <li>
+             <a class="md:p-4 py-2 block hover:text-red-400 focus:text-red-600" href="#partners"
+               >Partners</a
+             >
+           </li>
+           <li>
+             <a
+               class="md:p-4 py-2 block hover:text-red-400 focus:text-red-600"
+               href="#team"
+               >Team</a
+             >
+           </li>
+         </ul>
+         
+       </div>
+       <div>
 
-    
-    <!-- Custom styles for this template -->
-    <link href="heroes.css" rel="stylesheet">
-
-    
-  </head>
-  <body class="h-100 text-center text-white bg-bm">
-    <nav class="navbar navbar-expand-md">
-      <div class="container-fluid">
-
-        <a class="navbar-brand smf" href="#"><img class="" src="assets/logos/SM_logo_red.svg" alt="" width="40" height="32">supermodule</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li><a href="#" class="nav-link px-2 text-white">Crypto Insights</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Ultimate Websites</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Blockchain Advocacy</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Lite Paper</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">About</a></li>
-           
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light" type="submit">Login</button>
-          </form>
+          <button id="colorswitch" class="inline-flex items-center bg-gray-100 border-0 py-1 px-1 focus:outline-none hover:bg-gray-800 dark:hover:bg-gray-200  rounded-full text-base mt-4 md:mt-0 dark:bg-gray-800 dark:text-gray-100 ">
+            <svg id="icon-contrast" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            class="h-6 w-6" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+              <path d="M10,20C4.5,20,0,15.5,0,10S4.5,0,10,0s10,4.5,10,10S15.5,20,10,20z M10,2c-4.4,0-8,3.6-8,8s3.6,8,8,8s8-3.6,8-8S14.4,2,10,2
+                          z" />
+              <path fill="#ea3970" class="contrast" d="M10,4v12c3.3,0,6-2.7,6-6S13.3,4,10,4z" />
+            </svg>
+              
+          </button>
+          <button id="connectButton" class="inline-flex items-center bg-gray-100 border-0 py-1 px-1 focus:outline-none hover:bg-gray-800 dark:hover:bg-gray-200  rounded text-base mt-4 md:mt-0 dark:bg-gray-800 dark:hover:text-red-600 hover:text-red-600">
+            <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-sky-400 opacity-75"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+            </svg>
+              
+              
+              
+          </button>
+       </div>
+       
+   </nav>
+  
+  
+   
+ </header>
+  
+ 
+  <!-- Alert section start -->
+  <!--
+  <div id="mainAlert" class="text-center py-4 lg:px-4  my-14">
+    <div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+      <span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">New</span>
+      <span class="font-semibold mr-2 text-left flex-auto"></span>
+      <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+     
+        <svg class="fill-current h-6 w-6 text-red-500" role="button" onclick="closeAlert('mainAlert')" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
+     
+    </div>
+  </div>
+  -->
+  <!-- Alert section end -->
+  <div class="h-0.5 bg-gray-200 dark:bg-gray-800 rounded overflow-hidden my-14">
+    <div class="w-24 h-full bg-red-500"></div>
+  </div>
+  <!--Hero Section start-->
+  <section class="text-gray-600 dark:text-gray-300 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <img class="object-cover object-center rounded " alt="hero" src="./assets/images/logos/SMLogo3.svg">
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 dark:text-gray-100">Let's create something incredible together.</h1>
+        <p class="mb-8 leading-relaxed">
+          <span class="font-smf ">Supermodule</span> is an innovative platform that provides web3 related value added services for individuals and businesses. Our mission is to give an easy and friendly way to use blockchain technology and make them truly available for everyone, everywhere.
+          <br>We bring NFTs to life. Our platform enables a world of design and innovation. Join us to see what you can create!</p>
+        <div class="flex w-full md:justify-start justify-center items-end">
+          <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4">
+            <label for="hero-field" class="leading-7 text-sm text-gray-600">Join the waitlist</label>
+            <input type="text" id="hero-field" name="hero-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:ring-red-200 focus:bg-transparent focus:border-red-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <button class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Join</button>
+        </div>
+        <p class="text-sm mt-2 text-gray-500 mb-8 w-full">Early bird offers, for the first 10,000.</p>
+        <div class="flex lg:flex-row md:flex-col dark:text-gray-600">
+          <button class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 512 512">
+              <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"></path>
+            </svg>
+            <span class="ml-4 flex items-start flex-col leading-none">
+              <span class="text-xs text-gray-600 mb-1">COMING SOON ON</span>
+              <span class="title-font font-medium">Google Play</span>
+            </span>
+          </button>
+          <button class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 305 305">
+              <path d="M40.74 112.12c-25.79 44.74-9.4 112.65 19.12 153.82C74.09 286.52 88.5 305 108.24 305c.37 0 .74 0 1.13-.02 9.27-.37 15.97-3.23 22.45-5.99 7.27-3.1 14.8-6.3 26.6-6.3 11.22 0 18.39 3.1 25.31 6.1 6.83 2.95 13.87 6 24.26 5.81 22.23-.41 35.88-20.35 47.92-37.94a168.18 168.18 0 0021-43l.09-.28a2.5 2.5 0 00-1.33-3.06l-.18-.08c-3.92-1.6-38.26-16.84-38.62-58.36-.34-33.74 25.76-51.6 31-54.84l.24-.15a2.5 2.5 0 00.7-3.51c-18-26.37-45.62-30.34-56.73-30.82a50.04 50.04 0 00-4.95-.24c-13.06 0-25.56 4.93-35.61 8.9-6.94 2.73-12.93 5.09-17.06 5.09-4.64 0-10.67-2.4-17.65-5.16-9.33-3.7-19.9-7.9-31.1-7.9l-.79.01c-26.03.38-50.62 15.27-64.18 38.86z"></path>
+              <path d="M212.1 0c-15.76.64-34.67 10.35-45.97 23.58-9.6 11.13-19 29.68-16.52 48.38a2.5 2.5 0 002.29 2.17c1.06.08 2.15.12 3.23.12 15.41 0 32.04-8.52 43.4-22.25 11.94-14.5 17.99-33.1 16.16-49.77A2.52 2.52 0 00212.1 0z"></path>
+            </svg>
+            <span class="ml-4 flex items-start flex-col leading-none">
+              <span class="text-xs text-gray-600 mb-1">COMING SOON ON</span>
+              <span class="title-font font-medium">App Store</span>
+            </span>
+          </button>
         </div>
       </div>
-    </nav>
-        
-<main>
-
-  <h1 class="visually-hidden">SuperModule</h1>
- 
+    </div>
+  </section>
 
 
-
-  <div class="row justify-content-md-center px-4 py-5  text-center bg-black">
-    <div class="col col-lg-10 mx-auto ">
-        
-        <div class="">
-         
-            
-        
-          <img id="" class="" src="assets/images/SM_banner.svg" alt="" width="" height="300"/>
-            <h1 class="smf">
-           supermodule</h1>
-          <article>
-            <p class="lead mb-4 smf"> Create and swap your digital collectible like never before! </p>
-           </article>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4 gap-3">Coming soon ...</button>
+  <!--Smart Module START-->
+  
+  <section id="smart-modules" class="text-gray-600  dark:text-gray-300  body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col">
+        <div class="h-1 bg-gray-200 dark:bg-gray-800 rounded overflow-hidden">
+          <div class="w-24 h-full bg-red-500"></div>
+        </div>
+        <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+          <h1 class="sm:w-2/5 text-gray-900 dark:text-gray-100 font-medium title-font text-2xl mb-2 sm:mb-0">Smart Modules</h1>
+          <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Street art subway tile salvia four dollar toast bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters dreamcatcher.</p>
+        </div>
+      </div>
+      
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+              <svg version="1.1" id="icon-magic-wand" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 535.5 535.5" style="enable-background:new 0 0 535.5 535.5;"
+              xml:space="preserve" class="w-6 h-6" >
+                <polygon class="magic-stars" fill="#ea3970" points="165.75,91.8 229.5,127.5 193.799,63.75 229.5,0 165.75,35.7 102,0 137.7,63.75 102,127.5 		" />
+                <polygon class="magic-stars" fill="#ea3970" points="471.75,341.7 408,306 443.7,369.75 408,433.5 471.75,397.8 535.5,433.5 499.8,369.75 535.5,306 		" />
+                <polygon class="magic-stars" fill="#ea3970" points="535.5,0 471.75,35.7 408,0 443.7,63.75 408,127.5 471.75,91.8 535.5,127.5 499.8,63.75 		" />
+                <path d="M341.7,135.15c-10.2-10.2-25.5-10.2-35.7,0L7.649,433.5c-10.2,10.2-10.2,25.5,0,35.7l58.65,58.649
+                            c10.2,10.2,25.5,10.2,35.7,0L400.35,229.5c10.2-10.2,10.2-25.5,0-35.7L341.7,135.15z M313.65,275.4L260.1,221.85l61.2-61.2
+                            l53.55,53.55L313.65,275.4z" />
+              </svg>
+            </div>
+            <h2 class="text-lg text-gray-900 dark:text-gray-100 font-medium title-font mb-2">Fuse Mod</h2>
+            <p class="leading-relaxed text-base">This is the core module to integrate cypto assets with NFTs.   </p>
           </div>
         </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <circle cx="6" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+              </svg>
+            </div>
+            <h2 class="text-lg text-gray-900 dark:text-gray-100 font-medium title-font mb-2">Counterfeit Mod</h2>
+            <p class="leading-relaxed text-base">Counterfeit protection from source to destination and across all distribution channels. </p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h2 class="text-lg text-gray-900 dark:text-gray-100 font-medium title-font mb-2">Traceability Mod</h2>
+            <p class="leading-relaxed text-base">Provides complete supply chain lifecycle traceability across products and services. </p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
+              </svg>
+            </div>
+            <h2 class="text-lg text-gray-900 dark:text-gray-100 font-medium title-font mb-2">Engagment Mod</h2>
+            <p class="leading-relaxed text-base">Enables fan engagement across centralised & decentralised channels.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+              </svg>
+            </div>
+            <h2 class="text-lg text-gray-900 dark:text-gray-100 font-medium title-font mb-2">Ticketing Mod</h2>
+            <p class="leading-relaxed text-base">Generate passes/tickets with global verification process for any events.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h2 class="text-lg text-gray-900 font-medium dark:text-gray-100 title-font mb-2">Vault Mod</h2>
+            <p class="leading-relaxed text-base">Physical to Digital asset transformation using custodian vaults.</p>
+          </div>
+        </div>
+      </div>
+      <button class="flex mx-auto mt-16 text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">Button</button>
     </div>
+  </section>
+
+  <!-- Smart Module END -->
+
+  <!-- How it works START-->
+  
+  <section id="how-it-works" class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap flex-col">
+      <div class="flex flex-col">
+        <div class="h-1 bg-gray-200 dark:bg-gray-800 rounded overflow-hidden">
+          <div class="w-24 h-full bg-red-500"></div>
+        </div>
+        <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+          <h1 class="sm:w-2/5 text-gray-900 dark:text-gray-100 font-medium title-font text-2xl mb-2 sm:mb-0">How it works</h1>
+        </div>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <a id="step1" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-gray-100 inline-flex items-center leading-none  hover:text-indigo-500 tracking-wider rounded-t">
+           
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+            </svg>STEP 1
+          </a>
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full object-cover object-center rounded-b" src="./assets/images/STEP1.svg">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gradient-to-b from-red-600 to-yellow-600 opacity-0 hover:opacity-95 rounded-b">
+              <h2 class="tracking-widest text-sm title-font font-medium text-white mb-1"></h2>
+              <h1 class="title-font text-lg font-medium text-white mb-3"><strong>Upload Art</strong></h1>
+              <p class="leading-relaxed h-96 text-white">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <a id="step2" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-gray-100 inline-flex items-center leading-none  hover:text-indigo-500 tracking-wider rounded-t">
+            
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z" />
+            </svg>STEP 2
+          </a>
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center rounded-b" src="./assets/images/Step2A.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gradient-to-b from-red-600 to-yellow-600  opacity-0 hover:opacity-95 rounded-b">
+              <h2 class="tracking-widest text-sm title-font font-medium text-white mb-1"></h2>
+              <h1 class="title-font text-lg font-medium text-white mb-3"><strong>Select Smart Modules</strong></h1>
+              <p class="leading-relaxed h-96 text-red-300">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <a id="step3" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-gray-100 inline-flex items-center leading-none  hover:text-indigo-500 tracking-wider rounded-t">
+            
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+            </svg>STEP 3
+          </a>
+          <div class="flex relative" >
+            <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center rounded-b border-gray-200 bg-gray-100" src="./assets/images/Step3.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gradient-to-b from-red-600 to-yellow-600  opacity-0 hover:opacity-95 rounded-b">
+              <h2 class="tracking-widest text-sm title-font font-medium text-white mb-1"></h2>
+              <h1 class="title-font text-lg font-medium text-white mb-3"><strong>Publish</strong></h1>
+              <p class="leading-relaxed h-96 text-red-300">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+      <!-- <img class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded" alt="hero" src="./assets/images/STEP1.svg"> -->
+      <!-- <img class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded" alt="hero" src="./assets/images/STEP2.svg"> -->
+     
+      <div class="flex flex-col text-center w-full">
+        <h1 class="text-xl font-medium title-font mb-4 ">Publish Your Art + Technology</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+      </div>
+    </div>
+  </section>
+  <!-- How it works start  END-->  
+  <!-- Partners START--> 
+  
+  <section id="partners" class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto ">
+      <div class="flex flex-col">
+        <div class="h-1 bg-gray-200 dark:bg-gray-800 rounded overflow-hidden">
+          <div class="w-24 h-full bg-red-500"></div>
+        </div>
+        <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+          <h1 class="sm:w-2/5 text-gray-900 dark:text-gray-100 font-medium title-font text-2xl mb-2 sm:mb-0">Partners</h1>
+        </div>
+      </div>
+      <div class="lg:w-2/3 mx-auto">
+        <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
+          <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="https://dummyimage.com/820x340">
+          <div class="text-center relative z-10 w-full">
+            <h2 class="text-2xl text-gray-900 font-medium title-font mb-2">Meerana</h2>
+            <p class="leading-relaxed">Skateboard +1 mustache fixie paleo lumbersexual.</p>
+            <a class="mt-3 text-red-500 inline-flex items-center">Learn More
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-wrap -mx-2">
+          <div class="px-2 w-1/2">
+            <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
+              <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="https://dummyimage.com/542x460">
+              <div class="text-center relative z-10 w-full">
+                <h2 class="text-xl text-gray-900 font-medium title-font mb-2">AEIC</h2>
+                <p class="leading-relaxed">Skateboard +1 mustache fixie paleo lumbersexual.</p>
+                <a class="mt-3 text-red-500 inline-flex items-center">Learn More
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="px-2 w-1/2">
+            <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
+              <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="https://dummyimage.com/542x420">
+              <div class="text-center relative z-10 w-full">
+                <h2 class="text-xl text-gray-900 font-medium title-font mb-2">Basemodule</h2>
+                <p class="leading-relaxed">Skateboard +1 mustache fixie paleo lumbersexual.</p>
+                <a class="mt-3 text-red-500 inline-flex items-center">Learn More
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Partners END-->  
+  <!-- Team  Start-->  
+   <section id="team" class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col">
+        <div class="h-1 bg-gray-200 dark:bg-gray-800 rounded overflow-hidden">
+          <div class="w-24 h-full bg-red-500"></div>
+        </div>
+        <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+          <h1 class="sm:w-2/5 text-gray-900 dark:text-gray-100 font-medium title-font text-2xl mb-2 sm:mb-0">Team</h1>
+        </div>
+      </div>
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Team</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+      </div>
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Holden Caulfield</h2>
+              <p class="text-gray-500">UI Designer</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/84x84">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Henry Letham</h2>
+              <p class="text-gray-500">CTO</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/88x88">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Oskar Blinde</h2>
+              <p class="text-gray-500">Founder</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/90x90">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">John Doe</h2>
+              <p class="text-gray-500">DevOps</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/94x94">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Martin Eden</h2>
+              <p class="text-gray-500">Software Engineer</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/98x98">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Boris Kitua</h2>
+              <p class="text-gray-500">UX Researcher</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/100x90">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Atticus Finch</h2>
+              <p class="text-gray-500">QA Engineer</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/104x94">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Alper Kamu</h2>
+              <p class="text-gray-500">System</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/108x98">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Rodrigo Monchi</h2>
+              <p class="text-gray-500">Product Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Team END -->
+
+
+  <div class="h-0.5 bg-gray-200 dark:bg-gray-800 rounded overflow-hidden">
+    <div class="w-24 h-full bg-red-500"></div>
   </div>
-   
-  <div class="b-example-divider">
-    
-    
-  </div>
+
  
-
-  <!-- <div class="px-4 pt-5 my-5 text-center border-bottom">
-    <h1 class="display-4 fw-bold">Centered screenshot</h1>
-    <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+  <!-- Footer Start -->
+  <footer class="text-gray-600 dark:text-gray-400 dark:bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          
+          
+          <span class=" text-3xl font-smf h-10 dark:text-gray-300">Supermodule</span>
+        </a>
+        <p class="mt-2 text-sm text-gray-500">The world’s first digital marketplace for web3 value-added services. Create, Blend and Trade your digital collectibles like never before! </p>
       </div>
-    </div>
-    <div class="overflow-hidden" style="max-height: 30vh;">
-      <div class="container px-5">
-        <img src="bootstrap-docs.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
-      </div>
-    </div>
-  </div> -->
-
- <!-- <div class="b-example-divider"></div> -->
-
-  <!-- <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6">
-        <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-      </div>
-      <div class="col-lg-6">
-        <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
-        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+            </li>
+          </nav>
         </div>
       </div>
     </div>
-  </div> -->
-
-  <!-- <div class="b-example-divider"></div> -->
-
-  <div class="container col-xl-10 col-xxl-8 px-4 py-5 ">
-    <div class="row align-items-center g-lg-5 py-5">
-      <div class="col-lg-7 text-center text-lg-start">
-        <h1 class="display-4 fw-bold lh-1 mb-3">SuperForecasters (Experimental)</h1>
-
-         <button type="button" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
-        Pool strength <span class="badge bg-success">10</span>
-        </button>
-        <button type="button" class="btn btn-dark">
-        Pool value <span class="badge bg-success">$100,000</span>
-        </button>
-        <button type="button" class="btn btn-dark">
-        Duration <span class="badge bg-success">3 months</span>
-        </button>
-        <p class="col-lg-10 fs-4">Cindicator provides this strategy. They have completed the internal testing and are going for a 3months live experimental phase until February 2022. Please see the track record and strategy details below. BaseModule reserves the right to change terms on completion of the experimental phase.</p>
-
-      </div>
-      <div class="col-md-10 mx-auto col-lg-5">
-        <form class="p-4 p-md-5 border rounded-3 bg-dark">
-         <div data-tf-widget="kR7f4zI4" style="width:100%;height:400px;"></div>
-        </form>
+    <div class="bg-gray-100 dark:bg-gray-800">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2022 Supermodule —
+          <a href="https://twitter.com/vyvakz" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@vyvakz</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
       </div>
     </div>
-  </div>
-
-  <!-- <div class="b-example-divider"></div> -->
-
-  <div class="container my-5">
-    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-        <h1 class="display-4 fw-bold lh-1">SuperForecasters </h1>
-        <h3>Performance(20.03.2020 - 30.10.2021)</h3>
-        <button type="button" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
-        Compound Return<span class="badge bg-success">164.89%</span>
-        </button>
-        <button type="button" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
-        Annualized Return <span class="badge bg-success">57.8%</span>
-        </button>
-        <button type="button" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Max drawdown is an indicator of the risk of a portfolio chosen based on a certain strategy. It measures the largest single drop from peak to bottom in the value of a portfolio (before a new peak is achieved).
-
-For example if a portfolio starts being worth $100,000, increases in value to $150,000, decreases to $90,000, increases to $120,000, then decreases to $80,000, then increases to $200,000, the max drawdown is ($150,000-$80,000)/$150,000 = 46.67%
-
-Note that the highest peak of $200,000 is not included in the calculation because the drawdown began at a peak of $150,000. Also note that the increase to $120,000 before the drop to $80,000 has no effect on the drawdown, because $120,000 was not a new peak.
-Formula
-Max Drawdown = (Peak value before largest drop - Lowest value before new high established) / (Peak value before largest drop)">
-        Max Drawdown<span class="badge bg-success">25.45%</span>
-        </button>
-        <p class="lead">This algorithm uses forecasts from top decentralized analysts from the Cindicator. The strategy makes long and short trades for Bitcoin Futures contracts weekly. The objective is to outperform Bitcoin over a 1-3 year horizon or increase the BTC stack in your portfolio.*
-</p>
-        <p class="badge bg-secondary text-wrap">
-          *Currently, the algorithm’s base currency is USDT. In this case, the algorithm’s goal is to increase USDT size and outperform BTC. We are working on implementing Coin-M Futures to our trading platform that will allow us to make Bitcoin a base currency for an algorithm in the future.
-        </p>
-        <p>
-          Risk Disclosure
-        </p>
-        <p>
-SuperForecasters Strategy is an experimental algorithm. The use of this software involves risk, and past performance is not a guarantee of future results. Performance results were prepared by Cindicator and have
-not been compiled, reviewed, or audited by an independent accounting firm. Users should be aware that a loss of funds is possible. You use the strategy at your own discretion and risk. BaseModule is not liable for any losses.
-        </p>
-       <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Primary</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-        </div> -->
-      </div>
-      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-          <img class="rounded-lg-3" src="assets/images/SM_banner.svg" width="720">
-      </div>
-    </div>
-  </div>
-
-  <div class="b-example-divider"></div>
-
-  <div class="text-secondary px-4 py-5 text-center">
-    <div class="py-5">
-      
-      <div class="col-lg-6 mx-auto">
-           <!--?xml version="1.0" encoding="utf-8"?-->
-<!-- Generator: SketchAPI 2021.4.25.11 <https://api.sketch.io/> -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketchjs="https://sketch.io/dtd/" sketchjs:metadata="eyJuYW1lIjoiRHJhd2luZy0zLnNrZXRjaHBhZCIsInN1cmZhY2UiOnsibWV0aG9kIjoiZmlsbCIsImJsZW5kIjoibm9ybWFsIiwiZW5hYmxlZCI6dHJ1ZSwib3BhY2l0eSI6MSwidHlwZSI6InBhdHRlcm4iLCJwYXR0ZXJuIjp7InR5cGUiOiJwYXR0ZXJuIiwicmVmbGVjdCI6Im5vLXJlZmxlY3QiLCJyZXBlYXQiOiJyZXBlYXQiLCJzbW9vdGhpbmciOmZhbHNlLCJzcmMiOiJ0cmFuc3BhcmVudExpZ2h0Iiwic3giOjEsInN5IjoxLCJ4MCI6MC41LCJ4MSI6MSwieTAiOjAuNSwieTEiOjF9fSwiY2xpcFBhdGgiOnsiZW5hYmxlZCI6dHJ1ZSwic3R5bGUiOnsic3Ryb2tlU3R5bGUiOiJibGFjayIsImxpbmVXaWR0aCI6MX19LCJkZXNjcmlwdGlvbiI6Ik1hZGUgd2l0aCBTa2V0Y2hwYWQiLCJtZXRhZGF0YSI6e30sImV4cG9ydERQSSI6NzIsImV4cG9ydEZvcm1hdCI6InN2ZyIsImV4cG9ydFF1YWxpdHkiOjAuOTUsInVuaXRzIjoicHgiLCJ3aWR0aCI6MjEwLCJoZWlnaHQiOjIwMCwicGFnZXMiOlt7IndpZHRoIjoyMTAsImhlaWdodCI6MjAwfV0sInV1aWQiOiI1MDNiOGRjZC03MWRkLTQxODgtYjU1Mi04YWMxNzY3ZDkyMzcifQ==" width="210" height="200" viewBox="0 0 210 200" sketchjs:version="2021.4.25.11">
-<g sketchjs:tool="fancyText" style="mix-blend-mode: source-over;" transform="matrix(0.3412354951152886,0.9399778385012191,-0.9399778385012191,0.3412354951152886,107.3071842368187,-69.63163052138012)">
-  <g sketchjs:uid="1">
-    <g sketchjs:uid="2" style="paint-order: fill stroke markers;">
-      <path d="M 101.0925 105.140625L 92.863125 128L 57.2025 128L 105.664375 -0.012500000000017053L 142.239375 -0.012500000000017053L 190.70125000000002 128L 155.040625 128L 146.81125 105.140625L 101.0925 105.140625ZZM 123.951875 38.39125L 109.321875 81.366875L 138.58187500000003 81.366875L 123.951875 38.39125Z" sketchjs:uid="3" style="fill: rgb(46, 197, 240); stroke: rgb(46, 197, 240); stroke-width: 5.48625; stroke-miterlimit: 10; paint-order: stroke;" class="svg-elem-1"></path>
-    </g>
-  </g>
-</g>
-<g sketchjs:tool="fancyText" style="mix-blend-mode: source-over;" transform="matrix(-0.34219217257052476,0.9396299894274683,-0.9396299894274683,-0.34219217257052476,191.5469125977383,38.916718209959924)">
-  <g sketchjs:uid="1">
-    <g sketchjs:uid="2" style="paint-order: fill stroke markers;">
-      <path d="M 101.0925 105.140625L 92.863125 128L 57.2025 128L 105.664375 -0.012500000000017053L 142.239375 -0.012500000000017053L 190.70125000000002 128L 155.040625 128L 146.81125 105.140625L 101.0925 105.140625ZZM 123.951875 38.39125L 109.321875 81.366875L 138.58187500000003 81.366875L 123.951875 38.39125Z" sketchjs:uid="3" style="fill: rgb(46, 197, 240); stroke: rgb(46, 197, 240); stroke-width: 5.48625; stroke-miterlimit: 10; paint-order: stroke;" class="svg-elem-2"></path>
-    </g>
-  </g>
-</g>
-<path sketchjs:tool="rectangle" style="fill: rgb(255, 255, 255); fill-opacity: 1; vector-effect: non-scaling-stroke;" d="M0 0 L100 0 100 60 0 60 z" transform="matrix(-0.00753739470380613,1.6275448685812621,-1.3194309010562713,-0.006110474542142025,158.35236800439813,21.491229961347017)" class="svg-elem-3"></path>
-<g sketchjs:tool="fancyText" style="mix-blend-mode: source-over;" transform="matrix(1,0,0,1,-75.1776177687027,-28.040757669853008)">
-  <g sketchjs:uid="1">
-    <g sketchjs:uid="2" style="paint-order: fill stroke markers;">
-      <path d="M 111.09375 223L 111.09375 32.68749999999997L 219.84375 32.68749999999997Q 246.4875 32.68749999999997 258.99375000000003 44.78593749999999Q 271.5 56.88437499999998 271.5 81.62499999999997L 271.5 81.62499999999997Q 271.5 97.93749999999999 264.43125000000003 108.13281249999999Q 257.3625 118.32812499999999 247.03125000000003 122.40624999999999L 247.03125000000003 122.40624999999999Q 269.053125 128.3875 276.9375 151.76875L 276.9375 151.76875Q 279.65625 160.19687499999998 279.65625 171.34375L 279.65625 171.34375Q 279.65625 197.9875 267.15000000000003 210.49375Q 254.64375 223 228.00000000000003 223L 228.00000000000003 223L 111.09375 223ZZM 230.71875000000003 168.625L 230.71875000000003 163.1875Q 230.71875000000003 146.875 214.40625 146.875L 214.40625 146.875L 160.03125 146.875L 160.03125 184.9375L 214.40625 184.9375Q 230.71875000000003 184.9375 230.71875000000003 168.625L 230.71875000000003 168.625ZZM 222.5625 92.49999999999997L 222.5625 87.06249999999997Q 222.5625 70.74999999999997 206.25 70.74999999999997L 206.25 70.74999999999997L 160.03125 70.74999999999997L 160.03125 108.81249999999999L 206.25 108.81249999999999Q 222.5625 108.81249999999999 222.5625 92.49999999999997L 222.5625 92.49999999999997Z" sketchjs:uid="3" style="fill: rgb(255, 255, 255); stroke: rgb(255, 255, 255); stroke-linecap: round; paint-order: stroke;" class="svg-elem-4"></path>
-    </g>
-  </g>
-</g>
-<g sketchjs:tool="fancyText" style="mix-blend-mode: source-over;" transform="matrix(-0.0024066490645109264,0.9999971040159468,-0.9999971040159468,-0.0024066490645109264,151.4990749868642,-22.65369207693378)">
-  <g sketchjs:uid="1">
-    <g sketchjs:uid="2" style="paint-order: fill stroke markers;">
-      <path d="M 194.18087500000001 7.0731250000000045L 194.18087500000001 7.0731250000000045Q 195.643875 9.816249999999997 195.91818750000002 12.010749999999987Q 196.1925 14.205249999999992 196.1925 18.411374999999992L 196.1925 18.411374999999992L 196.1925 119.907Q 196.1925 132.525375 189.24325000000002 134.719875L 189.24325000000002 134.719875Q 185.76862500000001 135.817125 180.46525 135.817125Q 175.161875 135.817125 172.053 134.90275Q 168.94412499999999 133.988375 167.29825 132.70825Q 165.652375 131.428125 164.738 129.05075L 164.738 129.05075Q 163.823625 125.941875 163.823625 119.54124999999999L 163.823625 119.54124999999999L 163.823625 58.278125Q 159.25175000000002 63.94725 150.47375 76.2913125Q 141.69575 88.635375 139.318375 91.74425Q 136.941 94.853125 136.02662500000002 96.04181249999999Q 135.11225000000002 97.2305 131.5461875 99.3335625Q 127.980125 101.43662499999999 123.8654375 101.43662499999999Q 119.75075000000001 101.43662499999999 116.3675625 99.5164375Q 112.984375 97.59625 111.521375 95.7675L 111.521375 95.7675L 110.058375 93.755875Q 106.40087500000001 89.184 95.61125000000001 74.2796875Q 84.82162500000001 59.37537499999999 83.90725 58.278125L 83.90725 58.278125L 83.90725 119.907Q 83.90725 124.113125 83.6329375 126.2161875Q 83.358625 128.31925 81.895625 130.8795L 81.895625 130.8795Q 79.1525 135.817125 67.631375 135.817125L 67.631375 135.817125Q 56.476 135.817125 53.732875 130.8795L 53.732875 130.8795Q 52.269875 128.31925 51.9955625 126.12475Q 51.72125 123.93025 51.72125 119.54124999999999L 51.72125 119.54124999999999L 51.72125 18.045624999999987Q 51.72125 13.839499999999987 51.9955625 11.736437499999994Q 52.269875 9.633374999999987 53.732875 6.8902499999999804L 53.732875 6.8902499999999804Q 56.476 2.135499999999979 67.997125 2.135499999999979L 67.997125 2.135499999999979Q 72.93475000000001 2.135499999999979 76.5008125 3.3241874999999936Q 80.06687500000001 4.51287499999998 81.164125 5.793000000000006L 81.164125 5.793000000000006L 82.261375 6.8902499999999804L 123.774 61.387Q 154.86275 20.240124999999992 165.28662500000002 7.0731250000000045L 165.28662500000002 7.0731250000000045Q 168.39550000000003 2.135499999999979 180.0080625 2.135499999999979Q 191.62062500000002 2.135499999999979 194.18087500000001 7.0731250000000045Z" sketchjs:uid="3" style="fill: rgb(46, 197, 240); stroke: rgb(46, 197, 240); stroke-width: 5.48625; stroke-miterlimit: 10; paint-order: stroke;" class="svg-elem-5"></path>
-    </g>
-  </g>
-</g>
-<path sketchjs:tool="rectangle" style="fill: rgb(255, 255, 255); fill-opacity: 1; vector-effect: non-scaling-stroke;" d="M0 0 L33.59 0 33.59 49.1 0 49.1 z" transform="matrix(1.0719469113516789,0,0,1,35.5778745984577,19.48855313479872)" class="svg-elem-6"></path>
-<path sketchjs:tool="rectangle" style="fill: rgb(255, 255, 255); fill-opacity: 1; vector-effect: non-scaling-stroke;" d="M0 0 L33.59 0 33.59 49.1 0 49.1 z" transform="matrix(1.0719469113516789,0,0,1,35.61241837543437,130.6282779462365)" class="svg-elem-7"></path>
-</svg>
-        <h1 class="display-5 fw-bold text-white">StrongBlock (Coming soon ...) </h1>
-        <p class="fs-5 mb-4">Nodes provide crucial blockchain data, yet aren't rewarded - so there's no reason to stay in compliance.
-
-To solve this, StrongBlock let you launch compliant nodes in seconds, and receive rewards.</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Register you interest</button>
-          <button type="button" class="btn btn-outline-light btn-lg px-4">Coming soon ...</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="b-example-divider mb-0"></div>
-</main>
-
-  <script src="//embed.typeform.com/next/embed.js"></script>
-    
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
-
+  </footer>
+  
   <script>
-   
-  </script>
 
-  </body>
+    const colorswitch = document.querySelector("#colorswitch");
+   
+    var darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.classList.add('dark');
+      localStorage.theme = 'dark';
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.theme = 'light';
+    }
+
+    const toggleDarkMode = function () {
+      if(localStorage.theme == 'dark') {
+        document.documentElement.classList.remove('dark');
+        localStorage.theme = 'light';
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.theme = 'dark';
+      }
+    }
+    colorswitch.addEventListener("click",toggleDarkMode);
+    
+    function closeAlert(id) {
+      let element = document.getElementById(id);
+      element.remove();
+    }
+    const button = document.querySelector('#menu-button');
+    const menu = document.querySelector('#menu');
+
+
+    button.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+    const stpe1 = document.querySelector("#step1");
+    const stpe2 = document.querySelector("#step3");
+    const stpe3 = document.querySelector("#step3");
+
+    stpe1.addEventListener('click', () => {
+      alert('test');
+    });
+
+    step2.addEventListener('click', () => {
+      alert('test');
+    });
+
+    stpe3.addEventListener('click', () => {
+      alert('test');
+    });
+  </script>
+  <!-- <script type="text/javascript" src="./assets/scripts/connect.js"> </script> -->
+</body>
 </html>
+
+
+
+
