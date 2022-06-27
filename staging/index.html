@@ -1,18 +1,19 @@
 <!doctype html>
 <html class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./assets/styles/supermodule.css" rel="stylesheet">
 
-  
+
 </head>
 <!-- class="dark:bg-gray-800 dark:text-gray-200" -->
-<body class="antialiased bg-white dark:bg-gray-900 dark:text-white">
 
-  <header >
-    <nav
-       class="
+<body class=" bg-white dark:bg-dtheme dark:text-white text-blac">
+
+  <header>
+    <nav class="
          flex flex-wrap
          items-center
          justify-between
@@ -23,102 +24,86 @@
          fixed
          top-0
          z-10
-         bg-white dark:bg-gray-900 dark:text-white
          shadow-md
-         shadow-red-300
-        
-       "
-     >
+         dark:shadow-
+         bg-white       
+         dark:bg-dnav
+         dark:border-b
+         dark:border-dborder
+         
+       ">
       <div>
-         <a class="font-smf text-3xl text-red-600" href="#">
-          Supermodule
-         </a>
-       </div>
-      
-        <svg
-           xmlns="http://www.w3.org/2000/svg"
-           id="menu-button"
-           class="h-6 w-6 cursor-pointer md:hidden block"
-           fill="none"
-           viewBox="0 0 24 24"
-           stroke="currentColor"
-         >
-           <path
-             stroke-linecap="round"
-             stroke-linejoin="round"
-             stroke-width="2"
-             d="M4 6h16M4 12h16M4 18h16"
-           />
-         </svg>
-      
-      <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
-         <ul
-           class="
+        <a class="font-smf text-3xl  font-extrabold" href="#">
+          <span class="text-primary2">S</span>upermodule
+        </a>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block"
+        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+
+      <div class="hidden w-full md:flex md:place-items-start md:w-auto" id="menu">
+        <ul class="
              pt-4
-             text-base text-gray-700
+             text-base 
+             font-medium
              md:flex
              md:justify-between 
-             md:pt-0"
-         >
-           <li>
-             <a class="md:p-4 py-2 block hover:text-red-400 focus:text-red-600" href="#"
-               >Explore</a
-             >
-           </li>
-           <li>
-             <a class="md:p-4 py-2 block hover:text-red-400 focus:text-red-600" href="#how-it-works"
-               >How it works</a
-             >
-           </li>
-           <li>
-             <a class="md:p-4 py-2 block hover:text-red-400 focus:text-red-600" href="#smart-modules"
-               >Smart Modules</a
-             >
-           </li>
-           <li>
-             <a class="md:p-4 py-2 block hover:text-red-400 focus:text-red-600" href="#partners"
-               >Partners</a
-             >
-           </li>
-           <li>
-             <a
-               class="md:p-4 py-2 block hover:text-red-400 focus:text-red-600"
-               href="#team"
-               >Team</a
-             >
-           </li>
-         </ul>
-         
-       </div>
-       <div>
+             md:pt-0
+             dark:bg-dmenu">
+          <li>
+            <a class="md:p-4 py-2 block hover:text-primary2 focus:text-primary1" href="#">Explore</a>
+          </li>
+          <li>
+            <a class="md:p-4 py-2 block hover:text-primary2 focus:text-primary1" href="#how-it-works">How it works</a>
+          </li>
+          <li>
+            <a class="md:p-4 py-2 block hover:text-primary2 focus:text-primary1" href="#smart-modules">Smart Modules</a>
+          </li>
+          <li>
+            <a class="md:p-4 py-2 block hover:text-primary2 focus:text-primary1" href="#partners">Partners</a>
+          </li>
+          <li>
+            <a class="md:p-4 py-2 block hover:text-primary2 focus:text-primary1" href="#team">Team</a>
+          </li>
+        </ul>
 
-          <button id="colorswitch" class="inline-flex items-center bg-gray-100 border-0 py-1 px-1 focus:outline-none hover:bg-gray-800 dark:hover:bg-gray-200  rounded-full text-base mt-4 md:mt-0 dark:bg-gray-800 dark:text-gray-100 ">
-            <svg id="icon-contrast" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            class="h-6 w-6" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
-              <path d="M10,20C4.5,20,0,15.5,0,10S4.5,0,10,0s10,4.5,10,10S15.5,20,10,20z M10,2c-4.4,0-8,3.6-8,8s3.6,8,8,8s8-3.6,8-8S14.4,2,10,2
+      </div>
+      <div class="flex items-center">
+
+        <button id="colorswitch"
+          class="inline-flex items-center bg-gray-100 border-0 py-1 px-1 focus:outline-none hover:bg-gray-800 dark:hover:bg-gray-200  rounded-full text-base  md:mt-0 dark:bg-gray-800 dark:text-gray-100 ">
+          <svg id="icon-contrast" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" class="h-6 w-6" viewBox="0 0 20 20"
+            enable-background="new 0 0 20 20" xml:space="preserve">
+            <path d="M10,20C4.5,20,0,15.5,0,10S4.5,0,10,0s10,4.5,10,10S15.5,20,10,20z M10,2c-4.4,0-8,3.6-8,8s3.6,8,8,8s8-3.6,8-8S14.4,2,10,2
                           z" />
-              <path fill="#ea3970" class="contrast" d="M10,4v12c3.3,0,6-2.7,6-6S13.3,4,10,4z" />
-            </svg>
-              
-          </button>
-          <button id="connectButton" class="inline-flex items-center bg-gray-100 border-0 py-1 px-1 focus:outline-none hover:bg-gray-800 dark:hover:bg-gray-200  rounded text-base mt-4 md:mt-0 dark:bg-gray-800 dark:hover:text-red-600 hover:text-red-600">
-            <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-sky-400 opacity-75"></span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
-            </svg>
-              
-              
-              
-          </button>
-       </div>
-       
-   </nav>
-  
-  
-   
- </header>
-  
- 
+            <path fill="#ea3970" class="contrast" d="M10,4v12c3.3,0,6-2.7,6-6S13.3,4,10,4z" />
+          </svg>
+
+        </button>
+        <button id="connectButton"
+          class="inline-flex items-center bg-gray-100 border-0 py-1 px-1 focus:outline-none hover:bg-gray-800 dark:hover:bg-gray-200  rounded text-base  md:mt-0 dark:bg-gray-800 dark:hover:text-red-600 hover:text-red-600">
+          <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-sky-400 opacity-75"></span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+          </svg>
+
+
+
+        </button>
+      </div>
+
+    </nav>
+
+
+
+  </header>
+
+
   <!-- Alert section start -->
   <!--
   <div id="mainAlert" class="text-center py-4 lg:px-4  my-14">
@@ -133,20 +118,91 @@
   </div>
   -->
   <!-- Alert section end -->
-  <div class="h-0.5 bg-gray-200 dark:bg-gray-800 rounded overflow-hidden my-14">
-    <div class="w-24 h-full bg-red-500"></div>
-  </div>
+
   <!--Hero Section start-->
-  <section class="text-gray-600 dark:text-gray-300 body-font">
+
+  <section class="text-primary5 dark:text-primary3 body-font bg-hero_bg bg-cover">
+
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col ">
+      <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero"
+        src="./assets/images/logos/SMLogo3.svg">
+      <div class="text-center md:w-2/3 lg:w-3/4 w-full items-center flex flex-col">
+        <h1 class="title-font sm:text-5xl text-5xl mb-4 font-bold dark:text-primary3"><br>We're revolutionizing the way
+          people use NFTs.</h1>
+        <p class="mb-8 leading-relaxed font-medium text-lg">
+          If you can dream it, you can build it 🚀
+          <br />We're creating a new type of marketplace, where creators can monetize their art with utility modules.
+          <br>Our smart, yet simplistic modules are the perfect blend of art and technology. Join us to see what you can
+          create!
+        </p>
+        <div class="flex w-full justify-center items-end">
+          <div class="relative lg:w-full xl:w-1/2 w-2/4 md:w-full text-left">
+            <label for="hero-field" class="leading-7 text-sm text-gray-600">Join the waitlist</label>
+            <input type="text" id="hero-field" name="hero-field"
+              class="w-full bg-gray-100 bg-opacity-50 rounded-l  focus:ring-red-200 focus:bg-transparent border-2 border-gray-300 focus:border-primary2 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <button
+            class="inline-flex text-white bg-primary2 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded-r text-lg">Join</button>
+        </div>
+        <p class="text-sm mt-2 text-gray-500 mb-8 w-full">Early bird offers, for the first 10,000.</p>
+        
+        <div class="flex text-primary5">
+          <button
+            class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 512 512">
+              <path
+                d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z">
+              </path>
+            </svg>
+            <span class="ml-4 flex items-start flex-col leading-none">
+              <span class="text-xs text-gray-600 mb-1">COMING SOON ON</span>
+              <span class="title-font font-medium">Google Play</span>
+            </span>
+          </button>
+          <button
+            class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center ml-4 hover:bg-gray-200 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 305 305">
+              <path
+                d="M40.74 112.12c-25.79 44.74-9.4 112.65 19.12 153.82C74.09 286.52 88.5 305 108.24 305c.37 0 .74 0 1.13-.02 9.27-.37 15.97-3.23 22.45-5.99 7.27-3.1 14.8-6.3 26.6-6.3 11.22 0 18.39 3.1 25.31 6.1 6.83 2.95 13.87 6 24.26 5.81 22.23-.41 35.88-20.35 47.92-37.94a168.18 168.18 0 0021-43l.09-.28a2.5 2.5 0 00-1.33-3.06l-.18-.08c-3.92-1.6-38.26-16.84-38.62-58.36-.34-33.74 25.76-51.6 31-54.84l.24-.15a2.5 2.5 0 00.7-3.51c-18-26.37-45.62-30.34-56.73-30.82a50.04 50.04 0 00-4.95-.24c-13.06 0-25.56 4.93-35.61 8.9-6.94 2.73-12.93 5.09-17.06 5.09-4.64 0-10.67-2.4-17.65-5.16-9.33-3.7-19.9-7.9-31.1-7.9l-.79.01c-26.03.38-50.62 15.27-64.18 38.86z">
+              </path>
+              <path
+                d="M212.1 0c-15.76.64-34.67 10.35-45.97 23.58-9.6 11.13-19 29.68-16.52 48.38a2.5 2.5 0 002.29 2.17c1.06.08 2.15.12 3.23.12 15.41 0 32.04-8.52 43.4-22.25 11.94-14.5 17.99-33.1 16.16-49.77A2.52 2.52 0 00212.1 0z">
+              </path>
+            </svg>
+            <span class="ml-4 flex items-start flex-col leading-none">
+              <span class="text-xs text-gray-600 mb-1">COMING SOON ON</span>
+              <span class="title-font font-medium">App Store</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--
+
+  <section class="text-gray-600 dark:text-white body-font"  style="
+          background-image: linear-gradient(
+            180deg,
+            #e51d2414 0%,
+            rgba(62, 125, 255, 0) 100%
+          );
+        ">
+   
+    
+    <img class="absolute w-full" alt="bg" src="./assets/images/bg4.svg">
     <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
         <img class="object-cover object-center rounded " alt="hero" src="./assets/images/logos/SMLogo3.svg">
+        
       </div>
       <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 dark:text-gray-100">Let's create something incredible together.</h1>
-        <p class="mb-8 leading-relaxed">
-          <span class="font-smf ">Supermodule</span> is an innovative platform that provides web3 related value added services for individuals and businesses. Our mission is to give an easy and friendly way to use blockchain technology and make them truly available for everyone, everywhere.
-          <br>We bring NFTs to life. Our platform enables a world of design and innovation. Join us to see what you can create!</p>
+        <h1 class="title-font sm:text-5xl text-5xl mb-4 font-bold text-gray-900 dark:text-white"><br>We're revolutionizing the way people use NFTs.</h1>
+        <p class="mb-8 leading-relaxed font-medium text-lg">
+          If you can dream it, you can build it. That's the power of NFT. We're creating a new type of marketplace, where creators can monetize their work with utility modules 🚀
+          <br/>We're a technology-first company that believes every business deserves a solution as unique and exclusive as they are.
+          <br>Our smart, yet simplistic solutions are the perfect blend of art and technology. Join us to see what you can create!</p>
         <div class="flex w-full md:justify-start justify-center items-end">
           <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4">
             <label for="hero-field" class="leading-7 text-sm text-gray-600">Join the waitlist</label>
@@ -179,70 +235,185 @@
       </div>
     </div>
   </section>
+-->
 
 
-  <!--Smart Module START-->
-  
-  <section id="smart-modules" class="text-gray-600  dark:text-gray-300  body-font">
-    <div class="container px-5 py-24 mx-auto">
+
+
+
+  <!-- How it works START-->
+
+  <section id="how-it-works" class="body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap flex-col ">
       <div class="flex flex-col">
-        <div class="h-1 bg-gray-200 dark:bg-gray-800 rounded overflow-hidden">
-          <div class="w-24 h-full bg-red-500"></div>
+        <div class="h-1 bg-gray-200 dark:bg-dborder rounded overflow-hidden">
         </div>
-        <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-          <h1 class="sm:w-2/5 text-gray-900 dark:text-gray-100 font-medium title-font text-2xl mb-2 sm:mb-0">Smart Modules</h1>
-          <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Street art subway tile salvia four dollar toast bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters dreamcatcher.</p>
+        <div class="flex flex-wrap sm:flex-row flex-col py-6 ">
+          <h1 class="sm:w-2/5 font-medium title-font text-2xl">How it works</h1>
         </div>
       </div>
-      
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="text-xl font-medium title-font mb-4 ">Publish your Art with Utility</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn
+          asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+      </div>
+      <div class="flex flex-wrap -m-4 ">
+        <div class="lg:w-1/3 sm:w-1/2 p-4 ">
+          <a id="step1"
+            class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start dark:bg-dmenu border-dborder border title-font font-medium  inline-flex items-center leading-none  tracking-wider rounded-t">
+
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5 mr-3" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+            </svg>STEP 1
+          </a>
+          <a id="step1a">
+            <div class="flex relative group">
+              <img alt="gallery" class="absolute inset-0 w-full object-cover object-center rounded-b"
+                src="./assets/images/STEP1.svg">
+              <div id="step1desc"
+                class="invisible px-8 py-10 relative z-10 w-full border-4 border-dborder group-hover:visible group-hover:opacity-95  bg-primary1 rounded-b">
+                <h2 class="tracking-widest text-sm title-font font-medium text-white mb-1"></h2>
+                <h1 class="title-font text-lg font-medium text-white mb-3"><strong>Upload Art</strong></h1>
+                <p class="leading-relaxed h-96 text-white">Photo booth fam kinfolk cold-pressed sriracha leggings
+                  jianbing microdosing tousled waistcoat.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <a id="step2"
+            class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start  title-font font-medium dark:bg-dmenu border-dborder border inline-flex items-center leading-none tracking-wider rounded-t">
+
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5 mr-3" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z" />
+            </svg>STEP 2
+          </a>
+          <a id="step2a">
+            <div class="flex relative group">
+              <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center rounded-b"
+                src="./assets/images/Step2A.png">
+              <div id="step2desc"
+                class="invisible px-8 py-10 relative z-10 w-full border-4 border-dborder bg-primary1 group-hover:visible group-hover:opacity-95 rounded-b">
+                <h2 class="tracking-widest text-sm title-font font-medium text-white mb-1"></h2>
+                <h1 class="title-font text-lg font-medium text-white mb-3"><strong>Select Smart Modules</strong></h1>
+                <p class="leading-relaxed h-96 text-white">Photo booth fam kinfolk cold-pressed sriracha leggings
+                  jianbing microdosing tousled waistcoat.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <a id="step3"
+            class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start title-font font-medium dark:bg-dmenu border-dborder border-t border-r border-l inline-flex items-center leading-none  tracking-wider rounded-t">
+
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5 mr-3" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+            </svg>STEP 3
+          </a>
+          <a id="step3a">
+            <div class="flex relative group">
+              <img alt="gallery"
+                class="absolute inset-0 w-full  object-cover object-center rounded-b border-dborder border dark:bg-dmenu"
+                src="./assets/images/Step3.png">
+              <div id="step3desc"
+                class="invisible px-8 py-10 relative z-10 w-full border-4 border-dborder bg-primary1 group-hover:visible group-hover:opacity-95 rounded-b">
+                <h2 class="tracking-widest text-sm title-font font-medium text-white mb-1"></h2>
+                <h1 class="title-font text-lg font-medium text-white mb-3"><strong>Publish</strong></h1>
+                <p class="leading-relaxed h-96 text-white">Photo booth fam kinfolk cold-pressed sriracha leggings
+                  jianbing microdosing tousled waistcoat.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- <img class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded" alt="hero" src="./assets/images/STEP1.svg"> -->
+        <!-- <img class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded" alt="hero" src="./assets/images/STEP2.svg"> -->
+
+     
+      </div>
+  </section>
+  <!-- How it works start  END-->
+
+  <!--Smart Module START-->
+
+  <section id="smart-modules" class=" body-font">
+    <div class="container px-5 py-24 mx-auto">
+
+      <div class="flex flex-col">
+        <div class="h-1 bg-gray-200 dark:bg-dborder rounded overflow-hidden">
+
+        </div>
+        <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+          <h1 class="sm:w-2/5 font-medium title-font text-2xl mb-2 sm:mb-0">Smart Modules</h1>
+         </div>
+      </div>
+      <div class="flex flex-col text-center w-full mb-20">
+       
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">ake the first step in your journey to create
+          NFTs. Explore our library of smart modules that are fully integrated with our marketplace that enables
+          utility for your NFTs.</p>
+      </div>
+
       <div class="flex flex-wrap -m-4">
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div class="border border-gray-200 p-6 rounded-lg">
             <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
-              <svg version="1.1" id="icon-magic-wand" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 535.5 535.5" style="enable-background:new 0 0 535.5 535.5;"
-              xml:space="preserve" class="w-6 h-6" >
-                <polygon class="magic-stars" fill="#ea3970" points="165.75,91.8 229.5,127.5 193.799,63.75 229.5,0 165.75,35.7 102,0 137.7,63.75 102,127.5 		" />
-                <polygon class="magic-stars" fill="#ea3970" points="471.75,341.7 408,306 443.7,369.75 408,433.5 471.75,397.8 535.5,433.5 499.8,369.75 535.5,306 		" />
-                <polygon class="magic-stars" fill="#ea3970" points="535.5,0 471.75,35.7 408,0 443.7,63.75 408,127.5 471.75,91.8 535.5,127.5 499.8,63.75 		" />
+              <svg version="1.1" id="icon-magic-wand" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 535.5 535.5"
+                style="enable-background:new 0 0 535.5 535.5;" xml:space="preserve" class="w-6 h-6">
+                <polygon class="magic-stars" fill="#ea3970"
+                  points="165.75,91.8 229.5,127.5 193.799,63.75 229.5,0 165.75,35.7 102,0 137.7,63.75 102,127.5 		" />
+                <polygon class="magic-stars" fill="#ea3970"
+                  points="471.75,341.7 408,306 443.7,369.75 408,433.5 471.75,397.8 535.5,433.5 499.8,369.75 535.5,306 		" />
+                <polygon class="magic-stars" fill="#ea3970"
+                  points="535.5,0 471.75,35.7 408,0 443.7,63.75 408,127.5 471.75,91.8 535.5,127.5 499.8,63.75 		" />
                 <path d="M341.7,135.15c-10.2-10.2-25.5-10.2-35.7,0L7.649,433.5c-10.2,10.2-10.2,25.5,0,35.7l58.65,58.649
                             c10.2,10.2,25.5,10.2,35.7,0L400.35,229.5c10.2-10.2,10.2-25.5,0-35.7L341.7,135.15z M313.65,275.4L260.1,221.85l61.2-61.2
                             l53.55,53.55L313.65,275.4z" />
               </svg>
             </div>
             <h2 class="text-lg text-gray-900 dark:text-gray-100 font-medium title-font mb-2">Fuse Mod</h2>
-            <p class="leading-relaxed text-base">This is the core module to integrate cypto assets with NFTs.   </p>
+            <p class="leading-relaxed text-base">This is the core module to integrate cypto assets with NFTs. </p>
           </div>
         </div>
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div class="border border-gray-200 p-6 rounded-lg">
             <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-6 h-6" viewBox="0 0 24 24">
                 <circle cx="6" cy="6" r="3"></circle>
                 <circle cx="6" cy="18" r="3"></circle>
                 <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
               </svg>
             </div>
             <h2 class="text-lg text-gray-900 dark:text-gray-100 font-medium title-font mb-2">Counterfeit Mod</h2>
-            <p class="leading-relaxed text-base">Counterfeit protection from source to destination and across all distribution channels. </p>
+            <p class="leading-relaxed text-base">Counterfeit protection from source to destination and across all
+              distribution channels. </p>
           </div>
         </div>
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div class="border border-gray-200 p-6 rounded-lg">
             <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-6 h-6" viewBox="0 0 24 24">
                 <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                 <circle cx="12" cy="7" r="4"></circle>
               </svg>
             </div>
             <h2 class="text-lg text-gray-900 dark:text-gray-100 font-medium title-font mb-2">Traceability Mod</h2>
-            <p class="leading-relaxed text-base">Provides complete supply chain lifecycle traceability across products and services. </p>
+            <p class="leading-relaxed text-base">Provides complete supply chain lifecycle traceability across products
+              and services. </p>
           </div>
         </div>
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div class="border border-gray-200 p-6 rounded-lg">
             <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-6 h-6" viewBox="0 0 24 24">
                 <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
               </svg>
             </div>
@@ -253,18 +424,21 @@
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div class="border border-gray-200 p-6 rounded-lg">
             <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-6 h-6" viewBox="0 0 24 24">
                 <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
               </svg>
             </div>
             <h2 class="text-lg text-gray-900 dark:text-gray-100 font-medium title-font mb-2">Ticketing Mod</h2>
-            <p class="leading-relaxed text-base">Generate passes/tickets with global verification process for any events.</p>
+            <p class="leading-relaxed text-base">Generate passes/tickets with global verification process for any
+              events.</p>
           </div>
         </div>
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div class="border border-gray-200 p-6 rounded-lg">
             <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-6 h-6" viewBox="0 0 24 24">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
               </svg>
             </div>
@@ -273,103 +447,35 @@
           </div>
         </div>
       </div>
-      <button class="flex mx-auto mt-16 text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">Button</button>
+      <button
+        class="flex mx-auto mt-16 text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">Button</button>
     </div>
   </section>
 
   <!-- Smart Module END -->
+  <!-- Partners START-->
 
-  <!-- How it works START-->
-  
-  <section id="how-it-works" class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto flex flex-wrap flex-col">
-      <div class="flex flex-col">
-        <div class="h-1 bg-gray-200 dark:bg-gray-800 rounded overflow-hidden">
-          <div class="w-24 h-full bg-red-500"></div>
-        </div>
-        <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-          <h1 class="sm:w-2/5 text-gray-900 dark:text-gray-100 font-medium title-font text-2xl mb-2 sm:mb-0">How it works</h1>
-        </div>
-      </div>
-      <div class="flex flex-wrap -m-4">
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <a id="step1" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-gray-100 inline-flex items-center leading-none  hover:text-indigo-500 tracking-wider rounded-t">
-           
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
-            </svg>STEP 1
-          </a>
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full object-cover object-center rounded-b" src="./assets/images/STEP1.svg">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gradient-to-b from-red-600 to-yellow-600 opacity-0 hover:opacity-95 rounded-b">
-              <h2 class="tracking-widest text-sm title-font font-medium text-white mb-1"></h2>
-              <h1 class="title-font text-lg font-medium text-white mb-3"><strong>Upload Art</strong></h1>
-              <p class="leading-relaxed h-96 text-white">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <a id="step2" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-gray-100 inline-flex items-center leading-none  hover:text-indigo-500 tracking-wider rounded-t">
-            
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z" />
-            </svg>STEP 2
-          </a>
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center rounded-b" src="./assets/images/Step2A.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gradient-to-b from-red-600 to-yellow-600  opacity-0 hover:opacity-95 rounded-b">
-              <h2 class="tracking-widest text-sm title-font font-medium text-white mb-1"></h2>
-              <h1 class="title-font text-lg font-medium text-white mb-3"><strong>Select Smart Modules</strong></h1>
-              <p class="leading-relaxed h-96 text-red-300">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <a id="step3" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-gray-100 inline-flex items-center leading-none  hover:text-indigo-500 tracking-wider rounded-t">
-            
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-            </svg>STEP 3
-          </a>
-          <div class="flex relative" >
-            <img alt="gallery" class="absolute inset-0 w-full  object-cover object-center rounded-b border-gray-200 bg-gray-100" src="./assets/images/Step3.png">
-            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-gradient-to-b from-red-600 to-yellow-600  opacity-0 hover:opacity-95 rounded-b">
-              <h2 class="tracking-widest text-sm title-font font-medium text-white mb-1"></h2>
-              <h1 class="title-font text-lg font-medium text-white mb-3"><strong>Publish</strong></h1>
-              <p class="leading-relaxed h-96 text-red-300">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            </div>
-          </div>
-        </div>
-      <!-- <img class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded" alt="hero" src="./assets/images/STEP1.svg"> -->
-      <!-- <img class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded" alt="hero" src="./assets/images/STEP2.svg"> -->
-     
-      <div class="flex flex-col text-center w-full">
-        <h1 class="text-xl font-medium title-font mb-4 ">Publish Your Art + Technology</h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
-      </div>
-    </div>
-  </section>
-  <!-- How it works start  END-->  
-  <!-- Partners START--> 
-  
   <section id="partners" class="text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto ">
       <div class="flex flex-col">
-        <div class="h-1 bg-gray-200 dark:bg-gray-800 rounded overflow-hidden">
-          <div class="w-24 h-full bg-red-500"></div>
+        <div class="h-1 bg-gray-200 dark:bg-dborder rounded overflow-hidden">
+
         </div>
         <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-          <h1 class="sm:w-2/5 text-gray-900 dark:text-gray-100 font-medium title-font text-2xl mb-2 sm:mb-0">Partners</h1>
+          <h1 class="sm:w-2/5 text-gray-900 dark:text-gray-100 font-medium title-font text-2xl mb-2 sm:mb-0">Partners
+          </h1>
         </div>
       </div>
       <div class="lg:w-2/3 mx-auto">
         <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
-          <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="https://dummyimage.com/820x340">
+          <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0"
+            src="https://dummyimage.com/820x340">
           <div class="text-center relative z-10 w-full">
             <h2 class="text-2xl text-gray-900 font-medium title-font mb-2">Meerana</h2>
             <p class="leading-relaxed">Skateboard +1 mustache fixie paleo lumbersexual.</p>
             <a class="mt-3 text-red-500 inline-flex items-center">Learn More
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
             </a>
@@ -378,12 +484,14 @@
         <div class="flex flex-wrap -mx-2">
           <div class="px-2 w-1/2">
             <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
-              <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="https://dummyimage.com/542x460">
+              <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0"
+                src="https://dummyimage.com/542x460">
               <div class="text-center relative z-10 w-full">
                 <h2 class="text-xl text-gray-900 font-medium title-font mb-2">AEIC</h2>
                 <p class="leading-relaxed">Skateboard +1 mustache fixie paleo lumbersexual.</p>
                 <a class="mt-3 text-red-500 inline-flex items-center">Learn More
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
                 </a>
@@ -392,12 +500,14 @@
           </div>
           <div class="px-2 w-1/2">
             <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
-              <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="https://dummyimage.com/542x420">
+              <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0"
+                src="https://dummyimage.com/542x420">
               <div class="text-center relative z-10 w-full">
                 <h2 class="text-xl text-gray-900 font-medium title-font mb-2">Basemodule</h2>
                 <p class="leading-relaxed">Skateboard +1 mustache fixie paleo lumbersexual.</p>
                 <a class="mt-3 text-red-500 inline-flex items-center">Learn More
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
                 </a>
@@ -408,100 +518,324 @@
       </div>
     </div>
   </section>
-  <!-- Partners END-->  
-  <!-- Team  Start-->  
-   <section id="team" class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto">
+  <!-- Partners END-->
+  <!-- Timeline START-->
+  <section class=" body-font">
+    <div class="container px-5 py-24 mx-auto ">
       <div class="flex flex-col">
-        <div class="h-1 bg-gray-200 dark:bg-gray-800 rounded overflow-hidden">
-          <div class="w-24 h-full bg-red-500"></div>
+        <div class="h-1 bg-gray-200 dark:bg-dborder rounded overflow-hidden">
+
         </div>
         <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-          <h1 class="sm:w-2/5 text-gray-900 dark:text-gray-100 font-medium title-font text-2xl mb-2 sm:mb-0">Team</h1>
+          <h1 class="sm:w-2/5  font-medium title-font text-2xl mb-2 sm:mb-0">Roadmap</h1>
+        </div>
+      </div>
+      <div class="flex flex-wrap w-full">
+        <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-primary2 inline-flex items-center justify-center text-white relative z-10">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm  mb-1 tracking-wider">Aug 2021</h2>
+              <p class="leading-relaxed">Ideation - The idea came to light during a debate on how to increase the
+                intrensic value of digital assets.</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-primary2 inline-flex items-center justify-center text-white relative z-10">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm mb-1 tracking-wider">Nov 2021</h2>
+              <p class="leading-relaxed">Inception - After the initial brainstorming and ressearch an offical entity was
+                incorporated.</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-primary2 inline-flex items-center justify-center text-white relative z-10">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm mb-1 tracking-wider">Jan 2022</h2>
+              <p class="leading-relaxed">Validation - First official prospect accepted the proposal for a cross-border
+                solution.</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-primary2 inline-flex items-center justify-center text-white relative z-10">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-5 h-5" viewBox="0 0 24 24">
+                <circle cx="12" cy="5" r="3"></circle>
+                <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm  mb-1 tracking-wider">Feb 2022</h2>
+              <p class="leading-relaxed">Incubation - Initiated incubating at AEIC (American University of Dubai
+                Enterpreneurship & Innocation Center).</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-primary2 inline-flex items-center justify-center text-white relative z-10">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm  mb-1 tracking-wider">March 2022</h2>
+              <p class="leading-relaxed">DAO Proposal - Proposal to proceed with DAO (Decentralised Autonomous
+                Organisation) model until the regulations are in place.</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-primary2 inline-flex items-center justify-center text-white relative z-10">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm  mb-1 tracking-wider">April 2022</h2>
+              <p class="leading-relaxed">Pitch - Selected by Techinnova during the AEIC pitch for stratgeic partnership.
+              </p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-primary2 inline-flex items-center justify-center text-white relative z-10">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm  mb-1 tracking-wider">May 2022</h2>
+              <p class="leading-relaxed">Community Formation - Community members joined from AUD (American University of
+                Dubai).</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-primary2 inline-flex items-center justify-center text-white relative z-10">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm mb-1 tracking-wider">Jun 2022</h2>
+              <p class="leading-relaxed">Webiste/MVP - Website with MVP launch.</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-primary4 inline-flex items-center justify-center text-white relative z-10">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm mb-1 tracking-wider">Jul 2022</h2>
+              <p class="leading-relaxed">Markeplace Launch - NFT Marketplace with core blend module launch.</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-primary4 inline-flex items-center justify-center text-white relative z-10">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm  mb-1 tracking-wider">Aug 2022</h2>
+              <p class="leading-relaxed">DAO Launch - Official governance launch using DAO model.</p>
+            </div>
+          </div>
+          <div class="flex relative">
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-primary4 inline-flex items-center justify-center text-white relative z-10">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm  mb-1 tracking-wider">Nov 2022</h2>
+              <p class="leading-relaxed">Smart Module Marketplace Launch - Module submissions open to public</p>
+            </div>
+          </div>
+
+
+        </div>
+        <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+          src="./assets/images/rocket_launch.svg" alt="step">
+      </div>
+    </div>
+  </section>
+  <!-- Timeline  END-->
+
+  <!-- Team  Start-->
+  <section id="team" class=" body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col">
+        <div class="h-1 bg-gray-200 dark:bg-dborder rounded overflow-hidden">
+
+        </div>
+        <div class="flex flex-wrap sm:flex-row flex-col py-6 ">
+          <h1 class="sm:w-2/5  font-medium title-font text-2xl">Our Team</h1>
         </div>
       </div>
       <div class="flex flex-col text-center w-full mb-20">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Team</h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+       
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn
+          asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
       </div>
       <div class="flex flex-wrap -m-2">
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
           <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
+            <img alt="team" class="w-16 h-16 bg-primary1 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="https://static.neris-assets.com/images/personality-types/avatars/faces/enfj-protagonist-s3-v2-male.svg?v=1">
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Holden Caulfield</h2>
+              <h2 class=" title-font font-medium">Vivek Caulfield</h2>
               <p class="text-gray-500">UI Designer</p>
             </div>
           </div>
         </div>
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
           <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/84x84">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="https://dummyimage.com/84x84">
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Henry Letham</h2>
+              <h2 class=" title-font font-medium">Henry Letham</h2>
               <p class="text-gray-500">CTO</p>
             </div>
           </div>
         </div>
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
           <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/88x88">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="https://dummyimage.com/88x88">
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Oskar Blinde</h2>
+              <h2 class=" title-font font-medium">Oskar Blinde</h2>
               <p class="text-gray-500">Founder</p>
             </div>
           </div>
         </div>
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
           <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/90x90">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="https://dummyimage.com/90x90">
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">John Doe</h2>
+              <h2 class=" title-font font-medium">John Doe</h2>
               <p class="text-gray-500">DevOps</p>
             </div>
           </div>
         </div>
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
           <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/94x94">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="https://dummyimage.com/94x94">
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Martin Eden</h2>
+              <h2 class=" title-font font-medium">Martin Eden</h2>
               <p class="text-gray-500">Software Engineer</p>
             </div>
           </div>
         </div>
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
           <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/98x98">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="https://dummyimage.com/98x98">
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Boris Kitua</h2>
+              <h2 class=" title-font font-medium">Boris Kitua</h2>
               <p class="text-gray-500">UX Researcher</p>
             </div>
           </div>
         </div>
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
           <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/100x90">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="https://dummyimage.com/100x90">
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Atticus Finch</h2>
+              <h2 class=" title-font font-medium">Atticus Finch</h2>
               <p class="text-gray-500">QA Engineer</p>
             </div>
           </div>
         </div>
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
           <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/104x94">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="https://dummyimage.com/104x94">
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Alper Kamu</h2>
+              <h2 class=" title-font font-medium">Alper Kamu</h2>
               <p class="text-gray-500">System</p>
             </div>
           </div>
         </div>
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
           <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/108x98">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="https://dummyimage.com/108x98">
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Rodrigo Monchi</h2>
+              <h2 class=" title-font font-medium">Rodrigo Monchi</h2>
               <p class="text-gray-500">Product Manager</p>
             </div>
           </div>
@@ -512,25 +846,23 @@
   <!-- Team END -->
 
 
-  <div class="h-0.5 bg-gray-200 dark:bg-gray-800 rounded overflow-hidden">
-    <div class="w-24 h-full bg-red-500"></div>
-  </div>
 
- 
   <!-- Footer Start -->
-  <footer class="text-gray-600 dark:text-gray-400 dark:bg-gray-900 body-font">
-    <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+  <footer class="text-gray-600 dark:text-gray-400 dark:bg-dmenu body-font border-t border-dborder">
+    <div
+      class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
       <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-          
-          
+        <a class="flex title-font font-medium items-center md:justify-start justify-center ">
+
+
           <span class=" text-3xl font-smf h-10 dark:text-gray-300">Supermodule</span>
         </a>
-        <p class="mt-2 text-sm text-gray-500">The world’s first digital marketplace for web3 value-added services. Create, Blend and Trade your digital collectibles like never before! </p>
+        <p class="mt-2 text-sm text-gray-500">The world’s first digital marketplace for web3 value-added services.
+          Create, Blend and Trade your digital collectibles like never before! </p>
       </div>
       <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <h2 class="title-font font-medium  tracking-widest text-sm mb-3">CATEGORIES</h2>
           <nav class="list-none mb-10">
             <li>
               <a class="text-gray-600 hover:text-gray-800">First Link</a>
@@ -547,7 +879,7 @@
           </nav>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <h2 class="title-font font-medium  tracking-widest text-sm mb-3">CATEGORIES</h2>
           <nav class="list-none mb-10">
             <li>
               <a class="text-gray-600 hover:text-gray-800">First Link</a>
@@ -564,7 +896,7 @@
           </nav>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <h2 class="title-font font-medium  tracking-widest text-sm mb-3">CATEGORIES</h2>
           <nav class="list-none mb-10">
             <li>
               <a class="text-gray-600 hover:text-gray-800">First Link</a>
@@ -581,7 +913,7 @@
           </nav>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <h2 class="title-font font-medium  tracking-widest text-sm mb-3">CATEGORIES</h2>
           <nav class="list-none mb-10">
             <li>
               <a class="text-gray-600 hover:text-gray-800">First Link</a>
@@ -599,31 +931,39 @@
         </div>
       </div>
     </div>
-    <div class="bg-gray-100 dark:bg-gray-800">
+    <div class="bg-black">
       <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-        <p class="text-gray-500 text-sm text-center sm:text-left">© 2022 Supermodule —
-          <a href="https://twitter.com/vyvakz" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@vyvakz</a>
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2022 <span class="font-smf">Supermodule</span> —
+          <a href="https://twitter.com/vyvakz" rel="noopener noreferrer" class="text-gray-600 ml-1"
+            target="_blank">@vyvakz</a>
         </p>
         <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
           <a class="text-gray-500">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
               <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
             </svg>
           </a>
           <a class="ml-3 text-gray-500">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
             </svg>
           </a>
           <a class="ml-3 text-gray-500">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
               <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
               <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
             </svg>
           </a>
           <a class="ml-3 text-gray-500">
-            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
               <circle cx="4" cy="4" r="2" stroke="none"></circle>
             </svg>
           </a>
@@ -631,14 +971,14 @@
       </div>
     </div>
   </footer>
-  
+
   <script>
 
     const colorswitch = document.querySelector("#colorswitch");
-   
+
     var darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-    if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       document.documentElement.classList.add('dark');
       localStorage.theme = 'dark';
     } else {
@@ -647,7 +987,7 @@
     }
 
     const toggleDarkMode = function () {
-      if(localStorage.theme == 'dark') {
+      if (localStorage.theme == 'dark') {
         document.documentElement.classList.remove('dark');
         localStorage.theme = 'light';
       } else {
@@ -655,8 +995,8 @@
         localStorage.theme = 'dark';
       }
     }
-    colorswitch.addEventListener("click",toggleDarkMode);
-    
+    colorswitch.addEventListener("click", toggleDarkMode);
+
     function closeAlert(id) {
       let element = document.getElementById(id);
       element.remove();
@@ -670,25 +1010,44 @@
     });
 
     const stpe1 = document.querySelector("#step1");
-    const stpe2 = document.querySelector("#step3");
+    const stpe1a = document.querySelector("#step1a");
+    const stpe2 = document.querySelector("#step2");
+    const stpe2a = document.querySelector("#step2a");
     const stpe3 = document.querySelector("#step3");
+    const stpe3a = document.querySelector("#step3a");
 
     stpe1.addEventListener('click', () => {
-      alert('test');
+      let classList = document.getElementById('step1desc').classList
+      classList.toggle('invisible')
     });
 
+    stpe1a.addEventListener('click', () => {
+      let classList = document.getElementById('step1desc').classList
+      classList.toggle('invisible')
+    });
+
+
     step2.addEventListener('click', () => {
-      alert('test');
+      let classList = document.getElementById('step2desc').classList
+      classList.toggle('invisible')
+    });
+
+    step2a.addEventListener('click', () => {
+      let classList = document.getElementById('step2desc').classList
+      classList.toggle('invisible')
     });
 
     stpe3.addEventListener('click', () => {
-      alert('test');
+      let classList = document.getElementById('step3desc').classList
+      classList.toggle('invisible')
+    });
+
+    stpe3a.addEventListener('click', () => {
+      let classList = document.getElementById('step3desc').classList
+      classList.toggle('invisible')
     });
   </script>
   <!-- <script type="text/javascript" src="./assets/scripts/connect.js"> </script> -->
 </body>
+
 </html>
-
-
-
-
