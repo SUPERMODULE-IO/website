@@ -154,12 +154,12 @@
           -->
         </div>
         <div id="joinSection" class="flex w-full justify-center items-end">
-          <form class="flex w-full justify-center items-end" name="submit-to-google-sheet">
+          <form class="flex w-full justify-center items-end" name="submit2g" id="submit2g">
           <div class="relative lg:w-full xl:w-1/2 w-2/4 md:w-full text-left">
             <label for="hero-field" class="leading-7 text-sm text-gray-600">Join the waitlist</label>
-            <input type="text" id="email" name="email"
-              class="w-full bg-gray-100 bg-opacity-50 rounded-l  focus:ring-red-200 focus:bg-transparent border-2 border-gray-300 focus:border-primary2 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-          
+            <input type="text" name="email"
+              class="w-full bg-gray-100 bg-opacity-50 rounded-l  focus:ring-red-200 focus:bg-transparent border-2 border-gray-300 focus:border-primary2 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+            
             </div>
           <button type="submit"
             class="inline-flex text-white bg-primary2 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded-r text-lg">Join</button>
@@ -1079,13 +1079,13 @@
 
 
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwLv3eC55X9HQBct_-JVhQfy1DYcw9nCeB2ztKIAkfk2y-y013co5wHwAn56c0sFf173w/exec'
-    const form = document.forms['submit2g']
+    const form = document.forms['submit2g'];
 
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', document.getElementById('joinAlert').innerHTML("<div class='p-2 items-center bg-green-600 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-green-900 uppercase px-2 py-1 text-xs font-bold mr-''>Confirmed</span><span class='font-semibold mr-2 text-left flex-auto'>Thank you. We are delighted to have you with us.</span></div>")))
-        .catch(error => console.error('Error!',  document.getElementById('joinAlert').innerHTML("<div class='p-2 items-center bg-primary2 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-primary1 uppercase px-2 py-1 text-xs font-bold mr-3'>Oops</span><span class='font-semibold mr-2 text-left flex-auto'>Something went wrong! While we are on it you may join us on discord - <a class='bg-dmenu' href='https://discord.gg/NJTDc4wvge'>Count me in!</a></span></div>")))
+        .then(response => console.log('Success!', document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-green-600 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-green-900 uppercase px-2 py-1 text-xs font-bold mr-''>Confirmed</span><span class='font-semibold mr-2 text-left flex-auto'>Thank you. We are delighted to have you with us.</span></div>"))
+        .catch(error => console.error('Error!',  document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-primary2 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-primary1 uppercase px-2 py-1 text-xs font-bold mr-3'>Oops</span><span class='font-semibold mr-2 text-left flex-auto'>Something went wrong! While we are on it you may join us on discord - <a class='bg-dmenu' href='https://discord.gg/NJTDc4wvge'>Count me in!</a></span></div>"))
     })
   </script>
   <!-- <script type="text/javascript" src="./assets/scripts/connect.js"> </script> -->
