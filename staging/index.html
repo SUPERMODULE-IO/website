@@ -1102,7 +1102,7 @@
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                .then(response => console.log('Success!', document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-green-600 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-green-900 uppercase px-2 py-1 text-xs font-bold mr-''>Confirmed</span><span class='font-semibold mr-2 text-left flex-auto'>Thank you. We are delighted to have you with us.</span></div>"))
                 .then(data => { joinSpiner.add('hidden')})
-                .then(data => { joinSpection.add('hidden')})
+                .then(data => { joinSection.add('hidden')})
                 .catch(error => console.error('Error!',  document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-primary2 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-primary1 uppercase px-2 py-1 text-xs font-bold mr-3'>Oops</span><span class='font-semibold mr-2 text-left flex-auto'>Something went wrong! While we are on it you may join us on discord - <a class='bg-dmenu' href='https://discord.gg/NJTDc4wvge'>Count me in!</a></span></div>"))
                   .then(data => { joinSpiner.add('hidden')})
 
