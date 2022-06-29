@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./assets/styles/supermodule.css" rel="stylesheet">
-  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LdBZawgAAAAAGZZ281HuVpjTg5jbeVZSDK6ki7J"></script>
 
 </head>
 <!-- class="dark:bg-gray-800 dark:text-gray-200" -->
@@ -163,7 +163,7 @@
             <input type="hidden" name="location" id="location" value="loc">
             </div>
           <button type="submit"
-            class="g-recaptcha inline-flex text-white bg-primary2 border-1 border-primary2 py-2 px-6 focus:outline-none hover:bg-red-600 rounded-r text-lg " data-sitekey="6LdBZawgAAAAAGZZ281HuVpjTg5jbeVZSDK6ki7J" data-callback="captchaCall" data-action="submit">
+            class="inline-flex text-white bg-primary2 border-1 border-primary2 py-2 px-6 focus:outline-none hover:bg-red-600 rounded-r text-lg " >
             <svg id="joinSpinner" class="hidden animate-spin h-5 w-5 mr-3 border-color-white" fill="none"  viewBox="0 0 24 24">
               <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
               <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
@@ -1095,12 +1095,20 @@
       joinSpiner.remove('hidden');
       e.preventDefault();
       
+      grecaptcha.ready(function() {
+          grecaptcha.execute('6LdBZawgAAAAAGZZ281HuVpjTg5jbeVZSDK6ki7J', {action: 'submit'}).then(function(token) {
+              // Add your logic to submit to your backend server here.
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+               .then(response => console.log('Success!', document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-green-600 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-green-900 uppercase px-2 py-1 text-xs font-bold mr-''>Confirmed</span><span class='font-semibold mr-2 text-left flex-auto'>Thank you. We are delighted to have you with us.</span></div>"))
+                .then(data => { joinSpiner.add('hidden')})
+                .catch(error => console.error('Error!',  document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-primary2 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-primary1 uppercase px-2 py-1 text-xs font-bold mr-3'>Oops</span><span class='font-semibold mr-2 text-left flex-auto'>Something went wrong! While we are on it you may join us on discord - <a class='bg-dmenu' href='https://discord.gg/NJTDc4wvge'>Count me in!</a></span></div>"))
+                  .then(data => { joinSpiner.add('hidden')})
+
+
+          });
+        });
  
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-green-600 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-green-900 uppercase px-2 py-1 text-xs font-bold mr-''>Confirmed</span><span class='font-semibold mr-2 text-left flex-auto'>Thank you. We are delighted to have you with us.</span></div>"))
-          .then(data => { joinSpiner.add('hidden')})
-        .catch(error => console.error('Error!',  document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-primary2 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-primary1 uppercase px-2 py-1 text-xs font-bold mr-3'>Oops</span><span class='font-semibold mr-2 text-left flex-auto'>Something went wrong! While we are on it you may join us on discord - <a class='bg-dmenu' href='https://discord.gg/NJTDc4wvge'>Count me in!</a></span></div>"))
-          .then(data => { joinSpiner.add('hidden')})
+     
         //joinSpiner.add('hidden');
     })
   </script>
