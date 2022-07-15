@@ -27,7 +27,7 @@
 </head>
 <!-- class="dark:bg-gray-800 dark:text-gray-200" -->
 
-<body class=" bg-ltheme dark:bg-dtheme dark:text-white text-black">
+<body class=" bg-ltheme dark:bg-dtheme  xs:text-[20px] xs:leading-[27px] text-[16px] leading-[23px] font-normal dark:text-dtext text-ltext transition-colors duration-200 ease-in-out">
 
   <header>
     <nav class="
@@ -50,7 +50,7 @@
          
        ">
       <div>
-        <a class="font-smf text-3xl  font-extrabold" href="#">
+        <a class="font-smf text-3xl  font-extrabold dark:text-white text-black" href="#">
           <span class="text-primary1">S</span>upermodule
         </a>
       </div>
@@ -70,24 +70,56 @@
              md:pt-0
             ">
           <li>
-            <a class="md:p-4 py-2 block hover:text-primary2 focus:text-primary1" href="#">Home</a>
-            <div class=" h-1 bg-primary1 rounded mb-1 "></div>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8">
+              <a class=" hover:text-primary2 focus:text-primary1" href="#">
+                <h2 class="font-medium title-font mt-4 text-lg">Home</h2>
+                
+              </a>
+              <div class="w-12 h-1 bg-primary1 rounded mb-4"></div>
+            </div>
           </li>
           <li>
-            <a class="md:p-4 py-2 block hover:text-primary2 focus:text-primary1" href="#how-it-works">How it works</a>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8 ">
+              <a class="hover:text-primary2 focus:text-primary1" href="#how-it-works">
+                <h2 class="font-medium title-font mt-4 text-lg">How it works</h2>
+              </a>
+              <div class="w-12 h-1 bg-primary1 rounded mb-4 opacity-0"></div>
+            </div>
+          
+          </li>
+          <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8">
+              <a class="hover:text-primary2 focus:text-primary1" href="#services">
+                <h2 class="font-medium title-font mt-4 text-lg">Services</h2>
+              </a>
+              <div class="w-12 h-1 bg-primary1 rounded mb-4 opacity-0"></div>
+            </div>
             
           </li>
           <li>
-            <a class="md:p-4 py-2 block hover:text-primary2 focus:text-primary1" href="#services">Services</a>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8">
+              <a class="hover:text-primary2 focus:text-primary1" href="#team">
+                <h2 class="font-medium title-font mt-4 text-lg">Team</h2>
+              </a>
+              <div class="w-12 h-1 bg-primary1 rounded mb-4 opacity-0"></div>
+            </div>
+            
           </li>
           <li>
-            <a class="md:p-4 py-2 block hover:text-primary2 focus:text-primary1" href="#team">Team</a>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8">
+              <a class="hover:text-primary2 focus:text-primary1" href="#roadmap">
+                <h2 class="font-medium title-font mt-4 text-lg">Roadmap</h2>
+              </a>
+              <div class="w-12 h-1 bg-primary1 rounded mb-4 opacity-0"></div>
+            </div>
           </li>
           <li>
-            <a class="md:p-4 py-2 block hover:text-primary2 focus:text-primary1" href="#roadmap">Roadmap</a>
-          </li>
-          <li>
-            <a class="md:p-4 py-2 block hover:text-primary2 focus:text-primary1" href="#partners">Partners</a>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8">
+              <a class="hover:text-primary2 focus:text-primary1" href="#partners">
+                <h2 class="font-medium title-font mt-4 text-lg">Partners</h2>
+              </a>
+              <div class="w-12 h-1 bg-primary1 rounded mb-4 opacity-0"></div>
+            </div>
           </li>
         </ul>
 
@@ -134,7 +166,7 @@
       <span class="font-semibold mr-2 text-left flex-auto"></span>
       <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
      
-        <svg class="fill-current h-6 w-6 text-red-500" role="button" onclick="closeAlert('mainAlert')" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
+        <svg class="fill-current h-6 w-6 text-pribg-primary1" role="button" onclick="closeAlert('mainAlert')" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
      
     </div>
   </div>
@@ -152,10 +184,12 @@
     <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
       <div
         class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-        <h1 class="title-font font-bold   mb-4 sm:text-[64px] sm:leading-[70px] text-[40px] leading-[46px] "><span class="text-primary1">Marketplace</span> for <span class="text-primary2">Blockchain</span> Services.
+        <h1 class="title-font font-bold   mb-4 sm:text-[64px] sm:leading-[70px] text-[40px] leading-[46px] dark:text-white text-black "><span
+            class="text-primary1">Marketplace</span> for <span class="text-primary2">Blockchain</span> Services.
 
         </h1>
-        <p class="mb-8 xs:text-[20px] xs:leading-[27px] text-[16px] leading-[23px] font-normal dark:text-dtext text-ltext ">
+        <p
+          class="mb-8  ">
           <span class="font-smf">Supermodule</span> is where the Art and Technology industry unites 🚀
           <br>
 
@@ -174,7 +208,7 @@
             <span class="font-semibold mr-2 text-left flex-auto">Thank you. We are delighted to have you with us.</span>
           </div>
 
-          <div class="p-2 items-center bg-primary2 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+          <div class="p-2 items-center bg-primary1 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
             <span class="flex rounded-full bg-primary1 uppercase px-2 py-1 text-xs font-bold mr-3">Oops</span>
             <span class="font-semibold mr-2 text-left flex-auto">Something went wrong! While we are on it you may join us on discord - <a class="bg-dmenu" href="https://discord.gg/NJTDc4wvge">Count me in!</a></span>
           </div>
@@ -183,16 +217,16 @@
 
         <div id="joinSection" class="flex w-full  items-end">
           <form class="flex w-full  items-end" name="submit2g" id="submit2g">
-            <div class="relative lg:w-full xl:w-1/2 w-2/4 md:w-full ">
+            <div class="relative lg:w-full xl:w-1/2  md:w-full ">
               <label for="hero-field" class="leading-7 text-sm text-gray-600">Join the waitlist</label>
               <input type="email" name="email" id="email"
-                class="w-full bg-opacity-50 rounded-l dark:bg-dnav focus:ring-red-200 focus:bg-transparent border-2 border-gray-300 focus:border-primary1 text-base outline-none dark:text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                class="w-full bg-opacity-50 rounded-l dark:bg-dtheme focus:ring-red-200 focus:bg-transparent border-2 border-gray-300 focus:border-primary1 text-base outline-none dark:text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 placeholder="your.email@xyz.com" required>
               <input type="hidden" name="mobile" id="mobile" value="123">
               <input type="hidden" name="location" id="location" value="loc">
             </div>
             <button type="submit"
-              class="inline-flex text-white bg-primary1 border-1 border-primary2 dark:border-secondary1 py-2 px-6 focus:outline-none hover:bg-primary2 rounded-r text-lg ">
+              class="inline-flex text-white bg-primary1 border-1 border-primary1 dark:border-primary1 py-2 px-6 focus:outline-none hover:bg-primary1 rounded-r text-lg ">
               <svg id="joinSpinner" class="hidden animate-spin h-5 w-5 mr-3 border-color-white" fill="none"
                 viewBox="0 0 24 24">
                 <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
@@ -208,19 +242,19 @@
 
 
 
-        <div class="flex  dark:text-primary5 text-primary3">
-          <button class="dark:bg-lmenu bg-dmenu inline-flex py-3 px-5 rounded-lg items-center  focus:outline-none ">
+        <div class="flex  ">
+          <button class="dark:bg-ltheme bg-dtheme inline-flex py-3 px-5 rounded-lg items-center  focus:outline-none ">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 512 512">
               <path
                 d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z">
               </path>
             </svg>
             <span class="ml-4 flex items-start flex-col leading-none">
-              <span class="text-xs text-gray-600 mb-1">COMING SOON ON</span>
+              <span class="text-xs mb-1">COMING SOON ON</span>
               <span class="title-font font-medium">Google Play</span>
             </span>
           </button>
-          <button class="dark:bg-lmenu bg-dmenu inline-flex py-3 px-5 rounded-lg items-center ml-4  focus:outline-none">
+          <button class="dark:bg-ltheme bg-dtheme inline-flex py-3 px-5 rounded-lg items-center ml-4  focus:outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 305 305">
               <path
                 d="M40.74 112.12c-25.79 44.74-9.4 112.65 19.12 153.82C74.09 286.52 88.5 305 108.24 305c.37 0 .74 0 1.13-.02 9.27-.37 15.97-3.23 22.45-5.99 7.27-3.1 14.8-6.3 26.6-6.3 11.22 0 18.39 3.1 25.31 6.1 6.83 2.95 13.87 6 24.26 5.81 22.23-.41 35.88-20.35 47.92-37.94a168.18 168.18 0 0021-43l.09-.28a2.5 2.5 0 00-1.33-3.06l-.18-.08c-3.92-1.6-38.26-16.84-38.62-58.36-.34-33.74 25.76-51.6 31-54.84l.24-.15a2.5 2.5 0 00.7-3.51c-18-26.37-45.62-30.34-56.73-30.82a50.04 50.04 0 00-4.95-.24c-13.06 0-25.56 4.93-35.61 8.9-6.94 2.73-12.93 5.09-17.06 5.09-4.64 0-10.67-2.4-17.65-5.16-9.33-3.7-19.9-7.9-31.1-7.9l-.79.01c-26.03.38-50.62 15.27-64.18 38.86z">
@@ -230,7 +264,7 @@
               </path>
             </svg>
             <span class="ml-4 flex items-start flex-col leading-none">
-              <span class="text-xs text-gray-600 mb-1">COMING SOON ON</span>
+              <span class="text-xs  mb-1">COMING SOON ON</span>
               <span class="title-font font-medium">App Store</span>
             </span>
           </button>
@@ -239,26 +273,28 @@
 
       <div class="flex flex-wrap w-1/2">
         <div class="md:p-2 p-1 w-1/2">
-          <img alt="gallery" class="rounded-xl row-span-2 object-cover object-center block"
+          <img alt="gallery" class="rounded-xl row-span-2 object-cover object-center block animate-blob"
             src="./assets/images/card5.png">
         </div>
         <div class="md:p-2 p-1 w-1/2">
           <div class="">
-            <img alt="gallery" class="rounded-xl  object-cover object-center block opacity-80 animate-blob"
-            src="./assets/images/card7.png">
+            <img alt="gallery" class="rounded-xl  object-cover object-center block animate-blob animation-delay-1000"
+              src="./assets/images/card7.png">
           </div>
           <div>
-            <img alt="gallery" class="rounded-xl  object-cover object-center block opacity-80 animate-blob animation-delay-4000"
-            src="./assets/images/card9.png">
+            <img alt="gallery"
+              class="rounded-xl  object-cover object-center block opacity-80 animate-blob animation-delay-4000"
+              src="./assets/images/card9.png">
           </div>
           <div>
-            <img alt="gallery" class="rounded-xl w-full object-cover object-center block animate-blob animation-delay-2000"
-            src="./assets/images/card4.png">
+            <img alt="gallery"
+              class="rounded-xl w-full object-cover object-center block animate-blob animation-delay-2000"
+              src="./assets/images/card4.png">
           </div>
-           
-            
+
+
         </div>
-        
+
       </div>
 
     </div>
@@ -292,9 +328,9 @@
         <div class="flex w-full md:justify-start justify-center items-end">
           <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4">
             <label for="hero-field" class="leading-7 text-sm text-gray-600">Join the waitlist</label>
-            <input type="text" id="hero-field" name="hero-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:ring-red-200 focus:bg-transparent focus:border-red-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            <input type="text" id="hero-field" name="hero-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:ring-red-200 focus:bg-transparent focus:border-pribg-primary1 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
           </div>
-          <button class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Join</button>
+          <button class="inline-flex text-white bg-primary1 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Join</button>
         </div>
         <p class="text-sm mt-2 text-gray-500 mb-8 w-full">Early bird offers, for the first 10,000.</p>
         <div class="flex lg:flex-row md:flex-col dark:text-gray-600">
@@ -349,10 +385,10 @@
       <div class="relative rounded-xl overflow-auto p-8 dark:bg-dmenu bg-lmenu dark:text-white">
         
         <div class="grid grid-cols-3 gap-4  text-base font-bold text-center rounded-lg">
-          <button id="step1" class="p-4 rounded-lg active:bg-primary2 dark:hover:bg-dtheme hover:bg-primary4 focus:bg-primary2 ">Step
+          <button id="step1" class="p-4 rounded-lg active:bg-primary1 dark:hover:bg-dtheme hover:bg-primary4 focus:bg-primary1 ">Step
             1</button>
-          <button id="step2" class="p-4 rounded-lg active:bg-primary2 dark:hover:bg-dtheme hover:bg-primary4 focus:bg-primary2 ">Step 2</button>
-          <button id="step3" class="p-4 rounded-lg active:bg-primary2 dark:hover:bg-dtheme hover:bg-primary4 focus:bg-primary2 ">Step 3</button>
+          <button id="step2" class="p-4 rounded-lg active:bg-primary1 dark:hover:bg-dtheme hover:bg-primary4 focus:bg-primary1 ">Step 2</button>
+          <button id="step3" class="p-4 rounded-lg active:bg-primary1 dark:hover:bg-dtheme hover:bg-primary4 focus:bg-primary1 ">Step 3</button>
 
           
         </div>
@@ -406,7 +442,7 @@
             <div></div>
             <div
               class="p-4 rounded dark:bg-dnav bg-lmenu border-2 border-blue-500 dark:border-blue-500 shadow-lg shadow-primary1">
-              <span class="font-smf"><span class="text-primary2">S</span>upermodule</span></Supermodule> Marketplace
+              <span class="font-smf"><span class="text-primary1">S</span>upermodule</span></Supermodule> Marketplace
             </div>
             <div></div>
           </div>
@@ -427,7 +463,7 @@
             <div class=""></div>
             <div class="p-4 row-span-2 rounded-full border-2 border-primary1 dark:bg-dnav bg-lmenu ">
 
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-primary2" fill="none" viewBox="0 0 22 22"
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-primary1" fill="none" viewBox="0 0 22 22"
                 stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
@@ -559,7 +595,7 @@
 
             <div class="p-4 row-span-2 rounded-full shadow-lg border-2 border-primary1 dark:bg-dmenu bg-lmenu">
 
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-primary2" fill="none" viewBox="0 0 22 22"
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-primary1" fill="none" viewBox="0 0 22 22"
                 stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
@@ -585,7 +621,7 @@
             <div></div>
             <div
               class="p-4 rounded dark:bg-dnav bg-lmenu border-2 border-blue-500 dark:border-blue-500 shadow-lg shadow-primary1">
-              <span class="font-smf"><span class="text-primary2">S</span>upermodule</span></Supermodule> Marketplace
+              <span class="font-smf"><span class="text-primary1">S</span>upermodule</span></Supermodule> Marketplace
             </div>
             <div></div>
           </div>
@@ -780,7 +816,7 @@
             <div></div>
             <div
               class="p-4 rounded dark:bg-dnav bg-lmenu border-2 border-blue-500 dark:border-blue-500 shadow-lg shadow-primary1">
-              <span class="font-smf"><span class="text-primary2">S</span>upermodule</span></Supermodule> Marketplace
+              <span class="font-smf"><span class="text-primary1">S</span>upermodule</span></Supermodule> Marketplace
             </div>
             <div></div>
           </div>
@@ -852,79 +888,59 @@
 
   </section>
 -->
-
-
+  <!-- How it works  START-->
   <section id="how-it-works" class="body-font">
-    <div class="container px-5 py-24 mx-auto flex flex-wrap flex-col ">
-      <div class="flex flex-col">
-        <div class="h-1 bg-gray-200 dark:bg-dborder rounded overflow-hidden ">
-        </div>
-        <div class="flex flex-wrap sm:flex-row flex-col py-6 ">
-          <h1 class="sm:w-2/5 font-medium title-font text-2xl">How it works <span class="text-primary1">?</span></h1>
-        </div>
-      </div>
+    <div class="container px-5 py-24 mx-auto">
+      
       <div class="flex flex-col text-center w-full mb-20">
-        <h1 class="text-xl font-medium title-font mb-4 ">3 Step proceess to launch your <span class="text-primary2">Blockchain</span> Services</h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Supermodule is a new asset class that combines art and
+        <h1 class="dark:text-white text-black font-bold sm:text-[48px] sm:leading-[52px] text-[30px] leading-[36px] text-center">How it works <span class="text-primary1">?</span>
+        </h1>
+        <h1 class="text-xl font-medium title-font mb-4 ">Easy 3 step proceess to launch your <span
+            class="text-primary2">Blockchain</span> Services</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed ">Create new asset class that combines art and
           technology to create unique and exclusive industry solutions that have real value.</p>
       </div>
-      <div class="flex flex-wrap -m-4 ">
+      <div class="flex flex-wrap -m-4">
         <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-        
-          <a id="step1a">
-            <div class="flex relative ">
-              <img alt="gallery"
-                class="absolute inset-0  object-cover object-center rounded-b border-2 dark:border-secondary1 border-primary1"
-                src="./assets/images/step1.png">
-                
-            </div>
-          </a>
-          <h1 class="title-font text-lg font-medium text-white mb-3"><strong>Select Smart Modules</strong></h1>
-                <p class="leading-relaxed h-96 text-white">Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.</p>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-      
-          <a id="step2a">
-            <div class="flex relative group">
-              <img alt="gallery"
-                class="absolute inset-0 w-full  object-cover object-center rounded-b border-2 dark:border-secondary1 border-primary1"
-                src="./assets/images/step2.png">
-              <div id="step2desc"
-                class="invisible px-8 py-10 relative z-10 w-full border-4 border-dborder  bg-primary2 dark:bg-secondary1 group-hover:visible group-hover:opacity-95 rounded-b">
-                <h2 class="tracking-widest text-sm title-font font-medium text-white mb-1"></h2>
-                <h1 class="title-font text-lg font-medium text-white mb-3"><strong>Select Smart Modules</strong></h1>
-                <p class="leading-relaxed h-96 text-white">Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-      
-          <a id="step3a">
-            <div class="flex relative group">
-              <img alt="gallery"
-                class="absolute inset-0 w-full  object-cover object-center rounded-b  dark:bg-dmenu border-2 dark:border-secondary1 border-primary1"
-                src="./assets/images/step3.png">
-              <div id="step3desc"
-                class="invisible px-8 py-10 relative z-10 w-full border-4 border-dborder  bg-primary2 dark:bg-secondary1 group-hover:visible group-hover:opacity-95 rounded-b">
-                <h2 class="tracking-widest text-sm title-font font-medium text-white mb-1"></h2>
-                <h1 class="title-font text-lg font-medium text-white mb-3"><strong>Publish</strong></h1>
-                <p class="leading-relaxed h-96 text-white">Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <!-- <img class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded" alt="hero" src="./assets/images/STEP1.svg"> -->
-        <!-- <img class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded" alt="hero" src="./assets/images/STEP2.svg"> -->
+          <div class="flex relative h-1/2 justify-center">
+            <img alt="gallery" class=" " src="./assets/images/step1.png">
 
+          </div>
+          <div class="flex flex-col items-center text-center justify-center">
+            <h2 class="font-medium title-font mt-4 text-lg">Upload Art</h2>
+            <div class="w-12 h-1 bg-primary1 rounded mt-2 mb-4"></div>
+            <p class="">Upload your Art, be it Image, Video, or Audio, that will be your digital front-end.</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative h-1/2 justify-center">
+            <img alt="gallery" class=" " src="./assets/images/step2.png">
+
+          </div>
+          <div class="flex flex-col items-center text-center justify-center">
+            <h2 class="font-medium title-font mt-4 text-lg">Configure Service</h2>
+            <div class="w-12 h-1 bg-primary1 rounded mt-2 mb-4"></div>
+            <p class="">Configure the blockchain services which will be your back-end utilities.</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative h-1/2 justify-center">
+            <img alt="gallery" class=" inset-0  h-full object-cover object-center" src="./assets/images/step3.png">
+
+          </div>
+          <div class="flex flex-col items-center text-center justify-center">
+            <h2 class="font-medium title-font mt-4 text-lg">Publish </h2>
+            <div class="w-12 h-1 bg-primary1 rounded mt-2 mb-4"></div>
+            <p class="">Publish your newly created NFT asset that has real value to any.</p>
+          </div>
+        </div>
 
       </div>
+    </div>
   </section>
 
-  <!-- How it works start  END-->
+
+  <!-- How it works  END-->
 
 
 
@@ -938,12 +954,12 @@
 
         </div>
         <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-          <h1 class="sm:w-2/5 font-medium title-font text-2xl mb-2 sm:mb-0">Services</h1>
+          <h1 class="dark:text-white text-black font-bold sm:text-[48px] sm:leading-[52px] text-[30px] leading-[36px] text-center"><span class="text-primary2">Blockchain</span> Services <span class="text-primary1">!</span></h1>
         </div>
       </div>
       <div class="flex flex-col text-center w-full mb-20">
 
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Explore our library of blockchain services that are fully
+        <p class="lg:w-2/3 mx-auto leading-relaxed ">Explore our library of blockchain services that are fully
           integrated with our marketplace that can be easly enabled
           on your NFTs.</p>
       </div>
@@ -953,7 +969,7 @@
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div class="border border-gray-200 p-6 rounded-lg">
             <div
-              class="w-10 h-10 inline-flex items-center justify-center rounded-full dark:bg-secondary1 bg-primary2 dark:text-primary5 text-primary3 mb-4">
+              class="w-10 h-10 inline-flex items-center justify-center rounded-full dark:bg-primary1 bg-primary1 text-white mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -970,7 +986,7 @@
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div class="border border-gray-200 p-6 rounded-lg">
             <div
-              class="w-10 h-10 inline-flex items-center justify-center rounded-full dark:bg-secondary1 bg-primary2 dark:text-primary5 text-primary3 mb-4">
+              class="w-10 h-10 inline-flex items-center justify-center rounded-full dark:bg-primary1 bg-primary1 text-white mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -986,7 +1002,7 @@
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div class="border border-gray-200 p-6 rounded-lg">
             <div
-              class="w-10 h-10 inline-flex items-center justify-center rounded-full dark:bg-secondary1 bg-primary2 dark:text-primary5 text-primary3 mb-4">
+              class="w-10 h-10 inline-flex items-center justify-center rounded-full dark:bg-primary1 bg-primary1 text-white mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -1002,7 +1018,7 @@
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div class="border border-gray-200 p-6 rounded-lg">
             <div
-              class="w-10 h-10 inline-flex items-center justify-center rounded-full dark:bg-secondary1 bg-primary2 dark:text-primary5 text-primary3 mb-4">
+              class="w-10 h-10 inline-flex items-center justify-center rounded-full dark:bg-primary1 bg-primary1 text-white mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -1017,7 +1033,7 @@
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div class="border border-gray-200 p-6 rounded-lg">
             <div
-              class="w-10 h-10 inline-flex items-center justify-center rounded-full dark:bg-secondary1 bg-primary2 dark:text-primary5 text-primary3 mb-4">
+              class="w-10 h-10 inline-flex items-center justify-center rounded-full dark:bg-primary1 bg-primary1 text-white mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -1033,7 +1049,7 @@
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div class="border border-gray-200 p-6 rounded-lg">
             <div
-              class="w-10 h-10 inline-flex items-center justify-center rounded-full dark:bg-secondary1 bg-primary2 dark:text-primary5 text-primary3 mb-4">
+              class="w-10 h-10 inline-flex items-center justify-center rounded-full dark:bg-primary1 bg-primary1 text-white mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -1060,12 +1076,12 @@
 
         </div>
         <div class="flex flex-wrap sm:flex-row flex-col py-6 ">
-          <h1 class="sm:w-2/5  font-medium title-font text-2xl">Our Team</h1>
+          <h1 class="dark:text-white text-black font-bold sm:text-[48px] sm:leading-[52px] text-[30px] leading-[36px] text-center">Our Team</h1>
         </div>
       </div>
       <div class="flex flex-col text-center w-full mb-20">
 
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We're a technology-first company that believes every
+        <p class="lg:w-2/3 mx-auto leading-relaxed ">We're a technology-first company that believes every
           business deserves a solution as unique and exclusive as they are.</p>
       </div>
       <div class="flex flex-wrap -m-2">
@@ -1172,7 +1188,7 @@
 
         </div>
         <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-          <h1 class="sm:w-2/5  font-medium title-font text-2xl mb-2 sm:mb-0">Roadmap</h1>
+          <h1 class="dark:text-white text-black font-bold sm:text-[48px] sm:leading-[52px] text-[30px] leading-[36px] text-center">Roadmap</h1>
         </div>
       </div>
       <div class="flex flex-wrap w-full">
@@ -1182,7 +1198,7 @@
               <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
             </div>
             <div
-              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-secondary1 bg-primary2 inline-flex items-center justify-center dark:text-primary5 text-primary3 relative z-10">
+              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-primary1 bg-primary1 inline-flex items-center justify-center text-white relative z-10">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -1200,7 +1216,7 @@
               <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
             </div>
             <div
-              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-secondary1 bg-primary2 inline-flex items-center justify-center dark:text-primary5 text-primary3 relative z-10">
+              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-primary1 bg-primary1 inline-flex items-center justify-center text-white relative z-10">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -1209,7 +1225,7 @@
             </div>
             <div class="flex-grow pl-4">
               <h2 class="font-medium title-font text-sm mb-1 tracking-wider">Nov 2021</h2>
-              <p class="leading-relaxed">Inception - After the initial brainstorming and ressearch an offical entity was
+              <p class="leading-relaxed">Inception - After the initial brainstorming and research an offical entity was
                 incorporated.</p>
             </div>
           </div>
@@ -1218,7 +1234,7 @@
               <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
             </div>
             <div
-              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-secondary1 bg-primary2 inline-flex items-center justify-center dark:text-primary5 text-primary3 relative z-10">
+              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-primary1 bg-primary1 inline-flex items-center justify-center text-white relative z-10">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -1236,7 +1252,7 @@
               <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
             </div>
             <div
-              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-secondary1 bg-primary2 inline-flex items-center justify-center dark:text-primary5 text-primary3 relative z-10">
+              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-primary1 bg-primary1 inline-flex items-center justify-center text-white relative z-10">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 class="w-5 h-5" viewBox="0 0 24 24">
                 <circle cx="12" cy="5" r="3"></circle>
@@ -1254,7 +1270,7 @@
               <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
             </div>
             <div
-              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-secondary1 bg-primary2 inline-flex items-center justify-center dark:text-primary5 text-primary3 relative z-10">
+              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-primary1 bg-primary1 inline-flex items-center justify-center text-white relative z-10">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -1272,7 +1288,7 @@
               <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
             </div>
             <div
-              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-secondary1 bg-primary2 inline-flex items-center justify-center dark:text-primary5 text-primary3 relative z-10">
+              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-primary1 bg-primary1 inline-flex items-center justify-center text-white relative z-10">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -1290,7 +1306,7 @@
               <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
             </div>
             <div
-              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-secondary1 bg-primary2 inline-flex items-center justify-center dark:text-primary5 text-primary3 relative z-10">
+              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-primary1 bg-primary1 inline-flex items-center justify-center text-white relative z-10">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -1308,7 +1324,7 @@
               <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
             </div>
             <div
-              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-secondary1 bg-primary2 inline-flex items-center justify-center dark:text-primary5 text-primary3 relative z-10">
+              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-primary1 bg-primary1 inline-flex items-center justify-center text-white relative z-10">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -1317,7 +1333,7 @@
             </div>
             <div class="flex-grow pl-4">
               <h2 class="font-medium title-font text-sm mb-1 tracking-wider">Jul 2022</h2>
-              <p class="leading-relaxed">Webiste/Beta - Website with Beta launch.</p>
+              <p class="leading-relaxed">Webiste & Beta - Website and Beta launch.</p>
             </div>
           </div>
           <div class="flex relative pb-12">
@@ -1389,7 +1405,7 @@
 
         </div>
         <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-          <h1 class="sm:w-2/5 text-gray-900 dark:text-gray-100 font-medium title-font text-2xl mb-2 sm:mb-0">Partners
+          <h1 class="dark:text-white text-black font-bold sm:text-[48px] sm:leading-[52px] text-[30px] leading-[36px] text-center">Partners
           </h1>
         </div>
       </div>
@@ -1416,7 +1432,7 @@
   <!-- Partners END-->
 
   <!-- Footer Start -->
-  <footer class="bg-lmenu dark:bg-dmenu body-font border-t border-dborder shadow-inner">
+  <footer class="bg-lfoot dark:bg-dfoot body-font border-t border-dborder shadow-inner">
     <div
       class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
       <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
@@ -1428,72 +1444,72 @@
         <p class="mt-2 text-sm text-gray-500">The world’s first digital marketplace that combines art and technology to
           create unique and exclusive assets that have real value. </p>
       </div>
-      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center text-sm">
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium  tracking-widest text-sm mb-3">Product</h2>
+          <h2 class="title-font font-medium  tracking-widest text-base mb-3">Product</h2>
           <nav class="list-none mb-10">
             <li>
-              <a class="text-primary4 hover:text-primary2">Marketplace</a>
+              <a class="text-primary4 hover:text-primary1">Marketplace</a>
             </li>
             <li>
-              <a class="text-primary4 hover:text-primary2">Smart Modules</a>
+              <a class="text-primary4 hover:text-primary1">Smart Modules</a>
             </li>
             <li>
-              <a class="text-primary4 hover:text-primary2"></a>
+              <a class="text-primary4 hover:text-primary1"></a>
             </li>
             <li>
-              <a class="text-primary4 hover:text-primary2"></a>
+              <a class="text-primary4 hover:text-primary1"></a>
             </li>
           </nav>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium  tracking-widest text-sm mb-3">Company</h2>
+          <h2 class="title-font font-medium  tracking-widest text-base mb-3">Company</h2>
           <nav class="list-none mb-10">
             <li>
-              <a class="text-primary4 hover:text-primary2">About</a>
+              <a class="text-primary4 hover:text-primary1">About</a>
             </li>
             <li>
-              <a class="text-primary4 hover:text-primary2">Branding</a>
+              <a class="text-primary4 hover:text-primary1">Branding</a>
             </li>
             <li>
-              <a class="text-primary4 hover:text-primary2">Partnership </a>
+              <a class="text-primary4 hover:text-primary1">Partnership </a>
             </li>
             <li>
-              <a class="text-primary4 hover:text-primary2">Investors</a>
+              <a class="text-primary4 hover:text-primary1">Investors</a>
             </li>
           </nav>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium  tracking-widest text-sm mb-3">Resources</h2>
+          <h2 class="title-font font-medium  tracking-widest text-base mb-3">Resources</h2>
           <nav class="list-none mb-10">
             <li>
-              <a class="text-primary4 hover:text-primary2">Support</a>
+              <a class="text-primary4 hover:text-primary1">Support</a>
             </li>
             <li>
-              <a class="text-primary4 hover:text-primary2">Feedback</a>
+              <a class="text-primary4 hover:text-primary1">Feedback</a>
             </li>
             <li>
-              <a class="text-primary4 hover:text-primary2">Branding</a>
+              <a class="text-primary4 hover:text-primary1">Branding</a>
             </li>
             <li>
-              <a class="text-primary4 hover:text-primary2">Fourth Link</a>
+              <a class="text-primary4 hover:text-primary1">Fourth Link</a>
             </li>
           </nav>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium  tracking-widest text-sm mb-3">Policies</h2>
+          <h2 class="title-font font-medium  tracking-widest text-base mb-3">Policies</h2>
           <nav class="list-none mb-10">
             <li>
-              <a class="text-primary4 hover:text-primary2">Terms</a>
+              <a class="text-primary4 hover:text-primary1">Terms</a>
             </li>
             <li>
-              <a class="text-primary4 hover:text-primary2">Privacy</a>
+              <a class="text-primary4 hover:text-primary1">Privacy</a>
             </li>
             <li>
-              <a class="text-primary4 hover:text-primary2">Acknowledgements</a>
+              <a class="text-primary4 hover:text-primary1">Acknowledgements</a>
             </li>
             <li>
-              <a class="text-primary4 hover:text-primary2">Licenses</a>
+              <a class="text-primary4 hover:text-primary1">Licenses</a>
             </li>
           </nav>
         </div>
@@ -1502,7 +1518,7 @@
     <div class="bg-white dark:bg-black">
       <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
         <p class="text-gray-500 text-sm text-center sm:text-left">© 2022 <span class="font-smf"><span
-              class="text-primary2">S</span>upermodule</span> —
+              class="text-primary1">S</span>upermodule</span> —
           <a href="https://twitter.com/vyvakz" rel="noopener noreferrer" class="text-gray-600 ml-1"
             target="_blank">@vyvakz</a>
         </p>
@@ -1676,7 +1692,7 @@
             .then(response => console.log('Success!', document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-green-600 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-green-900 uppercase px-2 py-1 text-xs font-bold mr-''>Confirmed</span><span class='font-semibold mr-2 text-left flex-auto'>Thank you. We are delighted to have you with us.</span></div>"))
             .then(data => { joinSpiner.add('hidden') })
             .then(data => { joinSection.add('hidden') })
-            .catch(error => console.error('Error!', document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-primary2 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-primary1 uppercase px-2 py-1 text-xs font-bold mr-3'>Oops</span><span class='font-semibold mr-2 text-left flex-auto'>Something went wrong! While we are on it you may join us on discord - <a class='bg-dmenu' href='https://discord.gg/NJTDc4wvge'>Count me in!</a></span></div>"))
+            .catch(error => console.error('Error!', document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-primary1 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-primary1 uppercase px-2 py-1 text-xs font-bold mr-3'>Oops</span><span class='font-semibold mr-2 text-left flex-auto'>Something went wrong! While we are on it you may join us on discord - <a class='bg-dmenu' href='https://discord.gg/NJTDc4wvge'>Count me in!</a></span></div>"))
             .then(data => { joinSpiner.add('hidden') })
 
 
