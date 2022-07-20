@@ -1326,8 +1326,8 @@ video {
   line-height: 1rem;
 }
 
-.text-\[40px\] {
-  font-size: 40px;
+.text-\[64px\] {
+  font-size: 64px;
 }
 
 .text-sm {
@@ -1356,10 +1356,6 @@ video {
 
 .text-\[25px\] {
   font-size: 25px;
-}
-
-.text-\[28px\] {
-  font-size: 28px;
 }
 
 .font-normal {
@@ -1394,8 +1390,8 @@ video {
   line-height: 1;
 }
 
-.leading-\[46px\] {
-  line-height: 46px;
+.leading-\[70px\] {
+  line-height: 70px;
 }
 
 .leading-7 {
@@ -1414,16 +1410,8 @@ video {
   line-height: 36px;
 }
 
-.leading-\[40px\] {
-  line-height: 40px;
-}
-
 .leading-\[30px\] {
   line-height: 30px;
-}
-
-.leading-\[35px\] {
-  line-height: 35px;
 }
 
 .tracking-wider {
@@ -1821,8 +1809,16 @@ video {
     font-size: 20px;
   }
 
+  .xs\:text-\[16px\] {
+    font-size: 16px;
+  }
+
   .xs\:leading-\[27px\] {
     line-height: 27px;
+  }
+
+  .xs\:leading-\[23px\] {
+    line-height: 23px;
   }
 }
 
@@ -1868,12 +1864,24 @@ video {
     font-size: 48px;
   }
 
-  .sm\:leading-\[70px\] {
-    line-height: 70px;
+  .sm\:text-\[30px\] {
+    font-size: 30px;
   }
 
   .sm\:leading-\[52px\] {
     line-height: 52px;
+  }
+
+  .sm\:leading-\[40px\] {
+    line-height: 40px;
+  }
+
+  .sm\:leading-\[30px\] {
+    line-height: 30px;
+  }
+
+  .sm\:leading-\[35px\] {
+    line-height: 35px;
   }
 }
 
@@ -1897,18 +1905,6 @@ video {
 
   .md\:mt-4 {
     margin-top: 1rem;
-  }
-
-  .md\:flex {
-    display: flex;
-  }
-
-  .md\:hidden {
-    display: none;
-  }
-
-  .md\:w-auto {
-    width: auto;
   }
 
   .md\:w-1\/2 {
@@ -1935,10 +1931,6 @@ video {
     flex-wrap: nowrap;
   }
 
-  .md\:place-items-start {
-    place-items: start;
-  }
-
   .md\:items-start {
     align-items: flex-start;
   }
@@ -1951,10 +1943,6 @@ video {
     justify-content: flex-start;
   }
 
-  .md\:justify-between {
-    justify-content: space-between;
-  }
-
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -1963,10 +1951,6 @@ video {
   .md\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-  }
-
-  .md\:pt-0 {
-    padding-top: 0px;
   }
 
   .md\:pr-8 {
@@ -1993,8 +1977,28 @@ video {
     text-align: left;
   }
 
+  .md\:text-\[40px\] {
+    font-size: 40px;
+  }
+
   .md\:text-\[35px\] {
     font-size: 35px;
+  }
+
+  .md\:text-\[30px\] {
+    font-size: 30px;
+  }
+
+  .md\:text-\[64px\] {
+    font-size: 64px;
+  }
+
+  .md\:leading-\[40px\] {
+    line-height: 40px;
+  }
+
+  .md\:leading-\[70px\] {
+    line-height: 70px;
   }
 }
 
@@ -2007,8 +2011,24 @@ video {
     margin-top: 0px;
   }
 
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
   .lg\:inline-flex {
     display: inline-flex;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:w-auto {
+    width: auto;
   }
 
   .lg\:w-full {
@@ -2035,6 +2055,10 @@ video {
     width: 25%;
   }
 
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
   .lg\:max-w-lg {
     max-width: 32rem;
   }
@@ -2047,8 +2071,16 @@ video {
     flex-direction: row;
   }
 
+  .lg\:place-items-start {
+    place-items: start;
+  }
+
   .lg\:items-start {
     align-items: flex-start;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 
   .lg\:rounded-full {
@@ -2060,6 +2092,15 @@ video {
     padding-right: 1rem;
   }
 
+  .lg\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0px;
+  }
+
   .lg\:pr-24 {
     padding-right: 6rem;
   }
@@ -2068,12 +2109,8 @@ video {
     padding-left: 6rem;
   }
 
-  .lg\:text-\[50px\] {
-    font-size: 50px;
-  }
-
-  .lg\:text-\[45px\] {
-    font-size: 45px;
+  .lg\:text-left {
+    text-align: left;
   }
 
   .lg\:text-\[40px\] {
@@ -2084,12 +2121,12 @@ video {
     line-height: 50px;
   }
 
-  .lg\:leading-\[55px\] {
-    line-height: 55px;
+  .lg\:leading-\[40px\] {
+    line-height: 40px;
   }
 
-  .lg\:leading-\[65px\] {
-    line-height: 65px;
+  .lg\:leading-\[45px\] {
+    line-height: 45px;
   }
 }
 
@@ -2106,24 +2143,20 @@ video {
     font-size: 50px;
   }
 
-  .xl\:leading-\[75px\] {
-    line-height: 75px;
-  }
-
-  .xl\:leading-\[72px\] {
-    line-height: 72px;
-  }
-
-  .xl\:leading-\[71px\] {
-    line-height: 71px;
-  }
-
-  .xl\:leading-\[65px\] {
-    line-height: 65px;
-  }
-
   .xl\:leading-\[60px\] {
     line-height: 60px;
+  }
+
+  .xl\:leading-\[45px\] {
+    line-height: 45px;
+  }
+
+  .xl\:leading-\[50px\] {
+    line-height: 50px;
+  }
+
+  .xl\:leading-\[55px\] {
+    line-height: 55px;
   }
 }
 
