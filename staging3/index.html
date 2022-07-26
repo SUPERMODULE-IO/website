@@ -250,7 +250,8 @@
 
 
         <div class="flex  ">
-          <button class="dark:bg-ltheme bg-dtheme inline-flex py-3 px-5 rounded-lg items-center  focus:outline-none dark:text-gray-700 ">
+          <button
+            class="dark:bg-ltheme bg-dtheme inline-flex py-3 px-5 rounded-lg items-center  focus:outline-none dark:text-gray-700 ">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 512 512">
               <path
                 d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z">
@@ -1449,7 +1450,7 @@
           <div class="p-4 md:w-1/4 sm:w-1/2 w-full swiper-slide">
             <div class="border-2 border-gray-200 px-4 py-6 rounded-lg ">
 
-            
+
               <img alt="gallery" class="w-80 object-cover h-full object-center block"
                 src="./assets/images/logos/AEICLogo.svg">
 
@@ -1610,7 +1611,7 @@
               <circle cx="4" cy="4" r="2" stroke="none"></circle>
             </svg>
           </a>
-          <a class="ml-3 text-gray-500 hover:text-primary1" href="https://discord.gg/KD3p4Vrs">
+          <a class="ml-3 text-gray-500 hover:text-primary1" href="https://discord.gg/AfBAUMxT5G">
             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
               stroke-width="0" class="w-5 h-5" viewBox="0 0 16 15">
               <path
@@ -1730,9 +1731,9 @@
           classList.toggle('invisible')
         });
     */
-  //  const scriptURL = 'https://script.google.com/macros/s/AKfycbwLv3eC55X9HQBct_-JVhQfy1DYcw9nCeB2ztKIAkfk2y-y013co5wHwAn56c0sFf173w/exec'
-   
-  // Test URL
+    //  const scriptURL = 'https://script.google.com/macros/s/AKfycbwLv3eC55X9HQBct_-JVhQfy1DYcw9nCeB2ztKIAkfk2y-y013co5wHwAn56c0sFf173w/exec'
+
+    // Test URL
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxb3Gi1WAUeS45YxhOQVAAAJz_WPLB0X5bFzqtm3v9ByvfhyKl402OUta32E61j37JkIw/exec';
     const form = document.forms['submit2g'];
 
@@ -1750,10 +1751,16 @@
         grecaptcha.execute('6LdBZawgAAAAAGZZ281HuVpjTg5jbeVZSDK6ki7J', { action: 'submit' }).then(function (token) {
           // Add your logic to submit to your backend server here.
           fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => console.log('Success!' ,response, document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-green-600 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-green-900 uppercase px-2 py-1 text-xs font-bold mr-''>Confirmed</span><span class='font-semibold mr-2 text-left flex-auto'>Thank you. We are delighted to have you with us.</span></div>"))
+          // .then(response => console.log('Success!',reponse.data, (1 ==1) ? 1 : document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-green-600 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-green-900 uppercase px-2 py-1 text-xs font-bold mr-''>Confirmed</span><span class='font-semibold mr-2 text-left flex-auto'>Thank you. We are delighted to have you with us.</span></div>"))
+          //  .then(response => response.json().then(data => ({ data:data, status: response.status})).then(res => {console.log('DATA:',res.data)}))
+          //  .then(data => { joinSpiner.add('hidden') })
+          //  .then(data => { joinSection.add('hidden') })
+           // .catch(error => console.error('Error!', document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-primary1 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-primary1 uppercase px-2 py-1 text-xs font-bold mr-3'>Oops</span><span class='font-semibold mr-2 text-left flex-auto'>Something went wrong! While we are on it you may join us on discord - <a class='bg-dmenu' href='https://discord.gg/NJTDc4wvge'>Count me in!</a></span></div>"))
+          //  .then(data => { joinSpiner.add('hidden') })
+            .then(response => response.json().then(data => ({ data:data, status: response.status})).then(res => {console.log('DATA:',('email exist' == res.data.error) ? document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-primary1 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-primary1 uppercase px-2 py-1 text-xs font-bold mr-3'>Oops</span><span class='font-semibold mr-2 text-left flex-auto'>Your email is already registered with us! You can further discuss with us on discord - <a class='bg-dmenu' href='https://discord.gg/AfBAUMxT5G'>Take me to Discord!</a></span></div>" : document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-green-600 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-green-900 uppercase px-2 py-1 text-xs font-bold mr-''>Confirmed</span><span class='font-semibold mr-2 text-left flex-auto'>Thank you. We are delighted to have you with us.</span></div>")}))
             .then(data => { joinSpiner.add('hidden') })
             .then(data => { joinSection.add('hidden') })
-            .catch(error => console.error('Error!', document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-primary1 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-primary1 uppercase px-2 py-1 text-xs font-bold mr-3'>Oops</span><span class='font-semibold mr-2 text-left flex-auto'>Something went wrong! While we are on it you may join us on discord - <a class='bg-dmenu' href='https://discord.gg/NJTDc4wvge'>Count me in!</a></span></div>"))
+            .catch(error => console.error('Error!', document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-primary1 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-primary1 uppercase px-2 py-1 text-xs font-bold mr-3'>Oops</span><span class='font-semibold mr-2 text-left flex-auto'>Something went wrong! While we are on it you may join us on discord - <a class='bg-dmenu' href='https://discord.gg/AfBAUMxT5G'>Count me in!</a></span></div>"))
             .then(data => { joinSpiner.add('hidden') })
 
 
