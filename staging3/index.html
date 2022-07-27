@@ -230,6 +230,7 @@
                 placeholder="your.email@xyz.com" required>
               <input type="hidden" name="mobile" id="mobile" value="123">
               <input type="hidden" name="location" id="location" value="loc">
+              <input type="hidden" name="tokenF" id="toeknF" >
             </div>
             <button type="submit"
               class="inline-flex text-white bg-primary1 border-1 border-primary1 dark:border-primary1 py-2 px-6 focus:outline-none hover:bg-primary1 rounded-r text-lg ">
@@ -1750,6 +1751,8 @@
       grecaptcha.ready(function () {
         grecaptcha.execute('6LdBZawgAAAAAGZZ281HuVpjTg5jbeVZSDK6ki7J', { action: 'submit' }).then(function (token) {
           // Add your logic to submit to your backend server here.
+          var token_feild = document.getElementById('tokenF');
+          token_feild.value = token;
           fetch(scriptURL, { method: 'POST', body: new FormData(form) })
           // .then(response => console.log('Success!',reponse.data, (1 ==1) ? 1 : document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-green-600 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-green-900 uppercase px-2 py-1 text-xs font-bold mr-''>Confirmed</span><span class='font-semibold mr-2 text-left flex-auto'>Thank you. We are delighted to have you with us.</span></div>"))
           //  .then(response => response.json().then(data => ({ data:data, status: response.status})).then(res => {console.log('DATA:',res.data)}))
