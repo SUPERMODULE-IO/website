@@ -27,6 +27,9 @@
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
+  <script>
+
+  </script>
 </head>
 <!-- class="dark:bg-gray-800 dark:text-gray-200" -->
 
@@ -230,7 +233,7 @@
                 placeholder="your.email@xyz.com" required>
               <input type="hidden" name="mobile" id="mobile" value="123">
               <input type="hidden" name="location" id="location" value="loc">
-              <input type="hidden" name="tokenF" id="toeknF" >
+              <input type="hidden" name="tokenF" id="toeknF">
             </div>
             <button type="submit"
               class="inline-flex text-white bg-primary1 border-1 border-primary1 dark:border-primary1 py-2 px-6 focus:outline-none hover:bg-primary1 rounded-r text-lg ">
@@ -1738,9 +1741,9 @@
     const scriptURL = 'https://script.google.com/macros/s/AKfycbx8_yB60yoGTInnYjZZYd2pnTdEbCduwq1nqYHHe-d9AewEP3zKOxZESvDytTCXkVJ5TQ/exec';
     const form = document.forms['submit2g'];
 
-    function captchaCall(token) {
-      document.getElementById("submit2g").submit();
-    }
+
+
+
 
     form.addEventListener('submit', e => {
       let joinSpiner = document.getElementById('joinSpinner').classList;
@@ -1748,27 +1751,22 @@
       joinSpiner.remove('hidden');
       e.preventDefault();
 
-      grecaptcha.ready(function () {
-        grecaptcha.execute('6LdBZawgAAAAAGZZ281HuVpjTg5jbeVZSDK6ki7J', { action: 'submit' }).then(function (token) {
-          // Add your logic to submit to your backend server here.
-          var token_feild = document.getElementById('tokenF');
-          token_feild.value = token;
-          fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-          // .then(response => console.log('Success!',reponse.data, (1 ==1) ? 1 : document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-green-600 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-green-900 uppercase px-2 py-1 text-xs font-bold mr-''>Confirmed</span><span class='font-semibold mr-2 text-left flex-auto'>Thank you. We are delighted to have you with us.</span></div>"))
-          //  .then(response => response.json().then(data => ({ data:data, status: response.status})).then(res => {console.log('DATA:',res.data)}))
-          //  .then(data => { joinSpiner.add('hidden') })
-          //  .then(data => { joinSection.add('hidden') })
-           // .catch(error => console.error('Error!', document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-primary1 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-primary1 uppercase px-2 py-1 text-xs font-bold mr-3'>Oops</span><span class='font-semibold mr-2 text-left flex-auto'>Something went wrong! While we are on it you may join us on discord - <a class='bg-dmenu' href='https://discord.gg/NJTDc4wvge'>Count me in!</a></span></div>"))
-          //  .then(data => { joinSpiner.add('hidden') })
-            .then(response => response.json().then(data => ({ data:data, status: response.status})).then(res => {console.log('DATA:',('email exist' == res.data.error) ? document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-primary1 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-primary1 uppercase px-2 py-1 text-xs font-bold mr-3'>Oops</span><span class='font-semibold mr-2 text-left flex-auto'>Your email is already registered with us! You can further discuss with us on discord - <a class='bg-dmenu' href='https://discord.gg/AfBAUMxT5G'>Take me to Discord!</a></span></div>" : document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-green-600 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-green-900 uppercase px-2 py-1 text-xs font-bold mr-''>Confirmed</span><span class='font-semibold mr-2 text-left flex-auto'>Thank you. We are delighted to have you with us.</span></div>")}))
-            .then(data => { joinSpiner.add('hidden') })
-            .then(data => { joinSection.add('hidden') })
-            .catch(error => console.error('Error!', document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-primary1 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-primary1 uppercase px-2 py-1 text-xs font-bold mr-3'>Oops</span><span class='font-semibold mr-2 text-left flex-auto'>Something went wrong! While we are on it you may join us on discord - <a class='bg-dmenu' href='https://discord.gg/AfBAUMxT5G'>Count me in!</a></span></div>"))
-            .then(data => { joinSpiner.add('hidden') })
+
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        // .then(response => console.log('Success!',reponse.data, (1 ==1) ? 1 : document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-green-600 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-green-900 uppercase px-2 py-1 text-xs font-bold mr-''>Confirmed</span><span class='font-semibold mr-2 text-left flex-auto'>Thank you. We are delighted to have you with us.</span></div>"))
+        //  .then(response => response.json().then(data => ({ data:data, status: response.status})).then(res => {console.log('DATA:',res.data)}))
+        //  .then(data => { joinSpiner.add('hidden') })
+        //  .then(data => { joinSection.add('hidden') })
+        // .catch(error => console.error('Error!', document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-primary1 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-primary1 uppercase px-2 py-1 text-xs font-bold mr-3'>Oops</span><span class='font-semibold mr-2 text-left flex-auto'>Something went wrong! While we are on it you may join us on discord - <a class='bg-dmenu' href='https://discord.gg/NJTDc4wvge'>Count me in!</a></span></div>"))
+        //  .then(data => { joinSpiner.add('hidden') })
+        .then(response => response.json().then(data => ({ data: data, status: response.status })).then(res => { console.log('DATA:', ('email exist' == res.data.error) ? document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-primary1 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-primary1 uppercase px-2 py-1 text-xs font-bold mr-3'>Oops</span><span class='font-semibold mr-2 text-left flex-auto'>Your email is already registered with us! You can further discuss with us on discord - <a class='bg-dmenu' href='https://discord.gg/AfBAUMxT5G'>Take me to Discord!</a></span></div>" : document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-green-600 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-green-900 uppercase px-2 py-1 text-xs font-bold mr-''>Confirmed</span><span class='font-semibold mr-2 text-left flex-auto'>Thank you. We are delighted to have you with us.</span></div>") }))
+        .then(data => { joinSpiner.add('hidden') })
+        .then(data => { joinSection.add('hidden') })
+        .catch(error => console.error('Error!', document.getElementById('joinAlert').innerHTML = "<div class='p-2 items-center bg-primary1 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-primary1 uppercase px-2 py-1 text-xs font-bold mr-3'>Oops</span><span class='font-semibold mr-2 text-left flex-auto'>Something went wrong! While we are on it you may join us on discord - <a class='bg-dmenu' href='https://discord.gg/AfBAUMxT5G'>Count me in!</a></span></div>"))
+        .then(data => { joinSpiner.add('hidden') })
 
 
-        });
-      });
+
 
 
       //joinSpiner.add('hidden');
@@ -1814,6 +1812,22 @@
 
 
     });
+  </script>
+  <script>
+    document.onreadystatechange = (function () {
+
+      if (document.readyState === 'complete') {
+        /*code here*/
+        grecaptcha.ready(function () {
+          grecaptcha.execute('6LdBZawgAAAAAGZZ281HuVpjTg5jbeVZSDK6ki7J', { action: 'submit' }).then(function (token) {
+            // Add your logic to submit to your backend server here.
+
+            console.log('TOKEN', token);
+            document.getElementById('tokenF').value = token;
+          });
+        });
+      }
+    }) 
   </script>
 
   <!-- <script type="text/javascript" src="./assets/scripts/connect.js"> </script> -->
