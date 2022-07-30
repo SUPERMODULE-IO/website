@@ -140,7 +140,7 @@
       </div>
       <div class="flex items-center">
 
-        <button id="colorswitch" name="colorswitch"
+        <button id="colorswitch" name="colorswitch" aria-label="Change Theme"
           class="inline-flex items-center bg-gray-100 border-0 py-1 px-1 focus:outline-none hover:bg-gray-800 dark:hover:bg-gray-200  rounded-full text-base  md:mt-0 dark:bg-gray-800 dark:text-gray-100 ">
           <svg id="icon-contrast" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" class="h-6 w-6" viewBox="0 0 20 20"
@@ -236,7 +236,7 @@
         <div id="joinSection" class="flex w-full  items-end">
           <form class="flex w-full  items-end" name="submit2g" id="submit2g">
             <div class="relative  lg:w-1/2  w-full">
-              <label for="hero-field" class="leading-7 text-sm text-gray-600">Join the waitlist</label>
+              <label for="email" class="leading-7 text-sm text-gray-600">Join the waitlist</label>
               <input type="email" name="email" id="email"
                 class="w-full bg-opacity-50 rounded-l dark:bg-dtheme focus:ring-red-200 focus:bg-transparent border-2 border-gray-300 focus:border-primary1 text-base outline-none dark:text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 placeholder="your.email@xyz.com" required>
@@ -244,6 +244,7 @@
               <input type="hidden" name="location" id="location" value="loc">
               <input type="hidden" name="tokenF" id="tokenF">
             </div>
+            
             <button type="submit"
               class="inline-flex text-white bg-primary1 border-1 border-primary1 dark:border-primary1 py-2 px-6 focus:outline-none hover:bg-primary1 rounded-r text-lg ">
               <svg id="joinSpinner" class="hidden animate-spin h-5 w-5 mr-3 border-color-white" fill="none"
