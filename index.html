@@ -88,54 +88,54 @@
             ">
           <li>
             <div class="flex flex-col items-center text-center justify-center md:pr-8">
-              <a class=" hover:text-primary2 focus:text-primary1" href="#">
+              <a class=" hover:text-primary2 focus:text-primary1" href="#home-section" id="home">
                 <h2 class="font-medium title-font mt-4 text-lg">Home</h2>
 
               </a>
-              <div class="w-12 h-1 bg-primary1 rounded mb-4"></div>
+              <div id="menu1-underline" class="w-full h-1 bg-primary1 rounded mb-4"></div>
             </div>
           </li>
           <li>
             <div class="flex flex-col items-center text-center justify-center md:pr-8 ">
-              <a class="hover:text-primary2 focus:text-primary1" href="#how-it-works">
+              <a class="hover:text-primary2 focus:text-primary1" href="#how-it-works-section" id="how-it-works">
                 <h2 class="font-medium title-font mt-4 text-lg">How it works</h2>
               </a>
-              <div class="w-12 h-1 bg-primary1 rounded mb-4 opacity-0"></div>
+              <div id="menu2-underline" class="w-full h-1 bg-primary1 rounded mb-4 hidden "></div>
             </div>
 
           </li>
           <li>
             <div class="flex flex-col items-center text-center justify-center md:pr-8">
-              <a class="hover:text-primary2 focus:text-primary1" href="#services">
+              <a class="hover:text-primary2 focus:text-primary1" href="#services-section" id="services">
                 <h2 class="font-medium title-font mt-4 text-lg">Services</h2>
               </a>
-              <div class="w-12 h-1 bg-primary1 rounded mb-4 opacity-0"></div>
+              <div id="menu3-underline" class="w-full h-1 bg-primary1 rounded mb-4 hidden"></div>
             </div>
 
           </li>
           <li>
             <div class="flex flex-col items-center text-center justify-center md:pr-8">
-              <a class="hover:text-primary2 focus:text-primary1" href="#team">
+              <a class="hover:text-primary2 focus:text-primary1" href="#team-section" id="team">
                 <h2 class="font-medium title-font mt-4 text-lg">Team</h2>
               </a>
-              <div class="w-12 h-1 bg-primary1 rounded mb-4 opacity-0"></div>
+              <div id="menu4-underline" class="w-full h-1 bg-primary1 rounded mb-4 hidden"></div>
             </div>
 
           </li>
           <li>
             <div class="flex flex-col items-center text-center justify-center md:pr-8">
-              <a class="hover:text-primary2 focus:text-primary1" href="#roadmap">
+              <a class="hover:text-primary2 focus:text-primary1" href="#roadmap-section" id="roadmap">
                 <h2 class="font-medium title-font mt-4 text-lg">Roadmap</h2>
               </a>
-              <div class="w-12 h-1 bg-primary1 rounded mb-4 opacity-0"></div>
+              <div id="menu5-underline" class="w-full h-1 bg-primary1 rounded mb-4 hidden"></div>
             </div>
           </li>
           <li>
             <div class="flex flex-col items-center text-center justify-center md:pr-8">
-              <a class="hover:text-primary2 focus:text-primary1" href="#partners">
+              <a class="hover:text-primary2 focus:text-primary1" href="#partners-section" id="partners">
                 <h2 class="font-medium title-font mt-4 text-lg">Partners</h2>
               </a>
-              <div class="w-12 h-1 bg-primary1 rounded mb-4 opacity-0"></div>
+              <div id="menu6-underline" class="w-full h-1 bg-primary1 rounded mb-4 hidden"></div>
             </div>
           </li>
           <li>
@@ -188,7 +188,7 @@
   radial-gradient(at 50% 0%, hsla(350,96%,43%,1) 0, transparent 50%), 
   radial-gradient(at 100% 0%, hsla(0,0%,9%,1) 0, transparent 50%);-->
 
-  <section class="body-font">
+  <section class="body-font" id="home-section">
     <div class="container mx-auto flex px-5 py-24 lg:flex-row flex-col items-center">
       <div
         class="lg:flex-grow lg:w-1/2 lg:pr-24 md:pr-16 flex flex-col lg:items-start lg:text-left mb-16 lg:mb-0 items-center text-center">
@@ -908,7 +908,7 @@
   </section>
 -->
   <!-- How it works  START-->
-  <section id="how-it-works" class="body-font">
+  <section id="how-it-works-section" class="body-font">
     <div class="container px-5 pt-24 mx-auto">
 
       <div class="flex flex-col text-center w-full mb-20">
@@ -969,7 +969,7 @@
 
   <!--Services START-->
 
-  <section id="services" class=" body-font">
+  <section id="services-section" class=" body-font">
     <div class="container px-5 pb-24 mx-auto">
 
       <div class="flex flex-col">
@@ -1094,7 +1094,7 @@
   <!-- Smart Module END -->
 
   <!-- Team  Start-->
-  <section id="team" class=" body-font">
+  <section id="team-section" class=" body-font">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col">
         <div class="h-1 bg-gray-200 dark:bg-dborder rounded overflow-hidden">
@@ -1208,7 +1208,7 @@
   <!-- Team END -->
 
   <!-- Roadmap START-->
-  <section id="roadmap" class=" body-font">
+  <section id="roadmap-section" class=" body-font">
     <div class="container px-5 py-24 mx-auto ">
       <div class="flex flex-col">
         <div class="h-1 bg-gray-200 dark:bg-dborder rounded overflow-hidden">
@@ -1446,7 +1446,7 @@
 
   <!-- Partners START-->
 
-  <section id="partners" class="text-gray-600 body-font">
+  <section id="partners-section" class="text-gray-600 body-font">
 
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col">
@@ -1696,6 +1696,78 @@
     button.addEventListener('click', () => {
       menu.classList.toggle('hidden');
     });
+
+
+    const menu0 = document.querySelector('#home');
+    menu0.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      hideUnderline('#menu1-underline');
+      var anchor = document.querySelector('#hoome-section');
+      anchor.scrollIntoView();
+
+      
+    });
+
+
+    const menu1 = document.querySelector('#how-it-works');
+    menu1.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      hideUnderline('#menu2-underline');
+      var anchor = document.querySelector('#how-it-works-section');
+      anchor.scrollIntoView();
+
+      
+    });
+
+    const menu2 = document.querySelector('#services');
+    menu2.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      hideUnderline('#menu3-underline');
+      var anchor = document.querySelector('#services-section');
+      anchor.scrollIntoView();
+
+      
+    });
+
+    const menu3 = document.querySelector('#team');
+    menu3.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      hideUnderline('#menu4-underline');
+      var anchor = document.querySelector('#team-section');
+      anchor.scrollIntoView();
+
+      
+    });
+
+
+    const menu4 = document.querySelector('#roadmap');
+    menu4.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      hideUnderline('#menu5-underline');
+      var anchor = document.querySelector('#roadmap-section');
+      anchor.scrollIntoView();
+
+      
+    });
+
+    const menu5 = document.querySelector('#partners');
+    menu5.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      hideUnderline('#menu6-underline');
+      var anchor = document.querySelector('#partners-section');
+      anchor.scrollIntoView();
+
+      
+    });
+
+    function hideUnderline(selected_menu) {
+      for(var i=1; i<=6; i++) {
+        var menu_underline = document.querySelector('#menu'+ i+'-underline');
+        menu_underline.classList.add('hidden');
+      }
+      var menu_underline = document.querySelector(selected_menu);
+        menu_underline.classList.remove('hidden');
+    }
     /*
         const step1 = document.querySelector("#step1");
         const step2 = document.querySelector("#step2");
