@@ -72,8 +72,7 @@
         </a>
       </div>
 
-       
-    
+   
 
       <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer lg:hidden block"
         fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -154,7 +153,7 @@
                 </svg>
 
               </button>
-             
+
             </div>
           </li>
         </ul>
@@ -368,7 +367,7 @@
           <div class="flex flex-col items-center text-center justify-center">
             <h2 class="font-medium title-font mt-4 text-lg">Publish </h2>
             <div class="w-12 h-1 bg-primary1 rounded mt-2 mb-4"></div>
-            <p class="">Publish your digital asset wwith utilities to any Blockchain.</p>
+            <p class="">Publish your digital asset with utilities to any Blockchain.</p>
           </div>
         </div>
 
@@ -888,7 +887,7 @@
             <div class="border-2 border-gray-200 px-4 py-6 rounded-lg ">
 
 
-              <img alt="gallery" class="w-80 object-cover h-full object-center block"
+              <img alt="gallery" class="w-full object-cover h-full object-center block"
                 src="./assets/images/logos/AEICLogo.svg">
 
 
@@ -904,7 +903,7 @@
             <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
               <img alt="gallery" class="w-full object-cover h-full object-center hidden dark:block "
                 src="./assets/images/logos/bmlogo_white.svg">
-              <img alt="gallery" class="w-80 object-cover h-12 object-center block dark:hidden "
+              <img alt="gallery" class="w-full object-cover h-full object-center block dark:hidden "
                 src="./assets/images/logos/bmlogo_black.svg">
             </div>
           </div>
@@ -921,7 +920,7 @@
            <div class="swiper-scrollbar"></div>
     -->
 
-    
+
   </section>
 
 
@@ -1091,6 +1090,7 @@
     }
 
     const toggleDarkMode = function () {
+      menu.classList.add('hidden');
       if (localStorage.theme == 'dark') {
         document.documentElement.classList.remove('dark');
         localStorage.theme = 'light';
@@ -1121,7 +1121,7 @@
       var anchor = document.querySelector('#hoome-section');
       anchor.scrollIntoView();
 
-      
+
     });
 
 
@@ -1132,7 +1132,7 @@
       var anchor = document.querySelector('#how-it-works-section');
       anchor.scrollIntoView();
 
-      
+
     });
 
     const menu2 = document.querySelector('#services');
@@ -1142,7 +1142,7 @@
       var anchor = document.querySelector('#services-section');
       anchor.scrollIntoView();
 
-      
+
     });
 
     const menu3 = document.querySelector('#team');
@@ -1152,7 +1152,7 @@
       var anchor = document.querySelector('#team-section');
       anchor.scrollIntoView();
 
-      
+
     });
 
 
@@ -1163,7 +1163,7 @@
       var anchor = document.querySelector('#roadmap-section');
       anchor.scrollIntoView();
 
-      
+
     });
 
     const menu5 = document.querySelector('#partners');
@@ -1173,53 +1173,53 @@
       var anchor = document.querySelector('#partners-section');
       anchor.scrollIntoView();
 
-      
+
     });
 
     function hideUnderline(selected_menu) {
-      for(var i=1; i<=6; i++) {
-        var menu_underline = document.querySelector('#menu'+ i+'-underline');
+      for (var i = 1; i <= 6; i++) {
+        var menu_underline = document.querySelector('#menu' + i + '-underline');
         menu_underline.classList.add('hidden');
       }
       var menu_underline = document.querySelector(selected_menu);
-        menu_underline.classList.remove('hidden');
+      menu_underline.classList.remove('hidden');
     }
 
 
     //Animation Start
 
 
-// Callback for IntersectionObserver
-const callback = function(entries) {
-  entries.forEach(entry => {
+    // Callback for IntersectionObserver
+    const callback = function (entries) {
+      entries.forEach(entry => {
 
-    // Is the element in the viewport?
-    if (entry.isIntersecting) {
+        // Is the element in the viewport?
+        if (entry.isIntersecting) {
 
-      // Add the fadeIn class:
-      entry.target.classList.add("motion-safe:animate-fadeIn");
-    } else {
+          // Add the fadeIn class:
+          entry.target.classList.add("motion-safe:animate-fadeIn");
+        } else {
 
-      // Otherwise remove the fadein class
-      entry.target.classList.remove("motion-safe:animate-fadeIn");
-    }
-  });
-};
+          // Otherwise remove the fadein class
+          entry.target.classList.remove("motion-safe:animate-fadeIn");
+        }
+      });
+    };
 
     // Get all the elements you want to show on scroll
-const targets = document.querySelectorAll(".js-show-on-scroll");
+    const targets = document.querySelectorAll(".js-show-on-scroll");
 
-// Set up a new observer
-const observer = new IntersectionObserver(callback);
+    // Set up a new observer
+    const observer = new IntersectionObserver(callback);
 
-// Loop through each of the target
-targets.forEach(function(target) {
-  // Hide the element
-  target.classList.add("opacity-0");
+    // Loop through each of the target
+    targets.forEach(function (target) {
+      // Hide the element
+      target.classList.add("opacity-0");
 
-  // Add the element to the watcher
-  observer.observe(target);
-});
+      // Add the element to the watcher
+      observer.observe(target);
+    });
 
 
     /*
@@ -1346,6 +1346,10 @@ targets.forEach(function(target) {
       },
       loop: true,
       breakpoints: {
+        0: {
+          slidesPerView: 1,
+
+        },
         400: {
           slidesPerView: 1,
 
