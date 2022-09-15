@@ -31,13 +31,14 @@
     content="Your Marketplace for Blockchain, Metaverse, Web3, NFT, Crypto Services. Start building your blockchain utilities 🚀" />
   <meta property="og:image" content="https://supermodule.io/assets/images/logos/supermodule_logo_black.png" />
   <meta property="og:image" content="https://supermodule.io/assets/images/logos/supermodule_logo_white.png" />
- 
+
   <link href="./assets/styles/supermodule.css" rel="stylesheet">
   <script src="https://www.google.com/recaptcha/api.js?render=6LdBZawgAAAAAGZZ281HuVpjTg5jbeVZSDK6ki7J"></script>
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LNS1SP21D3"></script>
   <script>
@@ -1304,29 +1305,44 @@
     */
     //  const scriptURL = 'https://script.google.com/macros/s/AKfycbwLv3eC55X9HQBct_-JVhQfy1DYcw9nCeB2ztKIAkfk2y-y013co5wHwAn56c0sFf173w/exec'
 
+    //const axios = require('axios').default;
 
     // Test URL
-    const scriptURL = 'https://api.rarify.tech/data/contracts?include=insights&sort=insights.unique_buyers';
+    
     const form = document.forms['submit2g'];
 
     form.addEventListener('submit', e => {
       e.preventDefault();
-      let headers = new Headers();
-      headers.append('Authorization', 'Bearer 06ecb23f-4e5c-423e-9af5-0ccdb873b08b');
-      let param = {
-        include: 'insights',
-        sort:'insights.-unique_buyers'
-      };
-      let joinSpiner = document.getElementById('joinSpinner').classList;
-      let joinSection = document.getElementById('joinSection').classList;
-      joinSpiner.remove('hidden');
-     
 
-
-      fetch(scriptURL, { method: 'GET', headers: headers })
       
-        .then(response => response.json())
-        .then(json => console.log(json));
+
+      const config = {
+        baseURL: 'https://api.rarify.tech',
+        headers: {
+          'Authorization': `Bearer 06ecb23f-4e5c-423e-9af5-0ccdb873b08b`,
+        }
+      }
+
+      async function getData() {
+        // Get the collections with the largest number of unique buyers
+        const { data } = await axios.get('/data/contracts?include=insights&sort=-insights.unique_buyers', config);
+        const { data: contracts, included } = data;
+
+        const collectionsWithTradingVolume = contracts.map((oneContract) => {
+          // Find the insights object for each collection
+          const matchingInsights = included.find((oneIncluded) =>
+            oneIncluded.id === oneContract.relationships.insights.data.id
+          );
+          // Get the unique buyers from the insights
+          const uniqueBuyers = matchingInsights.attributes.unique_buyers;
+          return `Collection ID: ${oneContract.id} has ${uniqueBuyers} unique buyers.`;
+        });
+
+        console.log(collectionsWithTradingVolume);
+      }
+
+      getData()
+        .catch(console.error);
 
       //joinSpiner.add('hidden');
     })
