@@ -1,0 +1,741 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./assets/images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+
+  <link href="./assets/styles/supermodule.css" rel="stylesheet">
+
+
+
+
+</head>
+<!-- class="dark:bg-gray-800 dark:text-gray-200" -->
+
+<body
+  class=" bg-ltheme dark:bg-dtheme  xs:text-[20px] xs:leading-[27px] text-[16px] leading-[23px] font-normal dark:text-dtext text-ltext transition-colors duration-200 ease-in-out">
+
+  <header>
+    <nav class="
+         flex flex-wrap
+         items-center
+         justify-between
+         w-full
+         py-4
+         lg:py-0
+         px-4
+         fixed
+         top-0
+         z-10
+         shadow-md
+        
+         bg-lnav       
+         dark:bg-dnav
+         dark:border-b
+         dark:border-dborder
+         
+       ">
+      <div>
+        <a class="font-smf text-3xl  font-extrabold dark:text-white text-black" href="#">
+          <span class="text-primary1">S</span>upermodule
+        </a>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer lg:hidden block"
+        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+
+      <div class="hidden w-full lg:flex lg:place-items-start lg:w-auto" id="menu">
+        <ul class="
+             pt-4
+             text-base 
+             font-medium
+             lg:flex
+             lg:justify-between 
+             lg:pt-0
+            ">
+          <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8">
+              <a class=" hover:text-primary2 focus:text-primary1" href="https://www.supermodule.io/index.html#home">
+                <h2 class="font-medium title-font mt-4 text-lg">Home</h2>
+
+              </a>
+              <div class="w-12 h-1 bg-primary1 rounded mb-4"></div>
+            </div>
+          </li>
+          <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8 ">
+              <a class="hover:text-primary2 focus:text-primary1"
+                href="https://www.supermodule.io/index.html#how-it-works">
+                <h2 class="font-medium title-font mt-4 text-lg">How it works</h2>
+              </a>
+              <div class="w-12 h-1 bg-primary1 rounded mb-4 opacity-0"></div>
+            </div>
+
+          </li>
+          <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8">
+              <a class="hover:text-primary2 focus:text-primary1" href="https://www.supermodule.io/index.html#services">
+                <h2 class="font-medium title-font mt-4 text-lg">Services</h2>
+              </a>
+              <div class="w-12 h-1 bg-primary1 rounded mb-4 opacity-0"></div>
+            </div>
+
+          </li>
+          <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8">
+              <a class="hover:text-primary2 focus:text-primary1" href="https://www.supermodule.io/index.html#team">
+                <h2 class="font-medium title-font mt-4 text-lg">Team</h2>
+              </a>
+              <div class="w-12 h-1 bg-primary1 rounded mb-4 opacity-0"></div>
+            </div>
+
+          </li>
+          <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8">
+              <a class="hover:text-primary2 focus:text-primary1" href="https://www.supermodule.io/index.html#roadmap">
+                <h2 class="font-medium title-font mt-4 text-lg">Roadmap</h2>
+              </a>
+              <div class="w-12 h-1 bg-primary1 rounded mb-4 opacity-0"></div>
+            </div>
+          </li>
+          <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8">
+              <a class="hover:text-primary2 focus:text-primary1" href="https://www.supermodule.io/index.html#partners">
+                <h2 class="font-medium title-font mt-4 text-lg">Partners</h2>
+              </a>
+              <div class="w-12 h-1 bg-primary1 rounded mb-4 opacity-0"></div>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+      <div class="flex items-center">
+
+        <button id="colorswitch"
+          class="inline-flex items-center bg-gray-100 border-0 py-1 px-1 focus:outline-none hover:bg-gray-800 dark:hover:bg-gray-200  rounded-full text-base  md:mt-0 dark:bg-gray-800 dark:text-gray-100 ">
+          <svg id="icon-contrast" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" class="h-6 w-6" viewBox="0 0 20 20"
+            enable-background="new 0 0 20 20" xml:space="preserve">
+            <path d="M10,20C4.5,20,0,15.5,0,10S4.5,0,10,0s10,4.5,10,10S15.5,20,10,20z M10,2c-4.4,0-8,3.6-8,8s3.6,8,8,8s8-3.6,8-8S14.4,2,10,2
+                          z" />
+            <path fill="#ea3970" class="contrast" d="M10,4v12c3.3,0,6-2.7,6-6S13.3,4,10,4z" />
+          </svg>
+
+        </button>
+        <button id="connectButton"
+          class="inline-flex items-center bg-gray-100 border-0 py-1 px-1 focus:outline-none hover:bg-gray-800 dark:hover:bg-gray-200  rounded text-base  md:mt-0 dark:bg-gray-800 dark:hover:text-red-600 hover:text-red-600">
+          <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-sky-400 opacity-75"></span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+          </svg>
+
+
+
+        </button>
+      </div>
+
+    </nav>
+
+
+
+  </header>
+
+
+  <!-- Alert section start -->
+  <!--
+  <div id="mainAlert" class="text-center py-4 lg:px-4  my-14">
+    <div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+      <span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">New</span>
+      <span class="font-semibold mr-2 text-left flex-auto"></span>
+      <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+     
+        <svg class="fill-current h-6 w-6 text-red-500" role="button" onclick="closeAlert('mainAlert')" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
+     
+    </div>
+  </div>
+  -->
+  <!-- Alert section end -->
+
+  <!--Hero Section start-->
+
+  <!--background-image: 
+  radial-gradient(at 0% 0%, hsla(0,0%,9%,1) 0, transparent 50%), 
+  radial-gradient(at 50% 0%, hsla(350,96%,43%,1) 0, transparent 50%), 
+  radial-gradient(at 100% 0%, hsla(0,0%,9%,1) 0, transparent 50%);-->
+
+  <div class="flex flex-col">
+    <div class="h-1 bg-gray-200 dark:bg-dborder rounded overflow-hidden ">
+    </div>
+    <div class="flex flex-wrap sm:flex-row flex-col py-6 ">
+      <h1 class="sm:w-2/5 font-medium title-font text-2xl"><span class="text-primary1"></span></h1>
+    </div>
+  </div>
+
+  <!-- art-details area start  -->
+  <section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+      <div class=" mx-auto flex flex-wrap">
+        <a class="xl:w-1/2 w-full">
+          <img alt="ecommerce" class=" object-cover object-center rounded  hover:scale-125 transition-all duration-500"
+            src="./assets/images/BloomingDreams.png">
+        </a>
+        <div class="xl:w-1/2 w-full xl:pl-10 mt-6 xl:mt-0">
+          <p class="text-base font-bold text-gray-500  pb-5">Created by</p>
+
+
+          <div class="flex mb-4 border-b-[1px] border-gray-700 pb-6">
+            <span class="flex items-center">
+              <div class="flex">
+                <div class="relative">
+                  <img class="object-cover w-16 h-16 rounded-full"
+                    src="https://static.neris-assets.com/images/personality-types/avatars/faces/infj-advocate-s3-v3-male.svg?v=1"
+                    alt="Avatar" />
+                  <span class="absolute -right-1 bottom-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white fill-blue-500 stroke-white"
+                      viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+
+
+
+              <span class="dark:text-white text-black ml-3 font-bold">Razi Rozario
+                <p class="font-normal text-base text-blue-500"><a href="">@razirolanso</a></p>
+              </span>
+            </span>
+
+
+
+          </div>
+
+
+          <div class="flex mb-4 pt-3">
+            <span class="flex items-center">
+
+              <h1 class="dark:text-gray-300 text-gray-700 text-3xl font-bold  text-[48px] mb-1">Blooming Dreams</h1>
+            </span>
+
+          </div>
+
+          <p class="leading-relaxed border-b-[1px] border-gray-700 pb-6">Rozario created an impulsive painting that
+            captures millions of hearts just like football lovers can let off their worries on the pitch. Since the
+            world is engulfed in the love of football, Rozario has succeeded in bringing our favorite game to life in a
+            perfect fusion of colors. There was a time when sports were only enjoyed by men, but the game has changed in
+            today's world. "Blooming Dream", composed of blue, the color of openness, and red, the color of love, evokes
+            joy and delight in everyone. This painting illustrates how football has gathered such a devoted fan base
+            that has woven similar emotions in galleries from villages to cities. The girl in the rural shade is the
+            loving embrace of Arab culture, the arena of the world cup. Rozario has his trademark and techniques in each
+            of his paintings. The picture is painted with acrylic colors and a knife on canvas. His paintings stand out
+            because of his unique mixing method and unique strokes. The blending of different colors and tones in one
+            stroke gives the image, a pleasing spectator.
+          </p>
+          <div class="grid grid-cols-3 divide-x divide-gray-700 pt-8 pb-10 text-black dark:text-white">
+            <span class="text-base font-medium">Price
+              <p class="text-3xl  font-bold "><a href="">100000 USDC</a></p>
+              <p class="font-bold text-base "><a href="">100,000.00 USD</a></p>
+            </span>
+            <span class="text-base font-medium pl-6">Stock
+              <p class="text-3xl  font-bold "><a href="">1/1</a></p>
+              <p class="font-bold text-base "><a href="">1st Edition</a></p>
+            </span>
+            <span class="text-base font-medium  pl-6">Auction
+              <p class="text-3xl font-bold "><a href="">23: 30: 00</a></p>
+              <p class="font-bold text-base "><a href="">Hurry up!</a></p>
+            </span>
+          </div>
+
+
+          <div class="flex items-center pb-6">
+
+            <button
+              class="inline-flex text-white bg-primary1 border-0 py-2 px-12 focus:outline-none hover:bg-red-600 rounded font-bold">Buy</button>
+            <button
+              class="ml-4  text-white bg-primary1 border-0 py-2 px-12 focus:outline-none hover:bg-red-600 rounded disabled:bg-gray-700 font-bold"
+              disabled>Bid</button>
+            <button
+              class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z">
+                </path>
+              </svg>
+            </button>
+            <span class="flex pl-3 py-2 space-x-2 ml-auto">
+     
+              <a class="text-gray-500 hover:text-primary1" onclick="shareToFacebook()">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="text-gray-500 hover:text-primary1" onclick="shareToTwitter()">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                  </path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500 hover:text-primary1" onclick="shareToLinkedin()">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none"
+                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+
+          <div class="mx-auto flex flex-wrap pt-5" id="tabs-id">
+            <div class="w-full mb-6 ">
+              <div class=" flex mb-4 rounded-md dark:bg-gray-700 bg-white   sm:text-base text-sm dark:text-white">
+                <ul class="flex  flex-wrap list-none ">
+                  <li class=" flex-grow ">
+                    <a class=" block active py-2  sm:px-16 px-2 text-primary3 font-bold hover:text-primary2 "
+                      onclick="changeAtiveTab(event,'tab1')">Offers</a>
+                  </li>
+                  <li class=" flex-grow ">
+                    <a class=" block  py-2  sm:px-16 px-2 hover:text-primary2  "
+                      onclick="changeAtiveTab(event,'tab2')">Details</a>
+                  </li>
+                  <li class=" flex-grow">
+                    <a class="n block  py-2  sm:px-14 px-2 hover:text-primary2 "
+                      onclick="changeAtiveTab(event,'tab3')">Properties</a>
+                  </li>
+
+                </ul>
+              </div>
+
+              <div class="tab-content tab-space">
+                <div id="tab1" class="block">
+                  <div class="flex dark:bg-gray-700 bg-white rounded-md dark:bg-opacity-50 mb-1 py-3 text-gray-400">
+                    <span class="px-5">
+
+
+                      <p class="flex font-medium text-base text-black dark:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                          stroke="currentColor" class="h-6 w-6 m-0 stroke-primary1">
+                          <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg> Auction will begin at 15.11.2022 00.00.00 <br>
+                      </p>
+                      <p class="flex font-medium text-base "> Note: Offers will be visible once the auction goes live.
+
+                    </span>
+                  </div>
+
+
+
+                </div>
+                <div id="tab2" class="hidden">
+                  <div class="flex dark:bg-gray-700 bg-white rounded-md dark:bg-opacity-50 mb-1 py-3 text-gray-400 ">
+
+                    <span class="px-5 sm:text-base text-xs">
+                      <pre class="">Contract               :</pre>
+                      <pre class="">Token ID               :</pre>
+                      <pre class="">Token Standard         :</pre>
+                      <pre class="">Blockchain             :</pre>
+                      <pre class="">Creator Fees           :</pre>
+                    </span>
+                    <span class="ml-auto  font-bold sm:text-base text-xs pr-5 text-white" dir="rtl">
+                      <p class=" text-blue-500"><a href="https://polygonscan.com/address/">0x2953...4963</a>
+                      </p>
+                      <p class="">8175351583018391...</p>
+                      <p class="">ERC-1155</p>
+                      <p class="">Polygon</p>
+                      <p class="">2%</p>
+                    </span>
+                  </div>
+
+
+
+                </div>
+                <div id="tab3" class="hidden">
+                  <div class="flex dark:bg-gray-700 bg-white rounded-md dark:bg-opacity-50 mb-1 py-3 text-gray-400">
+                    <span class="px-5">
+
+                      <p class="flex font-medium text-base"><svg xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6 m-0 stroke-blue-500" fill="none" viewBox="0 0 24 24" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg> 46x32 Inches, Oil painting on Canvas.
+                      </p>
+                      <p class="flex font-medium text-base"><svg xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6 m-0 stroke-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                          stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg> Orginal painting will be shipped to the first buyer Worldwide.</p>
+                      <p class="flex font-medium text-base"><svg xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6 m-0 stroke-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                          stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg> Synthetic Italian frame.</p>
+                      <p class="flex font-medium text-base"><svg xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6 m-0 stroke-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                          stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg> Full copyrights sale. </p>
+                      <p class="flex font-medium text-base"><svg xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6 m-0 stroke-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                          stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg> For commercial and person uses.<br></p>
+                      <p class="flex font-medium text-base text-black dark:text-white"> Note: More artworks available of this
+                        creator <a href="#" class="text-blue-500 px-2"> Browse All</a></p>
+
+                    </span>
+                  </div>
+
+
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Items Start -->
+  <section class="text-gray-500 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1
+          class="dark:text-white text-black font-bold sm:text-[48px] sm:leading-[52px] text-[30px] leading-[36px] text-center">
+          About Razi Rozario
+        </h1>
+
+        <p class="w-full mx-auto leading-relaxed ">Razi Rozario
+          Experience is a virtue. Looking at the works of Razi Rozario puts you inside a moment to experience the
+          laughter, the sadness, the confusion, the heartbreak, the fear, and the bliss shared in a single expression.
+          For the past twenty-five years, He has been a full-time artist. He experiments with different flavors of color
+          that can speak all languages. He was born on 10th April 1973, two days after the death of the famous artist
+          Pablo Picasso, which is considered a destiny for his success as a profound artist. He says, ‘I work on my
+          painting with immense pleasure, carefully noting all its elements. Be it a rose or a gust of wind, then I
+          realize that I haven’t seen a rose, I don’t know how many petals are turned in and out. I keenly observe
+          nature, and finally, I become the rose that I intended to paint and complete the picture. But a painting is
+          complete only when the spectator receives the feel I experienced while drawing’. He is someone, who draws from
+          his experiences, history, and a huge pile of memory behind each painting, which drags people’s attention
+          toward his paintings. His wish was to uplift art to the masses or the common people. His paintings range from
+          young girls, grandmothers, Jesus Christ, and Kaaba at Mecca, to sunflowers and jackfruit. He is a freelance
+          artist, who pursued his master’s degree in Malayalam literature. He is the recipient of the Kala Prathibha
+          award from Mahatma Gandhi University in the year 2003. He has also published a book named ‘ The Ploughed-up
+          sky’ which is a painting poetry series and an autobiography, ‘Njaan Vashikkarana’ (Am Stubborn).
+          He has conducted around 105 solo exhibitions nationwide and participated in the state exhibition conducted by
+          Kerala Lalithakala academy. He has exhibited his works on college campuses, tourism fairs, shopping festival
+          book fairs, Lulu mall, etc. His life took a U-turn when he met superstar Shri Mohanlal, he bought a painting
+          ‘Creators of shadow’, which got selected for the state exhibition. His vision is that anything in the whole
+          world, be it literature, music, or painting, everything belongs to every human being. Painting and other arts
+          become unpopular they are restricted and confined to very few. His wish is to become a game-changer and
+          provide accessibility to common people as well. He says that ‘Art is his life. There is nothing else he want
+          to do.’
+        </p>
+      </div>
+
+    </div>
+  </section>
+  <!-- Related Items End -->
+
+  <!-- Footer Start -->
+  <footer class="bg-lfoot dark:bg-dfoot body-font border-t border-dborder shadow-inner">
+    <div
+      class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center ">
+
+
+          <span class=" text-3xl font-smf h-10 dark:text-gray-300">Supermodule</span>
+        </a>
+        <p class="mt-2 text-sm text-gray-500">The world’s first digital marketplace that combines art and technology to
+          create unique and exclusive assets that have real value. </p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center text-sm">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium  tracking-widest text-base mb-3">Product</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-primary4 hover:text-primary1">Marketplace</a>
+            </li>
+            <li>
+              <a class="text-primary4 hover:text-primary1">Smart Modules</a>
+            </li>
+            <li>
+              <a class="text-primary4 hover:text-primary1"></a>
+            </li>
+            <li>
+              <a class="text-primary4 hover:text-primary1"></a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium  tracking-widest text-base mb-3">Company</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-primary4 hover:text-primary1">About</a>
+            </li>
+            <li>
+              <a class="text-primary4 hover:text-primary1">Branding</a>
+            </li>
+            <li>
+              <a class="text-primary4 hover:text-primary1">Partnership </a>
+            </li>
+            <li>
+              <a class="text-primary4 hover:text-primary1">Investors</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium  tracking-widest text-base mb-3">Resources</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-primary4 hover:text-primary1">Support</a>
+            </li>
+            <li>
+              <a class="text-primary4 hover:text-primary1">Feedback</a>
+            </li>
+            <li>
+              <a class="text-primary4 hover:text-primary1">Branding</a>
+            </li>
+            <li>
+              <a class="text-primary4 hover:text-primary1">Fourth Link</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium  tracking-widest text-base mb-3">Policies</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-primary4 hover:text-primary1">Terms</a>
+            </li>
+            <li>
+              <a class="text-primary4 hover:text-primary1">Privacy</a>
+            </li>
+            <li>
+              <a class="text-primary4 hover:text-primary1">Acknowledgements</a>
+            </li>
+            <li>
+              <a class="text-primary4 hover:text-primary1">Licenses</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white dark:bg-black">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2022 <span class="font-smf"><span
+              class="text-primary1">S</span>upermodule</span> —
+          <a href="https://twitter.com/vyvakz" rel="noopener noreferrer" class="text-gray-600 ml-1"
+            target="_blank">@vyvakz</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-gray-500 hover:text-primary1" href="https://fb.me/supermoduleio">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500 hover:text-primary1" href="https://twitter.com/supermoduleio">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500 hover:text-primary1" href="https://instagram.com/supermoduleio">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500 hover:text-primary1" href="https://linkedin.com/company/supermodule">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500 hover:text-primary1" href="https://discord.gg/KD3p4Vrs">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 16 15">
+              <path
+                d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z" />
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <script>
+
+    const colorswitch = document.querySelector("#colorswitch");
+
+    var darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.classList.add('dark');
+      localStorage.theme = 'dark';
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.theme = 'light';
+    }
+
+    const toggleDarkMode = function () {
+      if (localStorage.theme == 'dark') {
+        document.documentElement.classList.remove('dark');
+        localStorage.theme = 'light';
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.theme = 'dark';
+      }
+    }
+    colorswitch.addEventListener("click", toggleDarkMode);
+
+    function closeAlert(id) {
+      let element = document.getElementById(id);
+      element.remove();
+    }
+    const button = document.querySelector('#menu-button');
+    const menu = document.querySelector('#menu');
+
+
+    button.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+    /*
+        const step1 = document.querySelector("#step1");
+        const step2 = document.querySelector("#step2");
+        const step3 = document.querySelector("#step3");
+        
+        step1.addEventListener('click', () => {
+          let classList = document.getElementById('step1desc').classList
+          let classList2 = document.getElementById('step2desc').classList
+          let classList3 = document.getElementById('step3desc').classList
+          classList.remove('hidden')
+          classList2.add('hidden')
+          classList3.add('hidden')
+        });
+    
+        step2.addEventListener('click', () => {
+          let classList = document.getElementById('step1desc').classList
+          let classList2 = document.getElementById('step2desc').classList
+          let classList3 = document.getElementById('step3desc').classList
+          classList.add('hidden')
+          classList2.remove('hidden')
+          classList3.add('hidden')
+        });
+    
+        step3.addEventListener('click', () => {
+          let classList = document.getElementById('step1desc').classList
+          let classList2 = document.getElementById('step2desc').classList
+          let classList3 = document.getElementById('step3desc').classList
+          classList.add('hidden')
+          classList2.add('hidden')
+          classList3.remove('hidden')
+        });
+    */
+
+
+
+  </script>
+
+  <script type="text/javascript">
+    function changeAtiveTab(event, tabID) {
+      let element = event.target;
+      while (element.nodeName !== "A") {
+        element = element.parentNode;
+      }
+      ulElement = element.parentNode.parentNode;
+      aElements = ulElement.querySelectorAll("li > a");
+      tabContents = document.getElementById("tabs-id").querySelectorAll(".tab-content > div");
+      for (let i = 0; i < aElements.length; i++) {
+        aElements[i].classList.remove("text-primary3");
+        aElements[i].classList.remove("font-bold");
+        // aElements[i].classList.remove("bg-pink-600");
+        // aElements[i].classList.add("text-pink-600");
+        // aElements[i].classList.add("bg-white");
+        tabContents[i].classList.add("hidden");
+        tabContents[i].classList.remove("block");
+      }
+      //  element.classList.remove("text-pink-600");
+      // element.classList.remove("bg-white");
+      element.classList.add("text-primary3");
+      element.classList.add("font-bold");
+      //  element.classList.add("bg-pink-600");
+      document.getElementById(tabID).classList.remove("hidden");
+      document.getElementById(tabID).classList.add("block");
+    }
+
+
+    function shareToTwitter() {
+      var text = encodeURIComponent("Grab the exclusive artwork \"Blooming Dreams\" by Razi Rozario at Supermodule");
+      var url = "https://www.supermodule.com/listing";
+      var user_id = "supermoduleio";
+      var hash_tags = "artwork,worldwideshipping,supermodule,razirozario";
+      var params = "menubar=no,toolbar=no,status=no,width=570,height=570";
+      let Shareurl = `https://twitter.com/intent/tweet?url=${url}&text=${text}&via=${user_id}&hashtags=${hash_tags}`;
+      window.open(Shareurl, "_blank");
+    }
+
+ 
+    function shareToFacebook() {
+      var url = "https://www.supermodule.com/listing.html";
+      var params = "menubar=no,toolbar=no,status=no,width=570,height=570";
+      let shareUrl = `http://www.facebook.com/sharer/sharer.phpu=${url}`;
+      window.open(shareUrl, "_blank");
+    }
+
+    function shareToLinkedin() {
+      var url = "https://www.supermodule.com/listing.html";
+      var title = "Blooming Dreams @Supermodule";
+      var summary = "Grab the exclusive artwork \"Blooming Dreams\" by Razi Rozario at Supermodule";
+      var source = "www.supermodule.io";
+      var params = "menubar=no,toolbar=no,status=no,width=570,height=570";
+      let shareUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}&summary=${summary}&source=${source}`;
+      window.open(shareUrl, "_blank");
+
+    }
+  </script>
+
+
+</body>
+
+</html>
