@@ -322,10 +322,7 @@ async function getUser(wallet) {
 async function loadAdminSection(wallet) {
   //First time user show deployment section
   var user = await getUser(wallet);
-  window.localStorage.setItem("email", user.user.email);
-  window.localStorage.setItem("dcontract", user.user.u_dcontract);
-  window.localStorage.setItem("wallet", user.user.u_wallet);
-  window.localStorage.setItem("bname", user.user.b_name);
+
 
 
   if (user == null) {
@@ -333,6 +330,10 @@ async function loadAdminSection(wallet) {
   } else {
     //user.user.email
     //alert("EMAIL:" + user.user.email);
+    window.localStorage.setItem("email", user.user.email);
+    window.localStorage.setItem("dcontract", user.user.u_dcontract);
+    window.localStorage.setItem("wallet", user.user.u_wallet);
+    window.localStorage.setItem("bname", user.user.b_name);
     showAdminSection(wallet);
   }
 }
