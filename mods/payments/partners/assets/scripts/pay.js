@@ -302,9 +302,7 @@ export const getProducts = async () => {
       
 
     </h1>
-    <h3 class="text-xs pb-2 mb-2">
-      ETA - Depends on license type and authority processing time. Excluding government fees.
-    </h3>
+
     <p class="flex items-center text-gray-600 mb-2 text-sm">
       <span
         class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-primary2 text-white rounded-full flex-shrink-0">
@@ -324,6 +322,15 @@ export const getProducts = async () => {
         <path d="M5 12h14M12 5l7 7-7 7"></path>
       </svg>
     </button>
+    <br>
+    <button id="pay${responseData.products[i].p_id}"
+    class="shadow-md shadow-black flex items-center mt-auto text-white bg-blue-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-primary2 disabled:opacity-25 rounded"
+    onclick="window.open('https://polygonscan.com/address/${responseData.products[i].d_contract}#tokentxns','_blank');">View Transactions
+    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+      class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+      <path d="M5 12h14M12 5l7 7-7 7"></path>
+    </svg>
+  </button>
     
     <p class="text-xs text-gray-500 mt-3">For any support related to this service please reach out to <a class="text-blue-600" href="mailto:${responseData.products[i].b_email}?subject=Support Request for ${responseData.products[i].p_name}&body=Please describe your support needs.">${responseData.products[i].b_email}</a></p>
   </div>

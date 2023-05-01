@@ -386,9 +386,10 @@ async function getAllProducts(wallet) {
 async function showAdminSection(wallet) {
 
   document.getElementById("loginSection").classList.add('hidden');
+  document.getElementById("deploymentSection").classList.add('hidden');
   document.getElementById("adminSection").classList.remove('hidden');
   document.getElementById("headerSection").classList.remove('hidden');
-  document.getElementById("footerSection").classList.remove('hidden'); 6
+  document.getElementById("footerSection").classList.remove('hidden'); 
 
 
   let responseData = "";
