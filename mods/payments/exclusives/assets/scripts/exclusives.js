@@ -80,7 +80,7 @@ export const getProducts = async () => {
     for (let i = 0; i < images.length; i++) {
       slider += `<div class="p-4 md:w-1/4 sm:w-1/2 w-full swiper-slide">
                   <div class="border-2 border-gray-200 px-4 py-6 rounded-lg swiper-zoom-container ">
-                    <img alt="gallery" class="w-full object-cover h-full object-center block"
+                    <img alt="gallery" class=" object-cover aspect-square object-center block"
                     src="./assets/images/SuperExclusives/${images[i]}.jpeg">
                   </div>
                 </div>`;
@@ -135,7 +135,7 @@ export const getProducts = async () => {
 
 
     <button
-      class="shadow-md shadow-black flex items-center mt-auto text-white bg-gradient-to-b from-primary1 to-primary2 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gradient-to-t rounded"
+      class="shadow-md shadow-black flex items-center mt-auto text-white  bg-primary2 hover:bg-primary1 border-0 py-2 px-4 w-full focus:outline-none  rounded"
       onclick="payNow(${responseData.products[i].p_price},${responseData.products[i].d_contract});">Buy Now
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
         class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
