@@ -134,9 +134,9 @@ export const getProducts = async () => {
     </p>
 
 
-    <button
+    <button id="pay${i}"
       class="shadow-md shadow-black flex items-center mt-auto text-white  bg-primary2 hover:bg-primary1 border-0 py-2 px-4 w-full focus:outline-none  rounded"
-      onclick="payNow(${responseData.products[i].p_price},${responseData.products[i].d_contract});">Buy Now
+      onclick="payNow('${responseData.products[i].price}','pay${i}');">Buy Now
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
         class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -172,21 +172,26 @@ export const getProducts = async () => {
 }
 
 
-export async function payNow(amount, dcontract) {
 
+export async function payNow(amount,pid) {
+
+  //dcontract = '0x9bCFac4aD4C259b8f3262566d7faBfaBc1601250';
+  document.getElementById(pid).disabled = true;
+  document.getElementById(pid).innerHTML = `Processing...`;
+  document.getElementById(pid).classList.add('animate-pulse');
+  
   //contract 
   //0xa50a2617A9eD30A15b401aa5de58D725220946C4
   //0x495c7F8a6f62F27491a9F1DDb90dAdcA0167f052
 
-  const provider = new ethers.BrowserProvider(window.ethereum)
-  const signer = provider.getSigner()
-  const addressraw = signer.getAddress()
-  const addressstr = (await addressraw).valueOf()
+  const provider = await new ethers.BrowserProvider(window.ethereum)
+  const signer = await provider.getSigner()
+
 
   // usdc polygon
-  const USDCMaticTokenContract = new ethers.Contract('0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174', USDCABI, signer);
+  const USDCMaticTokenContract = await new ethers.Contract('0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174', USDCABI(), signer);
 
-  // let AMOUNT = integer.parseInt(amount);
+ // let AMOUNT = integer.parseInt(amount);
   // USDT parameters
   //const erc20Token = new web3.eth.Contract(USDT_ABI, 0xc2132D05D31c914a87C6611C10748AEb04B58e8F)
 
@@ -224,10 +229,13 @@ export async function payNow(amount, dcontract) {
   //await usdcTxn.wait();
 
   // How many tokens?
-  let numberOfTokens = ethers.utils.parseUnits(amount, 6);
+  let numberOfTokens = await new ethers.parseUnits(amount, 6);
   console.log(`numberOfTokens: ${numberOfTokens}`);
 
+ // const usdcTxn = await USDCMaticTokenContract.approve(dcontract,ethers.parseUnits(amount, 6));
 
+  // Wait for the transaction to be mined
+ // await usdcTxn.wait();
 
   // Send USDC to contract
 
@@ -235,11 +243,13 @@ export async function payNow(amount, dcontract) {
   //Seond settlement function added 0xAB7d017735E6a5886258fBA54Bc75C2353c21717
   //Third add balance function and settlement : 0x7370E056Aed244a0211D860dc66A14EeD3aeD223
 
-  const txn = await USDCMaticTokenContract.transfer(dcontract, numberOfTokens).then((transferResult) => {
-    console.dir("RESULT::" + transferResult)
-    alert("Transfer Initiated");
+  const txn = await USDCMaticTokenContract.transfer('0x9bCFac4aD4C259b8f3262566d7faBfaBc1601250', ethers.parseUnits(amount, 6)).then((transferResult) => {
+    console.dir("RESULT::"+transferResult)
+    alert("Payment Initiated");
   })
-  console.log("TX::" + txn);
+  console.log("TX::"+txn);
+  document.getElementById(pid).disabled = false;
+  document.getElementById(pid).innerHTML = `Pay`;
   // Code for sending ETHER(base token) to contract 
 
   /*

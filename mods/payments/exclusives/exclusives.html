@@ -65,8 +65,9 @@
 
   <script src="./assets/scripts/config.js" type="module"></script>
   <script type="module">
-    import { getProducts } from "./assets/scripts/exclusives.js"
+    import { getProducts, payNow } from "./assets/scripts/exclusives.js"
     window.getProducts = getProducts;
+    window.payNow = payNow;
   </script>
 </head>
 <!-- class="dark:bg-gray-800 dark:text-gray-200" -->
@@ -138,7 +139,7 @@
           <li>
             <div class="flex flex-col items-center text-center justify-center md:pr-8">
               <a class="hover:text-primary2 focus:text-primary1"
-                href="https://billing.stripe.com/p/login/aEU3cechn8Av9NKeUU" id="product">
+                href="https://polygonscan.com/address/0x9bcfac4ad4c259b8f3262566d7fabfabc1601250#tokentxns" id="product">
                 <h2 class=" title-font mt-4 text-lg">Transactions</h2>
               </a>
               <div id="menu3-underline" class="w-full h-1 bg-primary1  mb-4 hidden"></div>
