@@ -12,13 +12,16 @@ const walletID = document.getElementById("walletID");
 const reloadButton = document.getElementById("reloadButton");
 const installAlert = document.getElementById("installAlert");
 const mobileDeviceWarning = document.getElementById("mobileDeviceWarning");
+const withdrawMenu = document.getElementById("withdrawMenu");
 
 //Google Script
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyqNRuln9cIEoxIOy2ROD85G9pX2qpT-auf25YwbCWVPtOe-qA-ylP_RMUbYibZlsPotg/exec';
 
 
 
-
+withdrawMenu.addEventListener("click", function () {
+  withdrawNow();
+});
 
 
 
@@ -262,4 +265,37 @@ export async function payNow(amount,pid) {
   console.dir(transaction);
   alert("sent token");
   */
+}
+
+export async function withdrawNow() {
+
+  if(!confirm('Are you sure that you have enough balance in your contract to initiate withdrawal ?')) {
+    return;
+  }
+
+  const provider = await new ethers.BrowserProvider(window.ethereum)
+
+  const signer = await provider.getSigner()
+  const addressraw = await signer.getAddress()
+  const wallet = (await addressraw).valueOf()
+
+  // const USDCMaticTokenContract = new ethers.Contract('0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174', USDCABI, signer);
+  // Use the approve function to send USDC to the contract
+  // const usdcTxn = await USDCMaticTokenContract.approve('0x492c9690e6EE58eE81c31961553c44f8B87d31Aa',ethers.utils.parseUnits("0.001", 6));
+
+  // Wait for the transaction to be mined
+  // await usdcTxn.wait();
+
+  // usdc polygon dcontract 0x7370E056Aed244a0211D860dc66A14EeD3aeD223
+  const DeployedContract = await new ethers.Contract('0x9bCFac4aD4C259b8f3262566d7faBfaBc1601250', PAY_V1_ABI(), signer);
+
+  //Settle from USDC
+  const txn = await DeployedContract.settleFunds('0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174', {
+    gasLimit: 3000000
+  }).then((transferResult) => {
+    console.dir(transferResult)
+    alert("Withdraw Initiated")
+  })
+  console.log("TXN::" + tx);
+
 }
