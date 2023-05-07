@@ -1,4 +1,4 @@
-import { USDCABI } from './config.js';
+import { USDCABI, PAY_V1_ABI } from './config.js';
 import { ethers } from "https://cdnjs.cloudflare.com/ajax/libs/ethers/6.3.0/ethers.js";
 //https://cdnjs.cloudflare.com/ajax/libs/ethers/6.3.0/ethers.js
 //https://cdn.ethers.io/lib/ethers-5.2.esm.min.js
@@ -176,13 +176,15 @@ export const getProducts = async () => {
 
 
 
-export async function payNow(amount,pid) {
+export async function payNow(amount, pid) {
 
   //dcontract = '0x9bCFac4aD4C259b8f3262566d7faBfaBc1601250';
   document.getElementById(pid).disabled = true;
   document.getElementById(pid).innerHTML = `Processing...`;
   document.getElementById(pid).classList.add('animate-pulse');
-  
+
+  await switchToMatic();
+
   //contract 
   //0xa50a2617A9eD30A15b401aa5de58D725220946C4
   //0x495c7F8a6f62F27491a9F1DDb90dAdcA0167f052
@@ -194,7 +196,7 @@ export async function payNow(amount,pid) {
   // usdc polygon
   const USDCMaticTokenContract = await new ethers.Contract('0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174', USDCABI(), signer);
 
- // let AMOUNT = integer.parseInt(amount);
+  // let AMOUNT = integer.parseInt(amount);
   // USDT parameters
   //const erc20Token = new web3.eth.Contract(USDT_ABI, 0xc2132D05D31c914a87C6611C10748AEb04B58e8F)
 
@@ -232,13 +234,13 @@ export async function payNow(amount,pid) {
   //await usdcTxn.wait();
 
   // How many tokens?
-  let numberOfTokens = await new ethers.parseUnits(amount, 6);
-  console.log(`numberOfTokens: ${numberOfTokens}`);
+  //let numberOfTokens = await new ethers.parseUnits(amount, 6);
+  //console.log(`numberOfTokens: ${numberOfTokens}`);
 
- // const usdcTxn = await USDCMaticTokenContract.approve(dcontract,ethers.parseUnits(amount, 6));
+  // const usdcTxn = await USDCMaticTokenContract.approve(dcontract,ethers.parseUnits(amount, 6));
 
   // Wait for the transaction to be mined
- // await usdcTxn.wait();
+  // await usdcTxn.wait();
 
   // Send USDC to contract
 
@@ -246,11 +248,16 @@ export async function payNow(amount,pid) {
   //Seond settlement function added 0xAB7d017735E6a5886258fBA54Bc75C2353c21717
   //Third add balance function and settlement : 0x7370E056Aed244a0211D860dc66A14EeD3aeD223
 
-  const txn = await USDCMaticTokenContract.transfer('0x9bCFac4aD4C259b8f3262566d7faBfaBc1601250', ethers.parseUnits(amount, 6)).then((transferResult) => {
-    console.dir("RESULT::"+transferResult)
-    alert("Payment Initiated");
-  })
-  console.log("TX::"+txn);
+  const txn = await USDCMaticTokenContract.transfer('0x9bCFac4aD4C259b8f3262566d7faBfaBc1601250', ethers.parseUnits(amount, 6)
+  ).then((transaction) => {
+    console.dir("RESULT::" + transaction)
+    alert("Payment Initiated")
+    transaction.wait()
+    then((receipt) => {
+      alert("Payment Successful")
+    }).catch(err => alert("ERROR::" + err.reason))
+
+  }).catch(err => alert(err.reason))
   document.getElementById(pid).disabled = false;
   document.getElementById(pid).innerHTML = `Pay`;
   // Code for sending ETHER(base token) to contract 
@@ -269,7 +276,7 @@ export async function payNow(amount,pid) {
 
 export async function withdrawNow() {
 
-  if(!confirm('Are you sure that you have enough balance in your contract to initiate withdrawal ?')) {
+  if (!confirm('Are you sure that you have enough balance in your contract to initiate withdrawal ?')) {
     return;
   }
 
@@ -278,6 +285,7 @@ export async function withdrawNow() {
   const signer = await provider.getSigner()
   const addressraw = await signer.getAddress()
   const wallet = (await addressraw).valueOf()
+  await switchToMatic();
 
   // const USDCMaticTokenContract = new ethers.Contract('0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174', USDCABI, signer);
   // Use the approve function to send USDC to the contract
@@ -292,10 +300,15 @@ export async function withdrawNow() {
   //Settle from USDC
   const txn = await DeployedContract.settleFunds('0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174', {
     gasLimit: 3000000
-  }).then((transferResult) => {
-    console.dir(transferResult)
+  }).then((transaction) => {
+    console.dir("RESULT::" + transaction)
     alert("Withdraw Initiated")
-  })
-  console.log("TXN::" + tx);
+    transaction.wait()
+    then((receipt) => {
+      alert("Withdraw Successful")
+    }).catch(err => alert("ERROR::" + err.reason))
+
+  }).catch(err => alert(err.reason))
+
 
 }

@@ -46,6 +46,7 @@ terms.addEventListener("change", function () {
 
 });
 
+
 /*
 const startLoading = () => {
   connectButton.classList.add("loadingButton");
@@ -533,8 +534,9 @@ export async function withdrawNow(dcontract) {
   const provider = await new ethers.BrowserProvider(window.ethereum)
 
   const signer = await provider.getSigner()
-  const addressraw = await signer.getAddress()
-  const wallet = (await addressraw).valueOf()
+
+  await switchToMatic();
+
 
   // const USDCMaticTokenContract = new ethers.Contract('0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174', USDCABI, signer);
   // Use the approve function to send USDC to the contract
@@ -549,10 +551,14 @@ export async function withdrawNow(dcontract) {
   //Settle from USDC
   const txn = await DeployedContract.settleFunds('0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174', {
     gasLimit: 3000000
-  }).then((transferResult) => {
-    console.dir(transferResult)
+  }).then((transaction) => {
+    console.dir("RESULT::" + transaction)
     alert("Withdraw Initiated")
-  })
-  console.log("TXN::" + tx);
+    transaction.wait()
+    then((receipt) => {
+      alert("Withdraw Successful")
+    }).catch(err => alert("ERROR::" + err.reason))
+
+  }).catch(err => alert(err.reason))
 
 }

@@ -52,7 +52,7 @@ const switchToMatic = async () => {
 
 const deployContract = async () => {
 
-  switchToMatic();
+  await switchToMatic();
 
   const provider = new ethers.BrowserProvider(window.ethereum)
 
@@ -350,6 +350,8 @@ export async function payNow(amount,dcontract,pid) {
   document.getElementById('pay'+pid).disabled = true;
   document.getElementById('pay'+pid).innerHTML = `Processing...`;
   document.getElementById('pay' + pid).classList.add('animate-pulse');
+
+  await switchToMatic();
   
   //contract 
   //0xa50a2617A9eD30A15b401aa5de58D725220946C4
@@ -400,8 +402,8 @@ export async function payNow(amount,dcontract,pid) {
   //await usdcTxn.wait();
 
   // How many tokens?
-  let numberOfTokens = await new ethers.parseUnits(amount, 6);
-  console.log(`numberOfTokens: ${numberOfTokens}`);
+ // let numberOfTokens = await new ethers.parseUnits(amount, 6);
+ // console.log(`numberOfTokens: ${numberOfTokens}`);
 
  // const usdcTxn = await USDCMaticTokenContract.approve(dcontract,ethers.parseUnits(amount, 6));
 
@@ -414,11 +416,17 @@ export async function payNow(amount,dcontract,pid) {
   //Seond settlement function added 0xAB7d017735E6a5886258fBA54Bc75C2353c21717
   //Third add balance function and settlement : 0x7370E056Aed244a0211D860dc66A14EeD3aeD223
 
-  const txn = await USDCMaticTokenContract.transfer(dcontract, ethers.parseUnits(amount, 6)).then((transferResult) => {
-    console.dir("RESULT::"+transferResult)
-    alert("Payment Initiated");
-  })
-  console.log("TX::"+txn);
+  const txn = await USDCMaticTokenContract.transfer(dcontract, ethers.parseUnits(amount, 6)
+  ).then((transaction) => {
+    console.dir("RESULT::" + transaction)
+    alert("Payment Initiated")
+    transaction.wait()
+    then((receipt) => {
+      alert("Payment Successful")
+    }).catch(err => alert("ERROR::" + err.reason))
+
+  }).catch(err => alert(err.reason))
+
   document.getElementById('pay'+pid).disabled = false;
   document.getElementById('pay'+pid).innerHTML = `Pay & Book Service`;
   // Code for sending ETHER(base token) to contract 
