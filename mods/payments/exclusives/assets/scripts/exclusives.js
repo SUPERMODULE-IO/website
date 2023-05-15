@@ -13,17 +13,37 @@ const reloadButton = document.getElementById("reloadButton");
 const installAlert = document.getElementById("installAlert");
 const mobileDeviceWarning = document.getElementById("mobileDeviceWarning");
 const withdrawMenu = document.getElementById("withdrawMenu");
+let metamaskEnabled = false;
 
 //Google Script
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyqNRuln9cIEoxIOy2ROD85G9pX2qpT-auf25YwbCWVPtOe-qA-ylP_RMUbYibZlsPotg/exec';
 
+
+const menu = document.querySelector('#menu');
+const button = document.querySelector('#menu-button');
+
+button.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
 
 
 withdrawMenu.addEventListener("click", function () {
   withdrawNow();
 });
 
-
+window.addEventListener('load', function() {
+  if (window.ethereum) {
+    console.log('Ethereum support is available')
+    if (window.ethereum.isMetaMask) {
+      console.log('MetaMask is active')
+      metamaskEnabled = true;
+    } else {
+      alert('MetaMask is not available')
+    }
+  } else {
+    console.log('Ethereum support is not found')
+  }
+})
 
 const switchToMatic = async () => {
   await window.ethereum.request({
@@ -138,8 +158,8 @@ export const getProducts = async () => {
 
 
     <button id="pay${i}"
-      class="shadow-md shadow-black flex items-center mt-auto text-white  bg-primary2 hover:bg-primary1 border-0 py-2 px-4 w-full focus:outline-none  rounded"
-      onclick="payNow('${responseData.products[i].price}','pay${i}');">Buy Now
+      class="shadow-md shadow-black flex items-center mt-auto text-white  bg-primary2 hover:bg-primary1 border-0 py-2 px-4 w-full focus:outline-none  rounded disabled:opacity-25"
+      onclick="payNow('${responseData.products[i].price}','pay${i}');" ${(metamaskEnabled) ? '' : 'disabled' } >${(metamaskEnabled) ? 'Buy Now' : 'MetaMask not found!'}
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
         class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -259,7 +279,8 @@ export async function payNow(amount, pid) {
 
   }).catch(err => alert(err.reason))
   document.getElementById(pid).disabled = false;
-  document.getElementById(pid).innerHTML = `Pay`;
+  document.getElementById(pid).innerHTML = `Buy Now`;
+  document.getElementById(pid).classList.remove('animate-pulse');
   // Code for sending ETHER(base token) to contract 
 
   /*
@@ -283,8 +304,7 @@ export async function withdrawNow() {
   const provider = await new ethers.BrowserProvider(window.ethereum)
 
   const signer = await provider.getSigner()
-  const addressraw = await signer.getAddress()
-  const wallet = (await addressraw).valueOf()
+
   await switchToMatic();
 
   // const USDCMaticTokenContract = new ethers.Contract('0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174', USDCABI, signer);
