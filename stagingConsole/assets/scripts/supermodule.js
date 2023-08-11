@@ -25,7 +25,7 @@ const deployContract = async () => {
     PAY_V1_BYTECODE: await (async () => {let {PAY_V1_BYTECODE} = await import('./pay_eth_usdc_v1.js'); return PAY_V1_BYTECODE;})()
 
   
-    let productContract = await new ethers.ContractFactory(PAY_V1_ABI(), PAY_V1_BYTECODE(), signer);
+    let productContract = await new ethers.ContractFactory(PAY_V1_ABI, PAY_V1_BYTECODE, signer);
   
     const contract = await productContract.deploy();
     const contractAddress = await contract.getAddress();
