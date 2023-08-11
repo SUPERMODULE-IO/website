@@ -21,11 +21,12 @@ const deployContract = async () => {
     const wallet = (await addressraw).valueOf()
 
     //Load payment module
-    PAY_V1_ABI: await (async () => {let {PAY_V1_ABI} = await import('./pay_eth_usdc_v1.js'); return PAY_V1_ABI;})()
-    PAY_V1_BYTECODE: await (async () => {let {PAY_V1_BYTECODE} = await import('./pay_eth_usdc_v1.js'); return PAY_V1_BYTECODE;})()
+   // PAY_V1_ABI: await (async () => {let {PAY_V1_ABI} = await import('./pay_eth_usdc_v1.js'); return PAY_V1_ABI();})()
+   // PAY_V1_BYTECODE: await (async () => {let {PAY_V1_BYTECODE} = await import('./pay_eth_usdc_v1.js'); return PAY_V1_BYTECODE();})()
 
+    const module = await import('./pay_eth_usdc_v1.js')
   
-    let productContract = await new ethers.ContractFactory(PAY_V1_ABI, PAY_V1_BYTECODE, signer);
+    let productContract = await new ethers.ContractFactory(module.PAY_V1_ABI(), module.PAY_V1_BYTECODE(), signer);
   
     const contract = await productContract.deploy();
     const contractAddress = await contract.getAddress();
