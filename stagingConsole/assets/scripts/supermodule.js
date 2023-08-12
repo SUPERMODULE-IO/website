@@ -6,7 +6,7 @@ deployButton.addEventListener("click", async () => {
     deployButton.innerHTML = `Deploying...`;
     deployButton.classList.add('animate-pulse');
 
-    const contractAddress = deployContract();
+    const contractAddress = await deployContract();
     deployButton.innerHTML = contractAddress;
     deployButton.classList.remove('animate-pulse');
   
