@@ -5,11 +5,14 @@ deployButton.addEventListener("click", async () => {
     deployButton.disabled = true;
     deployButton.innerHTML = `Deploying...`;
     deployButton.classList.add('animate-pulse');
-    deployContract();
+
+    const contractAddress = deployContract();
+    deployButton.innerHTML = contractAddress;
+    deployButton.classList.remove('animate-pulse');
   
 });
 
-const deployContract = async () => {
+const deployContract = async (network,token,version) => {
 
     await switchToMatic();
   
@@ -23,6 +26,16 @@ const deployContract = async () => {
     //Load payment module
    // PAY_V1_ABI: await (async () => {let {PAY_V1_ABI} = await import('./pay_eth_usdc_v1.js'); return PAY_V1_ABI();})()
    // PAY_V1_BYTECODE: await (async () => {let {PAY_V1_BYTECODE} = await import('./pay_eth_usdc_v1.js'); return PAY_V1_BYTECODE();})()
+    var modName = "pay_" + network + "_" + token + "_" + version + ".js"
+
+    switch(modName)
+    {
+        case "pay_eth_usdc_v1.js":
+            return deployModContract(signer,modeName);
+        default :
+            return "INVALID";
+        //no module to load
+    }
 
     const module = await import('./pay_eth_usdc_v1.js')
   
@@ -41,6 +54,14 @@ const deployContract = async () => {
     //Ussing async-await for deploy method
     persistContractDetails(contractAddress, wallet);
   
+  }
+
+  const deployModContract = async (signer,modName) => {
+    const module = await import(modName)
+    let productContract = await new ethers.ContractFactory(module.ABI(), module.BYTECODE(), signer);
+    const contract = await productContract.deploy();
+    const contractAddress = await contract.getAddress();
+    return contractAddress;
   }
 
   const switchToMatic = async () => {
