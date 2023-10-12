@@ -7,11 +7,10 @@ export async function pay(amount, address, network, token, version) {
   spayButton.disabled = true;
   spayButton.value = `Processing...`;
 
-  var modName = "www.supermodule.com/community/assets/scripts/spay_" + network + "_" + token + "_" + version + ".js"
+  var modName = "https://cdn.jsdelivr.net/gh/SUPERMODULE-IO/website@main/community/assets/scripts/spay_" + network + "_" + token + "_" + version + ".js"
   try {
 
     const module = await import(modName);
-    alert('MOD' + module);
 
     if (network == "eth") {
       await switchToEthereum();
@@ -49,6 +48,8 @@ export async function pay(amount, address, network, token, version) {
 
   } catch (error) {
     alert("Invalid module:" + error);
+    spayButton.disabled = false;
+    spayButton.value = `Pay`;
   }
 
 
