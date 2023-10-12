@@ -8,41 +8,49 @@ export async function pay(amount, address, network, token, version) {
   spayButton.value = `Processing...`;
 
   var modName = "www.supermodule.com/community/assets/scripts/spay_" + network + "_" + token + "_" + version + ".js"
-  const module = await import(modName);
-  alert('MOD'+module);
+  try {
 
-  if (network == "eth") {
-    await switchToEthereum();
-  } else if (network == "matic") {
-    await switchToMatic();
+    const module = await import(modName);
+    alert('MOD' + module);
 
-  } else {
-    isModule = false;
+    if (network == "eth") {
+      await switchToEthereum();
+    } else if (network == "matic") {
+      await switchToMatic();
+
+    } else {
+      isModule = false;
+    }
+
+    if (isModule) {
+      const provider = await new ethers.BrowserProvider(window.ethereum)
+      const signer = await provider.getSigner()
+      const tokenContract = await new ethers.Contract(module.TOKEN_ADDRESS(), module.ABI(), signer);
+      const txn = await tokenContract.transfer(address, ethers.parseUnits(amount, module.DECIMAL())
+      ).then((transaction) => {
+        console.dir("RESULT::" + transaction)
+        alert("Payment Initiated")
+        transaction.wait()
+        then((receipt) => {
+          alert("Payment Successful")
+        }).catch(err => alert("ERROR::" + err.reason))
+
+      }).catch(err => alert(err.reason))
+      spayButton.disabled = false;
+      spayButton.value = `Pay`;
+
+
+    } else {
+      alert("Payment Module Error");
+      spayButton.disabled = false;
+      spayButton.value = `Pay`;
+    }
+
+
+  } catch (error) {
+    alert("Invalid module:" + error);
   }
 
-  if (isModule) {
-    const provider = await new ethers.BrowserProvider(window.ethereum)
-    const signer = await provider.getSigner()
-    const tokenContract = await new ethers.Contract(module.TOKEN_ADDRESS(), module.ABI(), signer);
-    const txn = await tokenContract.transfer(address, ethers.parseUnits(amount, module.DECIMAL())
-    ).then((transaction) => {
-      console.dir("RESULT::" + transaction)
-      alert("Payment Initiated")
-      transaction.wait()
-      then((receipt) => {
-        alert("Payment Successful")
-      }).catch(err => alert("ERROR::" + err.reason))
-
-    }).catch(err => alert(err.reason))
-    spayButton.disabled = false;
-    spayButton.value = `Pay`;
-
-
-  } else {
-    alert("Payment Module Error");
-    spayButton.disabled = false;
-    spayButton.value = `Pay`;
-  }
 
 
 
