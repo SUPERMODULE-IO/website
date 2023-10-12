@@ -3,11 +3,9 @@ import { ethers } from "https://cdnjs.cloudflare.com/ajax/libs/ethers/6.3.0/ethe
 export async function pay(amount, address, network, token, version) {
 
   var isModule = true;
-  var ABI;
-  var tokenDecimal = 6; // for usdc
   const spayButton = document.getElementById("spay_button");
   spayButton.disabled = true;
-  spayButton.innerHTML = `Processing...`;
+  spayButton.value = `Processing...`;
 
   var modName = "www.supermodule.com/community/assets/scripts/spay_" + network + "_" + token + "_" + version + ".js"
   const module = await import(modName);
@@ -37,13 +35,13 @@ export async function pay(amount, address, network, token, version) {
 
     }).catch(err => alert(err.reason))
     spayButton.disabled = false;
-    spayButton.innerHTML = `Pay`;
+    spayButton.value = `Pay`;
 
 
   } else {
     alert("Payment Module Error");
     spayButton.disabled = false;
-    spayButton.innerHTML = `Pay`;
+    spayButton.value = `Pay`;
   }
 
 
