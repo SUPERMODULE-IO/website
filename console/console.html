@@ -1,0 +1,674 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./assets/images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link href="./assets/styles/supermodule-min.css" rel="stylesheet">
+  <script type="module">
+    import { } from "./assets/scripts/supermodule-min.js"
+  </script>
+  <title>Supermodule Console</title>
+</head>
+
+<body
+  class=" flex bg-ltheme dark:bg-dtheme  xs:text-[20px] xs:leading-[27px] text-[16px] leading-[23px] font-normal dark:text-dtext text-ltext transition-colors duration-200 ease-in-out">
+  <header id="headerSection" class="">
+    <nav class="
+         flex flex-wrap
+         items-center
+         justify-between
+         w-full
+         py-4
+         lg:py-0
+         px-4
+         fixed
+         top-0
+         z-10
+         shadow-md
+        
+         bg-lnav       
+         dark:bg-dnav
+         dark:border-b
+         dark:border-dborder
+         
+       ">
+      <div>
+        <a class="flex text-3xl  font-extrabold text-black dark:text-white js-show-on-scroll" href="#"
+          data-animate-type="motion-safe:animate-fade-right">
+          <title>Supermodule - Borderles Services</title>
+          <img alt="logo" class="w-[180px] sm:w-[230px] block dark:hidden"
+            src="./assets/images/logos/supermodule_logo_black.svg">
+
+
+        </a>
+      </div>
+
+
+
+      <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="flex-none h-6 w-6 cursor-pointer lg:hidden block"
+        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+
+      <div class="hidden w-full lg:flex lg:place-items-start lg:w-auto" id="menu">
+        <ul class="
+             pt-4
+             text-base 
+             font-medium
+             lg:flex
+             lg:justify-between 
+             lg:pt-0
+            ">
+
+          <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8 ">
+              <a class="hover:text-primary2 focus:text-primary1" href="#" id="productsMenu">
+                <h2 class="font-medium title-font mt-4 text-lg">Console</h2>
+              </a>
+              <div id="menu2-underline" class="w-full h-1 bg-primary1 rounded mb-4  "></div>
+            </div>
+
+          </li>
+          <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8 ">
+              <a class="hover:text-primary2 focus:text-primary1" href="#" id="withdrawMenu">
+                <h2 class="font-medium title-font mt-4 text-lg">Withdraw</h2>
+              </a>
+              <div id="menu2-underline" class="w-full h-1 bg-primary1 rounded mb-4 hidden"></div>
+            </div>
+
+          </li>
+          <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8 ">
+              <a class="hover:text-primary2 focus:text-primary1 " id="transactionsMenu" href="#" target="_blank"
+                rel="noopener noreferrer">
+                <h2 class="font-medium title-font mt-4 text-lg">Transactions</h2>
+              </a>
+              <div id="menu2-underline" class="w-full h-1 bg-primary1 rounded mb-4 hidden "></div>
+            </div>
+
+          </li>
+          <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8">
+              <a class="hover:text-primary2 focus:text-primary1" id="logoutMenu" href="">
+                <h2 class="font-medium title-font mt-4 text-lg">Logout</h2>
+              </a>
+              <div id="menu3-underline" class="w-full h-1 bg-primary1 rounded mb-4 hidden"></div>
+            </div>
+
+          </li>
+
+
+        </ul>
+
+      </div>
+
+
+    </nav>
+
+
+
+  </header>
+  <div class="flex h-full max-h-screen overflow-hidden w-full">
+    <asdie id="sidemenu0" class=" w-[72px]  flex bg-gray-800 duration-700 mt-16 h-screen z-10">
+
+      <div class="w-full flex flex-col text-white  text-[8px]">
+        <a id="sm0" href="#" onclick="sidemenuClick(0)"
+          class="flex flex-col items-center justify-center w-full p-2  font-bold bg-gray-700  ">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class=" w-6 h-6 inline-block ">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+            </svg>
+
+          </span>
+          <span>Dashboard</span>
+
+        </a>
+        <a id="sm1" href="#" onclick="sidemenuClick(1)"
+          class="flex flex-col items-center justify-center w-full p-2  font-bold  ">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class=" w-6 h-6 inline-block ">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+            </svg>
+          </span>
+          <span>Payments</span>
+
+        </a>
+        <a href="#" onclick="" class="flex flex-col items-center justify-center w-full p-2  font-bold text-primary4 ">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class=" w-6 h-6 inline-block ">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z" />
+            </svg>
+          </span>
+          <span>Tokenization</span>
+
+        </a>
+        <a href="#" onclick="" class="flex flex-col items-center justify-center w-full p-2  font-bold  text-primary4 ">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class=" w-6 h-6 inline-block">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
+            </svg>
+          </span>
+          <span>D Cloud</span>
+
+        </a>
+
+      </div>
+    </asdie>
+    <asdie id="sidemenu1" class=" w-56 -ml-56 flex bg-gray-800 duration-700 mt-16 h-screen ">
+
+      <div class="w-full flex flex-col text-white  space-y-4 bg-gray-700">
+
+        <a href="#" onclick="sidemenuClick(1)"
+          class="flex items-center justify-start w-full p-[21px]  font-bold text-primary2 uppercase transition-colors duration-200 border-r-4 border-blue-500 bg-gradient-to-r from-white to-blue-100 dark:from-gray-700 dark:to-gray-800">
+
+          <span>Payments</span>
+
+        </a>
+        <a href="#" class="hover:text-primary1 text-sm font-bold px-4">Advanced Settings</a>
+        <a href="#" class="text-gray-600 hover:text-primary3 text-sm font-bold px-4 ">Versioning</a>
+        <a href="#" class="text-gray-600 hover:text-primary3 text-sm font-bold px-4">Web Hooks</a>
+        <a href="#" class="text-gray-600 hover:text-primary3 text-sm font-bold px-4">Token Configurations</a>
+      </div>
+    </asdie>
+
+    <section id="sec0" class="">
+      <main id="main" class=" p-5 mt-16 w-full h-screen  ">
+
+
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="text-4xl  font-extrabold title-font mb-4 text-gray-900">Borderless Services</h1>
+            <div id="connectSection" class=""> 
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">If you have already deployed your contract before,
+              enter your contract address. Otherwise, select one of the below services to get started!</p>
+            <div
+              class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end  py-6">
+              <div class="relative flex-grow w-full">
+
+                <input type="text" id="caddress" name="caddress" placeholder="Contract Address"
+                  class="w-full bg-gray-900 bg-opacity-50 rounded border border-gray-300 focus:border-primary2 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  style="background-size: auto 26px !important; background-position: right center !important; background-repeat: no-repeat !important; background-origin: content-box !important; background-image: url(&quot;chrome-extension://bkdgflcldnnnapblkhphbgpggdiikppg/img/logo-small.svg&quot;) !important; transition: background 0s ease 0s !important;"
+                  required>
+              </div>
+              <div class="relative">
+                <select id="networkselectdashboard"
+                  class=" rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10"
+                  data-ddg-inputtype="unknown">
+                  <option value="eth">Ethereum</option>
+                  <option value="matic">Polygon</option>
+                  <option value="avax" disabled>Avalanche</option>
+                  <option value="op" disabled>Optimism</option>
+                </select>
+                <span
+                  class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </div>
+                    
+              <input type="hidden" id="userContract">
+              <button
+                class="disabled:opacity-25 bg-blue-500 hover:bg-primary2 text-white font-bold py-2 px-4 rounded inline-flex items-center"
+                id="connectButton" name="connectButton">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6 mr-2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                </svg>
+
+
+                <span>Connect</span>
+
+              </button>
+
+            </div>
+            </div> 
+          </div>
+          <div class="flex flex-wrap -m-4 text-center  text-white">
+            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+
+              <button
+                class="px-4 py-6 rounded-lg bg-primary1 opacity-90 hover:opacity-100 hover:shadow-black shadow-black shadow-md hover:shadow-lg w-full"
+                onclick="sidemenuClick(1)">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                  stroke="currentColor" class=" w-12 h-12 mb-3 inline-block">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+                </svg>
+
+                <h2 class="title-font font-bold text-2xl ">PAYMENTS</h2>
+
+                <p class="leading-relaxed text-sm">Be your own payment gateway</p>
+              </button>
+
+
+            </div>
+            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <button class="border-2 border-gray-200 bg-gray-300 px-4 py-6 rounded-lg w-full">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                  stroke="currentColor" class="text-primary4 w-12 h-12 mb-3 inline-block">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z" />
+                </svg>
+
+                <h2 class="title-font font-bold text-2xl ">TOKENIZATION</h2>
+                <p class="leading-relaxed text-sm">Tokenize physical and digital assets</p>
+              </button>
+            </div>
+            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <button class="border-2 border-gray-200 bg-gray-300 px-4 py-6 rounded-lg w-full">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                  stroke="currentColor" class="text-primary4 w-12 h-12 mb-3 inline-block">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
+                </svg>
+
+                <h2 class="title-font font-bold text-2xl ">DCLOUD</h2>
+                <p class="leading-relaxed text-sm">Decentralised Cloud</p>
+              </button>
+            </div>
+            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <button class="border-2 border-gray-200 bg-gray-300 px-4 py-6 rounded-lg w-full">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                  stroke="currentColor" class="text-primary4 w-12 h-12 mb-3 inline-block">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
+                </svg>
+
+                <h2 class="title-font font-bold text-2xl ">PASSWORDLESS</h2>
+                <p class="leading-relaxed text-sm">Token Gated Access</p>
+              </button>
+            </div>
+            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <button class="border-2 border-gray-200 bg-gray-300 px-4 py-6 rounded-lg w-full">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="text-primary4 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <h2 class="title-font font-bold text-2xl ">TAMPERPROOF</h2>
+                <p class="leading-relaxed text-sm">Create Tamper Resistant Documents</p>
+              </button>
+            </div>
+
+            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <button class="border-2 border-gray-200 bg-gray-300 px-8 py-6 rounded-lg w-full">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                  stroke="currentColor" class="text-primary4 w-12 h-12 mb-3 inline-block">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z" />
+                </svg>
+
+                <h2 class="title-font font-bold text-2xl ">TICKETING</h2>
+                <p class="leading-relaxed text-sm">Global forge resistant tickets</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </section>
+
+    <section id="sec1" class="hidden">
+      <main id="main2" class=" p-5 mt-16 w-full h-screen overflow-auto ">
+
+
+        <div class="container px-5 py-4 mx-auto">
+          <div class="flex flex-col">
+            <div class="h-1 bg-gray-200 rounded overflow-hidden">
+              <div class="w-24 h-full bg-primary1"></div>
+            </div>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+              <h1 class="sm:w-2/5 text-gray-900 dark:text-gray-100 font-medium title-font text-2xl mb-2 sm:mb-0">
+                Activate :
+                Payments Button</h1>
+              <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Deploy the prebuilt smart contract to start
+                accepting payments. Get started by choosing your preferred network, currency, and module.</p>
+            </div>
+          </div>
+          <div id="form_section" class="">
+
+
+            <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2 ">
+              <div class="p-2  w-full">
+                <div class=" rounded flex p-4 h-full items-center shadow-md">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                    class="text-primary2 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                  <span class="mr-3 w-24 font-bold">Network</span>
+                  <div class="relative w-full">
+                    <select id="networkselect"
+                      class="w-full rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10"
+                      data-ddg-inputtype="unknown">
+                      <option value="eth">Ethereum</option>
+                      <option value="matic">Polygon</option>
+                      <option value="avax" disabled>Avalanche</option>
+                      <option value="op" disabled>Optimism</option>
+                    </select>
+                    <span
+                      class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2 ">
+              <div class="p-2  w-full">
+                <div class=" rounded flex p-4 h-full items-center shadow-md">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                    class="text-primary2 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                  <span class="mr-3 w-24 font-bold">Currency</span>
+                  <div class="relative w-full">
+                    <select id="tokenselect"
+                      class="w-full rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10"
+                      data-ddg-inputtype="unknown">
+                      <option value="usdc">USDC</option>
+                      <option value="usdt" disabled>USDT</option>
+                      <option value="dai" disabled>DAI</option>
+
+                    </select>
+                    <span
+                      class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2 ">
+              <div class="p-2  w-full">
+                <div class=" rounded flex p-4 h-full items-center shadow-md">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                    class="text-primary2 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                  <span class="mr-3 w-24 font-bold">Module</span>
+                  <div class="relative w-full">
+                    <select id="moduleselect"
+                      class="w-full rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10"
+                      data-ddg-inputtype="unknown">
+                      <option value="pay">Payments </option>
+                      <option value="payrd" disabled>Payments + Refund Processing</option>
+                      <option value="paysn" disabled>Payments + Subscription</option>
+
+                    </select>
+                    <span
+                      class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <input type="hidden" value="v1" id="version">
+            <!--
+            <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2 ">
+              <div class="p-2  w-full">
+                <div class=" rounded flex p-4 h-full items-center shadow-md">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                    class="text-primary2 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                  <span class="mr-3 w-24 font-bold">Version</span>
+                  <div class="relative w-full">
+                    <select id="moduleselect"
+                      class="w-full rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10"
+                      data-ddg-inputtype="unknown">
+                      <option value="v1">V1.0 </option>
+                      <option value="v2" disabled>V2.0</option>
+                      <option value="v2" disabled>V3.0</option>
+
+                    </select>
+                    <span
+                      class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </div>
+
+                </div>
+              </div>
+            </div> -->
+
+            <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2 ">
+              <div class="p-2  w-full">
+                <div class=" rounded flex p-4 h-full items-center shadow-md">
+                  <textarea type="terms" id="terms" name="terms" readonly
+                    class="w-full   rounded  focus:border-primary1 focus:bg-transparent focus:ring-2 focus:ring-red-200 text-xs outline-none py-1 px-3 leading-6 transition-colors duration-200 ease-in-out overflow-auto">
+TERMS OF SERVICE
+Welcome to supermodule borderless platform. By using our platform, you agree to the following terms and conditions:
+Community Version: Please note that this is a community version of the software being used, and it is provided as is, without any warranty, express or implied. We do not guarantee that our platform will be free from errors or interruptions, and we do not assume any liability for any usage failures or financial losses resulting from the use of our platform.
+KYC and AML Compliance: You, as the customer, are responsible for ensuring that you collect and maintain all necessary Know Your Customer (KYC) and Anti-Money Laundering (AML) documentation, as required by applicable laws and regulations, for accepting payments through our platform. Our platform does not assume any responsibility or liability for your compliance with these requirements.
+Limitation of Liability: In no event shall our platform, our affiliates, or our officers, directors, employees, agents, licensors, or service providers be liable for any direct, indirect, incidental, special, consequential, or exemplary damages, including but not limited to, damages for loss of profits, revenue, goodwill, use, data, or other intangible losses, arising out of or in connection with the use of our platform.
+Indemnification: You agree to indemnify, defend, and hold harmless our platform, our affiliates, and our officers, directors, employees, agents, licensors, and service providers from and against any and all claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees arising out of or in connection with your use of our platform or any violation of these terms and conditions.
+Modifications: We reserve the right to modify or update these terms and conditions at any time without prior notice. Your continued use of our platform after any modifications or updates shall constitute your acceptance of the updated terms and conditions.
+Governing Law and Jurisdiction: These terms and conditions shall be governed by and construed in accordance with the laws of the jurisdiction where our platform is based. Any dispute arising out of or in connection with these terms and conditions shall be resolved by the courts of that jurisdiction.
+By using our platform, you agree to abide by these terms and conditions. If you do not agree to these terms and conditions, please do not use our platform.</textarea>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end">
+              <div class="relative flex-grow w-full object-center items-center text-center text-sm">
+
+
+
+
+                <input type="checkbox" id="termsCheck" name="termsCheck" checked>
+                <label for="termsCheck">I accept the terms of service</label>
+
+
+              </div>
+
+
+            </div>
+            <div
+              class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end  py-6">
+              <div class="relative flex-grow w-full object-center items-center text-center">
+
+                <button
+                  class="disabled:opacity-25 bg-blue-500 hover:bg-primary2 text-white font-bold py-2 px-4 inline-flex rounded shadow-md shadow-black"
+                  id="deployButton">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  </svg>
+
+                  <span>Deploy</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <div id="contract_section" class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2 hidden">
+            <div class="p-2  w-full">
+              <p class="text-center text-primary1 text-base font-bold">
+                The following contract address will only appear once, so please copy it and save it securely.
+              </p>
+              <div class=" rounded flex p-4 items-center shadow-md">
+
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                  class="text-primary2 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                  <path d="M22 4L12 14.01l-3-3"></path>
+                </svg>
+                <span class="mr-3 w-80 font-bold">Your Contract Address</span>
+                <div class="relative w-full">
+                  <input type="text" id="contractDisplay"
+                    class="w-full rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10">
+
+
+                </div>
+
+              </div>
+              <br />
+              <p class="text-center  text-base ">
+                Enter the desired payment amount to auto generate the payment button code below
+              </p>
+              <div class=" rounded flex p-4  items-center shadow-md">
+                <span class="mr-3  font-bold">Set your payment amount : </span>
+                <input type="number" id="payAmount"
+                  class="mr-3 rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10"
+                  value="10">
+
+                <button
+                  class="disabled:opacity-25 bg-blue-500 hover:bg-primary2 text-white font-bold py-2 px-4 inline-flex rounded shadow-md shadow-black"
+                  id="generateCode">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-6 h-6 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                  </svg>
+
+
+                  <span>Generate Code</span>
+                </button>
+
+
+              </div>
+              <p class="text-center text-base">
+                Copy and embed the following code into the html page to start accepting payments.
+              </p>
+              <div class=" rounded flex p-4 h-full items-center shadow-md">
+
+                <textarea id="embedcode" readonly
+                  class="w-full h-full  rounded  focus:border-primary1 focus:bg-transparent focus:ring-2 focus:ring-red-200 text-xs outline-none py-1  leading-6 transition-colors duration-200 ease-in-out overflow-auto">
+
+                </textarea>
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </main>
+    </section>
+
+  </div>
+  <!-- Javascript code -->
+  <script>
+    var sidemenu = document.getElementById("sidemenu2");
+    var main = document.getElementById("main");
+    var activeSMenu = 0;
+    var activeSection = 0;
+    var smOpen = false;
+
+  
+
+    // show the menu
+    function openMenu(id) {
+      var sidemenu = document.getElementById("sidemenu" + id);
+      sidemenu.classList.remove('-ml-56');
+      sidemenu.classList.add('ml-0');
+    }
+
+    // make the menu "go away"
+    function closeMenu(id) {
+      var sidemenu = document.getElementById("sidemenu" + id);
+      sidemenu.classList.remove('ml-0');
+      sidemenu.classList.add('-ml-56');
+    }
+
+    function showSection(id) {
+      var activeSec = document.getElementById("sec" + activeSection);
+      activeSec.classList.add('hidden');
+      var secId = document.getElementById("sec" + id);
+      secId.classList.remove('hidden');
+      activeSection = id;
+    }
+
+    function sidemenuClick(id) {
+
+      var actsmButton = document.getElementById("sm" + activeSMenu);
+      actsmButton.classList.remove('bg-gray-700');
+
+      var smButton = document.getElementById("sm" + id);
+      smButton.classList.add('bg-gray-700');
+      if (id != 0) {
+        //toogle
+        if (smOpen) {
+          closeMenu(id);
+          activeSMenu = id;
+          smOpen = false;
+        } else {
+          showSection(id);
+          openMenu(id);
+          activeSMenu = id;
+          smOpen = true;
+        }
+      } else {
+        if (activeSMenu != 0) {
+          closeMenu(activeSMenu);
+          smOpen = false;
+          activeSMenu = 0;
+          showSection(0);
+        }
+
+      }
+
+    }
+
+
+  </script>
+</body>
+
+</html>

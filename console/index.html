@@ -1,0 +1,1348 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./assets/images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description"
+    content="Borderless Service Provider" />
+
+  <meta property="og:url" content="https://supermodule.io" />
+  <meta property="og:type" content="Website" />
+  <meta property="og:title" content="www.supermodule.io" />
+  <meta property="og:description"
+    content="Borderless Service Provider 🚀" />
+  <meta property="og:image" content="https://supermodule.io/assets/images/logos/supermodule_logo_black.png" />
+  <meta property="og:image" content="https://supermodule.io/assets/images/logos/supermodule_logo_white.png" />
+
+  <link href="./assets/styles/supermodule-min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  
+</head>
+<!-- class="dark:bg-gray-800 dark:text-gray-200" -->
+
+<body
+  class=" bg-ltheme dark:bg-dtheme  xs:text-[20px] xs:leading-[27px] text-[16px] leading-[23px] font-normal dark:text-dtext text-ltext transition-colors duration-200 ease-in-out">
+
+  <header>
+    <nav class="
+         flex flex-wrap
+         items-center
+         justify-between
+         w-full
+         py-4
+         lg:py-0
+         px-4
+         fixed
+         top-0
+         z-10
+         
+         backdrop-blur-sm 
+         bg-ltheme/60 
+         dark:bg-dtheme/60
+         
+         
+       ">
+      <div>
+        <a class="flex-auto font-smf text-3xl  font-extrabold dark:text-white text-black" href="#">
+          <title>Supermodule</title>
+          <img alt="logo" class="w-[180px] sm:w-[230px] hidden dark:block"
+            src="./assets/images/logos/supermodule_logo_white.svg">
+          <img alt="logo" class="w-[180px] sm:w-[230px] block dark:hidden"
+            src="./assets/images/logos/supermodule_logo_black.svg">
+        </a>
+      </div>
+
+
+
+      <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="flex-none h-6 w-6 cursor-pointer lg:hidden block"
+        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+
+      <div class="hidden w-full lg:flex lg:place-items-start lg:w-auto" id="menu">
+        <ul class="
+             pt-4
+             text-base 
+             font-medium
+             lg:flex
+             lg:justify-between 
+             lg:pt-0
+            ">
+          <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8">
+              <a class=" hover:text-primary2 focus:text-primary1" href="#home-section" id="home">
+                <h2 class="font-medium title-font mt-4 text-lg">Home</h2>
+
+              </a>
+              <div id="menu1-underline" class="w-full h-1 bg-primary1 rounded mb-4"></div>
+            </div>
+          </li>
+          <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8 ">
+              <a class="hover:text-primary2 focus:text-primary1" href="#how-it-works-section" id="how-it-works">
+                <h2 class="font-medium title-font mt-4 text-lg">Get started</h2>
+              </a>
+              <div id="menu2-underline" class="w-full h-1 bg-primary1 rounded mb-4 hidden "></div>
+            </div>
+
+          </li>
+          <!--   <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8">
+              <a class="hover:text-primary2 focus:text-primary1" href="#services-section" id="services">
+                <h2 class="font-medium title-font mt-4 text-lg">Services</h2>
+              </a>
+              <div id="menu3-underline" class="w-full h-1 bg-primary1 rounded mb-4 hidden"></div>
+            </div>
+
+          </li> -->
+          <!-- 
+          <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8">
+              <a class="hover:text-primary2 focus:text-primary1" href="#team-section" id="team">
+                <h2 class="font-medium title-font mt-4 text-lg">Team</h2>
+              </a>
+              <div id="menu3-underline" class="w-full h-1 bg-primary1 rounded mb-4 hidden"></div>
+            </div>
+
+          </li>
+          <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8">
+              <a class="hover:text-primary2 focus:text-primary1" href="#roadmap-section" id="roadmap">
+                <h2 class="font-medium title-font mt-4 text-lg">Roadmap</h2>
+              </a>
+              <div id="menu4-underline" class="w-full h-1 bg-primary1 rounded mb-4 hidden"></div>
+            </div>
+          </li>
+          -->
+          <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8">
+              <a class="hover:text-primary2 focus:text-primary1" href="#media-section" id="media">
+                <h2 class="font-medium title-font mt-4 text-lg">Media</h2>
+              </a>
+              <div id="menu3-underline" class="w-full h-1 bg-primary1 rounded mb-4 hidden"></div>
+            </div>
+          </li>
+          <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8">
+              <a class="hover:text-primary2 focus:text-primary1" href="#partners-section" id="partners">
+                <h2 class="font-medium title-font mt-4 text-lg">Partners</h2>
+              </a>
+              <div id="menu4-underline" class="w-full h-1 bg-primary1 rounded mb-4 hidden"></div>
+            </div>
+          </li>
+          <li>
+            <div class="flex flex-col items-center text-center justify-center md:pr-8">
+              <button id="colorswitch" name="colorswitch" aria-label="Change Theme"
+                class="items-center mt-4 bg-gray-100 border-0 py-1 px-1 focus:outline-none hover:bg-gray-800 dark:hover:bg-gray-200  rounded-full text-base  dark:bg-gray-800 dark:text-gray-100 ">
+                <svg id="icon-contrast" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" class="h-6 w-6" viewBox="0 0 20 20"
+                  enable-background="new 0 0 20 20" xml:space="preserve">
+                  <path d="M10,20C4.5,20,0,15.5,0,10S4.5,0,10,0s10,4.5,10,10S15.5,20,10,20z M10,2c-4.4,0-8,3.6-8,8s3.6,8,8,8s8-3.6,8-8S14.4,2,10,2
+                          z" />
+                  <path fill="#ea3970" class="contrast" d="M10,4v12c3.3,0,6-2.7,6-6S13.3,4,10,4z" />
+                </svg>
+
+              </button>
+
+            </div>
+          </li>
+        </ul>
+
+      </div>
+
+
+    </nav>
+
+
+
+  </header>
+
+
+  <!-- Alert section start -->
+  <!--
+  <div id="mainAlert" class="text-center py-4 lg:px-4  my-14">
+    <div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+      <span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">New</span>
+      <span class="font-semibold mr-2 text-left flex-auto"></span>
+      <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+     
+        <svg class="fill-current h-6 w-6 text-pribg-primary1" role="button" onclick="closeAlert('mainAlert')" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
+     
+    </div>
+  </div>
+  -->
+  <!-- Alert section end -->
+
+  <!--Hero Section start-->
+
+  <!--background-image: 
+  radial-gradient(at 0% 0%, hsla(0,0%,9%,1) 0, transparent 50%), 
+  radial-gradient(at 50% 0%, hsla(350,96%,43%,1) 0, transparent 50%), 
+  radial-gradient(at 100% 0%, hsla(0,0%,9%,1) 0, transparent 50%);-->
+
+
+  <section class="body-font" id="home-section">
+    <div class="container mx-auto flex px-5 py-24 lg:flex-row flex-col items-center">
+      <div
+        class="lg:flex-grow lg:w-1/2 lg:pr-24 md:pr-16 flex flex-col lg:items-start lg:text-left mb-16 lg:mb-0 items-center text-center">
+        <h1
+          class="title-font font-extrabold mb-4 text-[26px] xs:text-[30px] sm:text-[40px] md:text-[48px] lg:text-[40px] xl:text-[55px] 2xl:text-[64px]  leading-[30px] sm:leading-[40px] lg:leading-[45px] xl:leading-[55px] 2xl:leading-[70px] dark:text-white text-black justify-between">
+          <span class="text-primary1">Borderless Platform</span> for
+          <br><span id="typed" class="text-primary2"></span> Services
+
+        </h1>
+        <p class="mb-8  ">
+          We believe in the future of borderless services 🚀
+          <br>
+
+
+
+          <br>Instantly launch web3 apps with prebuilt smart contracts, ensuring full ownership across a wide range of
+          blockchain networks.
+          <br><br>See what you can <span class="text-primary3">BUIDL!</span>
+
+        </p>
+        <label for="console" class="text-sm text-gray-600">Take control back! </label>
+        <div class="flex justify-center">
+
+          <button id="consoleButton1" name="consoleButton1"
+            class=" shadow-md shadow-black inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Launch
+            Console 🚀</button>
+        </div>
+
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class="object-cover object-center rounded" alt="hero" src="./assets/images/SupermoduleHeroNoBG.svg">
+      </div>
+
+
+
+    </div>
+  </section>
+
+
+  <!-- Get started  START-->
+  <section id="how-it-works-section" class="body-font"
+    style="background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)">
+    <div class="container px-5 pt-24 mx-auto">
+
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1
+          class="dark:text-white text-black font-bold sm:text-[48px] sm:leading-[52px] text-[30px] leading-[36px] text-center">
+          Get started
+        </h1>
+
+        <p class="lg:w-2/3 mx-auto leading-relaxed ">
+          <span class="text-xl font-medium title-font">Easy one click deploy pre-built smart contracts <br>
+
+        </p>
+      </div>
+      <div class="flex flex-wrap -m-4  xl:text-base">
+        <div class="p-2 md:w-1/3 w-full">
+          <div id="starterpass"
+            class="shadow-lg shadow-black h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+            <h2 class="text-sm tracking-widest title-font mb-1 mt-2 font-medium">PAYMENTS </h2>
+            <h1 class="xl:text-5xl text-5xl font-extrabold text-gray-900 leading-none flex items-center ">
+              <span id="pro_price">FREE</span>
+              <span class="text-lg ml-1 font-normal text-gray-500 ">/community edition</span>
+
+            </h1>
+            <h3 class="text-sm font-normal pb-4 mb-4 border-b border-gray-200"></h3>
+            <p class="flex items-center text-primary5 mb-2">
+              <span
+                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-primary5 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                  class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Payment Button
+            </p>
+            <p class="flex items-center text-primary5 mb-2">
+              <span
+                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-primary5 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                  class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Prebuilt Smart Contracts
+            </p>
+            <p class="flex items-center text-primary5 mb-2">
+              <span
+                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-primary5 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                  class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Instant Settlement
+            </p>
+            <p class="flex items-center text-primary5 mb-2">
+              <span
+                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-primary5 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                  class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Community Modules
+            </p>
+
+            <p class="flex items-center text-primary5 mb-6 line-through ">
+              <span
+                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-primary5 text-white rounded-full flex-shrink-0 ">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                  class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>1% Transaction Fee
+            </p>
+
+            <button id="consoleButton2" name="consoleButton2"
+              class="flex items-center mt-auto text-white bg-indigo-500 bg-opacity-75 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded shadow-sm shadow-black hover:shadow-black hover:shadow-md">Get
+              started!
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+            <p class="text-xs text-gray-500 mt-3">Unlimited usage with fair user policy.</p>
+          </div>
+        </div>
+
+        <div class="p-2 md:w-1/3 w-full ">
+
+          <div id="propass"
+            class="h-full p-6 rounded-lg border-2 bg-gray-900 shadow-xl shadow-black border-primary2 flex flex-col relative overflow-hidden">
+
+
+
+            <h2 class="text-sm tracking-widest title-font mt-2  mb-1 font-medium">PAYMENTS + REFUNDS </h2>
+            <h1 class="xl:text-5xl text-5xl font-extrabold text-white leading-none flex items-center ">
+              <span id="pro_price">FREE</span>
+              <span class="text-lg ml-1 font-normal text-gray-500 ">/community edition</span>
+
+            </h1>
+            <h3 class="text-sm font-normal pb-4 mb-4 border-b border-gray-200" id="pro_duration"></h3>
+            <p class="flex items-center text-primary4 mb-2">
+              <span
+                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-primary1 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                  class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Payment Links
+            </p>
+            <p class="flex items-center text-primary4 mb-2">
+              <span
+                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-primary1 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                  class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Product Listings
+            </p>
+            <p class="flex items-center text-primary4 mb-2">
+              <span
+                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-primary1 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                  class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Refunds
+            </p>
+            <p class="flex items-center text-primary4 mb-2">
+              <span
+                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-primary1 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                  class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Live Notifications
+            </p>
+            <p class="flex items-center text-primary4 mb-6 line-through">
+              <span
+                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-primary1 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                  class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>1% Transaction Fee
+            </p>
+            <button
+              class="bg-opacity-75 shadow-sm shadow-black flex items-center mt-auto text-white bg-primary4 border-0 py-2 px-4 w-full focus:outline-none  rounded ">Coming
+              Soon
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+            <p class="text-xs text-gray-500 mt-3">Unlimited usage with fair user policy.</p>
+          </div>
+        </div>
+
+        <div class="p-2 md:w-1/3 w-full ">
+
+          <div id="propass"
+            class="h-full p-6 rounded-lg border-2 bg-gray-900 shadow-xl shadow-black border-primary2 flex flex-col relative overflow-hidden">
+
+
+
+            <h2 class="text-sm tracking-widest title-font mt-2  mb-1 font-medium">PAYMENTS + SUBSCRIPTIONS </h2>
+            <h1 class="xl:text-5xl text-5xl font-extrabold text-white leading-none flex items-center ">
+              <span id="pro_price">FREE</span>
+              <span class="text-lg ml-1 font-normal text-gray-500 ">/community edition</span>
+
+            </h1>
+            <h3 class="text-sm font-normal pb-4 mb-4 border-b border-gray-200" id="pro_duration"></h3>
+            <p class="flex items-center text-primary4 mb-2">
+              <span
+                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-primary1 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                  class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Subscriptions
+            </p>
+            <p class="flex items-center text-primary4 mb-2">
+              <span
+                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-primary1 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                  class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Escrow System
+            </p>
+            <p class="flex items-center text-primary4 mb-2">
+              <span
+                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-primary1 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                  class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Invoicing
+            </p>
+            <p class="flex items-center text-primary4 mb-2">
+              <span
+                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-primary1 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                  class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Payments +
+            </p>
+            <p class="flex items-center text-primary4 mb-6 line-through">
+              <span
+                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-primary1 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                  class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>.5% Transaction Fee
+            </p>
+            <button
+              class="bg-opacity-75 shadow-sm shadow-black flex items-center mt-auto text-white bg-primary4 border-0 py-2 px-4 w-full focus:outline-none  rounded ">Coming
+              Soon
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+            <p class="text-xs text-gray-500 mt-3">Unlimited usage with fair user policy.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+
+      <div class="text-center lg:w-2/3 w-full">
+
+
+        <div class="flex justify-center">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- How it works  END-->
+
+
+
+  <!--Services START-->
+
+
+
+  <!-- Smart Module END -->
+
+  <!-- Team  Start-->
+  <!-- 
+  <section id="team-section" class=" body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col">
+
+        <div class="flex flex-wrap sm:flex-row flex-col py-6 ">
+          <h1
+            class="dark:text-white text-black font-bold sm:text-[48px] sm:leading-[52px] text-[30px] leading-[36px] text-center">
+            Our Team</h1>
+        </div>
+      </div>
+      <div class="flex flex-col  w-full ">
+
+        <h1 class="text-xl font-medium title-font mb-4 ">We're a technology-first company that believes every
+          business deserves a solution as unique and exclusive as they are.</h1>
+      </div>
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center  p-4 rounded-lg shadow-black shadow-md dark:bg-gray-900">
+            <img alt="team" class="w-16 h-16 bg-primary1 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="https://static.neris-assets.com/images/personality-types/avatars/faces/enfj-protagonist-s3-v3-male.svg?v=1">
+            <div class="flex-grow">
+              <h2 class=" title-font font-medium">Vivek Ganesh</h2>
+              <p class="text-gray-500">Founder, Engineering <br>Protagonist (ENFJ-A)</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center shadow-black shadow-md dark:bg-gray-900 p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="https://static.neris-assets.com/images/personality-types/avatars/faces/infj-advocate-s3-v3-male.svg?v=1">
+            <div class="flex-grow">
+              <h2 class=" title-font font-medium">Imran Wadha</h2>
+              <p class="text-gray-500">Business & Marketing <br>Advocate (INFJ-A)</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center shadow-black shadow-md dark:bg-gray-900 p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="https://static.neris-assets.com/images/personality-types/avatars/faces/isfj-defender-s3-v5-female.svg?v=1">
+            <div class="flex-grow">
+              <h2 class=" title-font font-medium">Kavya Shanthkumar</h2>
+              <p class="text-gray-500">Operations <br>Defender (ISFJ-T)</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center shadow-black shadow-md dark:bg-gray-900 p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="https://static.neris-assets.com/images/personality-types/avatars/faces/intj-architect-s3-v2-female.svg?v=1">
+            <div class="flex-grow">
+              <h2 class=" title-font font-medium">Aida AlAwadhi</h2>
+              <p class="text-gray-500">Engineering <br>Architect (INTJ-T)</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center shadow-black shadow-md dark:bg-gray-900 p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="https://static.neris-assets.com/images/personality-types/avatars/faces/entj-commander-s3-v2-male.svg?v=1">
+            <div class="flex-grow">
+              <h2 class=" title-font font-medium">Yazeed AlShehri</h2>
+              <p class="text-gray-500">Engineering <br>Commander (ENTJ-A)</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center shadow-black shadow-md dark:bg-gray-900 p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="https://static.neris-assets.com/images/personality-types/avatars/faces/enfp-campaigner-s3-v7-female.svg?v=1">
+            <div class="flex-grow">
+              <h2 class=" title-font font-medium">Lia Maria Pangracious</h2>
+              <p class="text-gray-500">Marketing <br>Campaigner (ENFP-T)</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center shadow-black shadow-md dark:bg-gray-900 p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="https://static.neris-assets.com/images/personality-types/avatars/faces/enfj-protagonist-s3-v1-male.svg?v=1">
+            <div class="flex-grow">
+              <h2 class=" title-font font-medium">Abdullah Hassan</h2>
+              <p class="text-gray-500">Engineering <br>Protagonist (ENFJ-A)</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center shadow-black shadow-md dark:bg-gray-900 p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="https://static.neris-assets.com/images/personality-types/avatars/faces/istj-logistician-s3-v2-male.svg?v=1">
+            <div class="flex-grow">
+              <h2 class=" title-font font-medium">Joseph Rabbat</h2>
+              <p class="text-gray-500">Engineering <br>Logistician (ISTJ-A)</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center shadow-black shadow-md dark:bg-gray-900 p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="https://static.neris-assets.com/images/personality-types/avatars/faces/enfp-campaigner-s3-v4-male.svg?v=1">
+            <div class="flex-grow">
+              <h2 class=" title-font font-medium">Mahmoud Abdelsalam</h2>
+              <p class="text-gray-500">Engineering <br>Campaigner (ENFP-T)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>-->
+  <!-- Team END -->
+
+  <!-- Roadmap START-->
+  <!-- 
+  <section id="roadmap-section" class="body-font">
+    <div class="container px-5 py-24 mx-auto ">
+      <div class="flex flex-col">
+
+        <div class="flex flex-wrap sm:flex-row flex-col py-6 ">
+          <h1
+            class="dark:text-white text-black font-bold sm:text-[48px] sm:leading-[52px] text-[30px] leading-[36px] text-center">
+            Roadmap</h1>
+        </div>
+        <div class="flex flex-col  w-full ">
+
+        <h1 class="text-xl font-medium title-font mb-4 ">Our partners are our strategic alliance for expansion.</h1>
+      </div>
+      </div>
+      <div class="flex flex-wrap w-full">
+        <div class="lg:w-2/3 md:w-1/2 md:pr-10 md:py-6">
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-primary1 bg-primary1 inline-flex items-center justify-center text-white relative ">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm  mb-1 tracking-wider">Q4 2021</h2>
+              <p class="leading-relaxed">Inception - Development kicked off</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-primary1 bg-primary1 inline-flex items-center justify-center text-white relative">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm mb-1 tracking-wider">Q1 2022</h2>
+              <p class="leading-relaxed">Validation - First official proposal accepted for a cross-border solution</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-primary1 bg-primary1 inline-flex items-center justify-center text-white relative">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                
+                
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm mb-1 tracking-wider">Q1 2022</h2>
+              <p class="leading-relaxed">Incubation - American University in Dubai
+                Enterpreneurship & Innovation Center</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-primary1 bg-primary1 inline-flex items-center justify-center text-white relative ">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+               
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm  mb-1 tracking-wider">Q2 2022</h2>
+              <p class="leading-relaxed">Soft Launch - MVP</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-primary1 bg-primary1 inline-flex items-center justify-center text-white relative ">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm  mb-1 tracking-wider">Q3 2022</h2>
+              <p class="leading-relaxed">Launch - Platform ready for customer onboarding</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-primary1 bg-primary1 inline-flex items-center justify-center text-white relative ">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                 <circle cx="12" cy="5" r="3"></circle>
+                <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+                
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm  mb-1 tracking-wider">Q4 2022</h2>
+              <p class="leading-relaxed">First Win - First customer onboarded
+              </p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-primary1 bg-primary1 inline-flex items-center justify-center text-white relative ">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm  mb-1 tracking-wider">Q1 2023</h2>
+              <p class="leading-relaxed">Expansion - Customers and partners signed</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full dark:bg-primary1 bg-primary1 inline-flex items-center justify-center text-white relative ">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm mb-1 tracking-wider">Q2 2023</h2>
+              <p class="leading-relaxed">Development - SaaS platform community version</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-primary4 inline-flex items-center justify-center text-white relative ">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm mb-1 tracking-wider">Q3 2023</h2>
+              <p class="leading-relaxed">Launch - SaaS platform commercial version</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-primary4 inline-flex items-center justify-center text-white relative ">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm mb-1 tracking-wider">Q4 2023</h2>
+              <p class="leading-relaxed">Solutions - More industry focused solutions</p>
+            </div>
+          </div>
+       
+          <div class="flex relative">
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-primary4 inline-flex items-center justify-center text-white relative ">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm  mb-1 tracking-wider">2024</h2>
+              <p class="leading-relaxed">Expansion - Global markets</p>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="lg:w-1/3 md:w-1/2 w-full object-cover object-center rounded-lg md:mt-0 mt-12 ">
+          <img class="block dark:hidden" src="./assets/images/rocket_launch_black.svg" alt="step">
+
+          <img class="hidden dark:block" src="./assets/images/rocket_launch_white.svg" alt="step">
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+  <!-- Roadmap  END-->
+
+  <!-- Media Section START -->
+
+  <section class="body-font" id="media-section">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="flex flex-col">
+
+        <div class="flex flex-wrap sm:flex-row flex-col py-6 ">
+          <h1
+            class="dark:text-white text-black font-bold sm:text-[48px] sm:leading-[52px] text-[30px] leading-[36px] text-center">
+            Media</h1>
+        </div>
+      </div>
+      <div class="flex flex-col  w-full ">
+
+        <h1 class="text-xl font-medium title-font mb-4 ">News, promotions and more.</h1>
+      </div>
+      <div class="flex flex-wrap md:-m-2 -m-1 w-full items-center object-center justify-center text-center">
+        <div class="flex flex-wrap md:w-1/2 w-full">
+          <div class="md:p-2 p-1 w-1/2">
+            <a href="https://7enews.net/en/news-en/gcc-en/aud-in-the-metaverse-with-vara/">
+              <img alt="gallery" class="w-full object-cover h-[200px] object-center block rounded-lg"
+                src="./assets/images/media1.jpeg">
+            </a>
+          </div>
+          <div class="md:p-2 p-1 w-1/2">
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7007301908839165952">
+              <img alt="gallery" class="w-full object-cover h-[200px] rounded-lg object-center block"
+                src="./assets/images/media2.jpeg">
+            </a>
+          </div>
+          <div class="md:p-2 p-1 w-full">
+
+            <iframe class="w-full object-cover h-[382px] rounded-lg object-center block"
+              src="https://www.youtube.com/embed/RilEilmbgaQ" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="flex flex-wrap md:w-1/2 w-full">
+          <div class="md:p-2 p-1 w-full">
+
+            <blockquote class="twitter-tweet object-cover object-center block ">
+              <p lang="en" dir="ltr">Major General Abdullah Ali Al Ghaithi, Assistant Commander-in-Chief for Operation
+                Affairs at <a
+                  href="https://twitter.com/hashtag/DubaiPolice?src=hash&amp;ref_src=twsrc%5Etfw">#DubaiPolice</a>,
+                recently inaugurated the Resilience Forum at <a
+                  href="https://twitter.com/mbrlae?ref_src=twsrc%5Etfw">@mbrlae</a> to discuss key future risks. <a
+                  href="https://t.co/2w2b1nlEWR">pic.twitter.com/2w2b1nlEWR</a></p>&mdash; Dubai Policeشرطة دبي
+              (@DubaiPoliceHQ) <a
+                href="https://twitter.com/DubaiPoliceHQ/status/1583480393721729024?ref_src=twsrc%5Etfw">October 21,
+                2022</a>
+            </blockquote>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Media Section END -->
+
+
+
+
+  <!-- Partners START-->
+
+  <section id="partners-section" class="body-font">
+
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col">
+
+        <div class="flex flex-wrap sm:flex-row flex-col py-6">
+          <h1
+            class="dark:text-white text-black font-bold sm:text-[48px] sm:leading-[52px] text-[30px] leading-[36px] text-center">
+            Partners
+          </h1>
+        </div>
+        <div class="flex flex-col  w-full ">
+
+          <h1 class="text-xl font-medium title-font mb-4 ">Our strategic alliance.</h1>
+        </div>
+      </div>
+      <div class="flex flex-wrap -m-4 text-center swiper ">
+        <div class="swiper-wrapper">
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full swiper-slide">
+            <div class="shadow-black shadow-md dark:bg-gray-900 px-4 py-6 rounded-lg ">
+              <img alt="gallery" class="w-full object-cover h-full object-center block"
+                src="./assets/images/logos/meeranalogo.svg">
+
+
+            </div>
+          </div>
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full swiper-slide">
+            <div class="shadow-black shadow-md dark:bg-gray-900 px-4 py-6 rounded-lg ">
+
+
+              <img alt="gallery" class="w-full object-cover h-full object-center block"
+                src="./assets/images/logos/AEICLogo.svg">
+
+
+            </div>
+          </div>
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full swiper-slide">
+            <div class="shadow-black shadow-md dark:bg-gray-900 px-4 py-6 rounded-lg">
+              <img alt="gallery" class="w-full object-cover h-full object-center block"
+                src="./assets/images/logos/codmaxlogo.svg">
+            </div>
+          </div>
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full swiper-slide">
+            <div class="shadow-black shadow-md dark:bg-gray-900 px-4 py-6 rounded-lg">
+              <img alt="gallery" class="w-full object-cover h-full object-center hidden dark:block "
+                src="./assets/images/logos/bmlogo_white.svg">
+              <img alt="gallery" class="w-full object-cover h-full object-center block dark:hidden "
+                src="./assets/images/logos/bmlogo_black.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--        If we need pagination
+           <div class="swiper-pagination"></div>
+
+           If we need navigation buttons 
+           <div class="swiper-button-prev"></div>
+           <div class="swiper-button-next"></div>
+     
+            If we need scrollbar
+           <div class="swiper-scrollbar"></div>
+    -->
+
+
+  </section>
+
+
+
+
+  <!-- Partners END-->
+
+  <!-- Footer Start -->
+  <footer class="bg-lfoot dark:bg-dfoot body-font border-t border-dborder shadow-inner">
+    <div
+      class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center ">
+
+
+          <span class=" text-3xl font-smf h-10 dark:text-gray-300">Supermodule</span>
+        </a>
+        <p class="mt-2 text-sm text-gray-500">Platform to build borderless applications with complete ownership,
+          scalability, and reliability across blockchains.</p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center text-sm">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium  tracking-widest text-base mb-3">Product</h2>
+          <nav class="list-none mb-10">
+            <ul>
+              <li>
+                <a class="text-primary4 hover:text-primary1">Marketplace</a>
+              </li>
+              <li>
+                <a class="text-primary4 hover:text-primary1">Services</a>
+              </li>
+              <li>
+                <a class="text-primary4 hover:text-primary1"></a>
+              </li>
+              <li>
+                <a class="text-primary4 hover:text-primary1"></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium  tracking-widest text-base mb-3">Company</h2>
+          <nav class="list-none mb-10">
+            <ul>
+              <li>
+                <a class="text-primary4 hover:text-primary1">About</a>
+              </li>
+              <li>
+                <a class="text-primary4 hover:text-primary1">Careers</a>
+              </li>
+              <li>
+                <a class="text-primary4 hover:text-primary1">Partnership </a>
+              </li>
+              <li>
+                <a class="text-primary4 hover:text-primary1"
+                  href="mailto:investor@supermodule.io?subject=Investment Details&body=Please send me a copy of your Investment program!">Investors</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium  tracking-widest text-base mb-3">Resources</h2>
+          <nav class="list-none mb-10">
+            <ul>
+              <li>
+                <a class="text-primary4 hover:text-primary1" hre="https://discord.gg/NJTDc4wvge">Support</a>
+              </li>
+              <li>
+                <a class="text-primary4 hover:text-primary1">Feedback</a>
+              </li>
+              <li>
+                <a class="text-primary4 hover:text-primary1"
+                  href="https://github.com/SUPERMODULE-IO/resources">Branding</a>
+              </li>
+              <li>
+                <a class="text-primary4 hover:text-primary1" href="https://blog.supermodule.io">Blog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium  tracking-widest text-base mb-3">Policies</h2>
+          <nav class="list-none mb-10">
+            <ul>
+              <li>
+                <a class="text-primary4 hover:text-primary1">Terms</a>
+              </li>
+              <li>
+                <a class="text-primary4 hover:text-primary1">Privacy</a>
+              </li>
+              <li>
+                <a class="text-primary4 hover:text-primary1">Credits</a>
+              </li>
+              <li>
+                <a class="text-primary4 hover:text-primary1">Licenses</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white dark:bg-black">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2021 <span class="font-smf"><span
+              class="text-primary1">S</span>upermodule</span>. All rights reserved.
+          <a href="https://twitter.com/vyvakz" aria-label="Twitter" rel="noopener noreferrer" class="text-gray-600 ml-1"
+            target="_blank">@vyvakz</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-gray-500 hover:text-primary1" href="https://fb.me/supermoduleio" aria-label="Facebook">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500 hover:text-primary1" href="https://twitter.com/supermoduleio"
+            aria-label="Twitter">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500 hover:text-primary1" href="https://instagram.com/supermoduleio"
+            aria-label="Instagram">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500 hover:text-primary1" href="https://linkedin.com/company/supermodule"
+            aria-label="Linkedin">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500 hover:text-primary1" href="https://discord.gg/AfBAUMxT5G" aria-label="Discord">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 16 15">
+              <path
+                d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z" />
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+    const colorswitch = document.querySelector("#colorswitch");
+
+    //default light theme
+    document.documentElement.classList.remove('dark');
+    localStorage.theme = 'light';
+
+
+    const toggleDarkMode = function () {
+      menu.classList.add('hidden');
+      if (localStorage.theme == 'dark') {
+        document.documentElement.classList.remove('dark');
+        localStorage.theme = 'light';
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.theme = 'dark';
+      }
+    }
+    colorswitch.addEventListener("click", toggleDarkMode);
+
+    function closeAlert(id) {
+      let element = document.getElementById(id);
+      element.remove();
+    }
+    const button = document.querySelector('#menu-button');
+    const menu = document.querySelector('#menu');
+
+
+    button.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+
+    const menu0 = document.querySelector('#home');
+    menu0.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      hideUnderline('#menu1-underline');
+      var anchor = document.querySelector('#home-section');
+      anchor.scrollIntoView();
+
+
+    });
+
+
+    const menu1 = document.querySelector('#how-it-works');
+    menu1.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      hideUnderline('#menu2-underline');
+      var anchor = document.querySelector('#how-it-works-section');
+      anchor.scrollIntoView();
+
+
+    });
+
+    /*
+        const menu2 = document.querySelector('#services');
+        menu2.addEventListener('click', () => {
+          menu.classList.add('hidden');
+          hideUnderline('#menu3-underline');
+          var anchor = document.querySelector('#services-section');
+          anchor.scrollIntoView();
+    
+    
+        });
+    
+        const menu2 = document.querySelector('#team');
+        menu2.addEventListener('click', () => {
+          menu.classList.add('hidden');
+          hideUnderline('#menu3-underline');
+          var anchor = document.querySelector('#team-section');
+          anchor.scrollIntoView();
+    
+    
+        });
+    
+    
+        const menu3 = document.querySelector('#roadmap');
+        menu3.addEventListener('click', () => {
+          menu.classList.add('hidden');
+          hideUnderline('#menu4-underline');
+          var anchor = document.querySelector('#roadmap-section');
+          anchor.scrollIntoView();
+    
+    
+        });
+        */
+
+    const menu2 = document.querySelector('#media');
+    menu2.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      hideUnderline('#menu3-underline');
+      var anchor = document.querySelector('#media-section');
+      anchor.scrollIntoView();
+
+
+    });
+
+    const menu3 = document.querySelector('#partners');
+    menu3.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      hideUnderline('#menu4-underline');
+      var anchor = document.querySelector('#partners-section');
+      anchor.scrollIntoView();
+
+
+    });
+
+    function hideUnderline(selected_menu) {
+      for (var i = 1; i <= 4; i++) {
+        var menu_underline = document.querySelector('#menu' + i + '-underline');
+        menu_underline.classList.add('hidden');
+      }
+      var menu_underline = document.querySelector(selected_menu);
+      menu_underline.classList.remove('hidden');
+    }
+
+
+    //Animation Start
+
+
+    // Callback for IntersectionObserver
+    const callback = function (entries) {
+      entries.forEach(entry => {
+
+        // Is the element in the viewport?
+        if (entry.isIntersecting) {
+
+          // Add the fadeIn class:
+          entry.target.classList.add("motion-safe:animate-fadeIn");
+        } else {
+
+          // Otherwise remove the fadein class
+          entry.target.classList.remove("motion-safe:animate-fadeIn");
+        }
+      });
+    };
+
+    // Get all the elements you want to show on scroll
+    const targets = document.querySelectorAll(".js-show-on-scroll");
+
+    // Set up a new observer
+    const observer = new IntersectionObserver(callback);
+
+    // Loop through each of the target
+    targets.forEach(function (target) {
+      // Hide the element
+      target.classList.add("opacity-0");
+
+      // Add the element to the watcher
+      observer.observe(target);
+    });
+
+
+
+
+    var typed = new Typed('#typed', {
+      strings: ["Web3", "Payment", "Cloud", "AI"],
+      typeSpeed: 80,
+      backSpeed: 50,
+      loop: true
+    });
+
+
+
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      slidesPerView: 4,
+      speed: 6000,
+      autoplay: {
+        delay: 0,
+        freeMode: true,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+
+        },
+        400: {
+          slidesPerView: 1,
+
+        },
+        640: {
+          slidesPerView: 2,
+
+        },
+        768: {
+          slidesPerView: 3,
+
+        },
+        1024: {
+          slidesPerView: 4,
+
+        },
+      }
+
+
+    });
+
+    const consoleButton1 = document.getElementById("consoleButton1");
+
+    consoleButton1.addEventListener("click", async () => {
+      consoleButton1.disabled = true;
+      consoleButton1.innerHTML = `Launching... 🚀`;
+      consoleButton1.classList.add('animate-pulse');
+      window.location.href = 'console';
+
+    });
+
+    const consoleButton2 = document.getElementById("consoleButton2");
+
+    consoleButton2.addEventListener("click", async () => {
+      consoleButton2.disabled = true;
+      consoleButton2.innerHTML = `Launching... 🚀`;
+      consoleButton2.classList.add('animate-pulse');
+      window.location.href = 'console';
+
+    });
+
+  </script>
+
+
+  <!-- <script type="text/javascript" src="./assets/scripts/connect.js"> </script> -->
+</body>
+
+</html>
