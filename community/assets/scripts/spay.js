@@ -7,7 +7,7 @@ export async function pay(amount, address, network, token, version) {
   spayButton.disabled = true;
   spayButton.value = `Processing...`;
 
-  var modName = "https://cdn.jsdelivr.net/gh/SUPERMODULE-IO/website@latest/community/assets/scripts/spay_" + network + "_" + token + "_" + version + ".js"
+  var modName = "https://cdn.jsdelivr.net/gh/SUPERMODULE-IO/website@v1.0-beta/community/assets/scripts/spay_" + network + "_" + token + "_" + version + ".js"
   try {
 
     const module = await import(modName);
