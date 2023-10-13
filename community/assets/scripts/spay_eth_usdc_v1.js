@@ -1,3 +1,4 @@
+//Version v1.0-beta
 export const TOKEN_ADDRESS = () => {
     return '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48';
 }

@@ -1,3 +1,4 @@
+//Version v1.0-beta
 export const TOKEN_ADDRESS = () => {
     return '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174';
 }
@@ -954,5 +955,3 @@ export const ABI = ()=>{
         "type": "function"
     }]);
 }
-
-
